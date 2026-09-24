@@ -106,7 +106,7 @@ Every span here comes from the verifier-corrected promo tables in the footage no
 ## Recurring cautions
 
 - **People:** faces are partly visible in V01 (3.0–3.5 s, 9.0–10.0 s, 12.0–14.0 s), V02A (worker B at 6.5–7.0 s) and V02B (small). Get consent or blur.
-- **Third-party marks:** CAT logos on nearly every machine; fleet numbers "740" (V02A) and "5335" (all roller clips); the Hastings Deering dealer decal in V03A (0.0–1.5 s) and V03C (legible 9.0–11.0 s, a small patch 5.5–13.5 s). Don't imply endorsement.
+- **Third-party marks:** CAT logos on nearly every machine; the "740" tank decal (V02A; model badge or fleet number, not confirmed) and fleet number "5335" (all roller clips); the Hastings Deering dealer decal in V03A (0.0–1.5 s) and V03C (legible 9.0–11.0 s, a small patch 5.5–13.5 s). Don't imply endorsement.
 - **Safety optics:** the camera operator is very close to moving plant in V02A (8.5–12.0 s), V02B (13–15 s), V03A (0.0–1.5 s), V03B (about 4–5 s) and V03C (5–11.5 s). The cuts avoid these spans.
 - **Site:** the canopy, red soil, containers and bushland could identify the site. Don't name it or imply a named customer without Jon's approval.
 - **Rights:** all clips are WhatsApp-forwarded. Confirm who filmed them and that commercial use is allowed.

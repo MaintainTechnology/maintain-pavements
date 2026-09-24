@@ -216,7 +216,7 @@ Jon captioned a still from this clip *"02 — Binder and water through the full 
 |---|---|---|---|
 | ![[V02A-24.5s.jpg\|200]] | ![[PDF-p3_img2.jpeg\|200]] | Same camera position beside the column. Same cart ("740" decal, white loop at the rear, spray round the rear bogie), same green container with a wheel behind the cart, same red soil and bunting, same sunlit foreground strip. The PDF image is a slightly tighter crop (1200x710, so the sides are trimmed). The tank's size relative to the roof-column spacing and the green container sitting just behind the tank rear fit **about 24.0 to 24.5 s** best. | **High.** p.3 photo "02 — Binder and water through the full depth" is almost certainly a frame grab from this clip. |
 | ![[V02A-04.0s.jpg\|200]] | ![[PDF-p4_img1.jpeg\|200]] | Same shelter and flag line. In both, a worker with a red/orange sun brim and neck flap on the hard hat, and orange long-sleeve hi-vis, hand-sprays with a hose. The PDF frame has a roller and a different moment. | Site **high**; same worker **medium** (PPE match only); not from this clip. |
-| ![[V02A-15.5s.jpg\|200]] | ![[PDF-p3_img1.jpeg\|200]] | Same shelter, columns, bunting and bushland. The PDF shows a tracked skid-steer trimming. | Site **high**; not from this clip. |
+| ![[V02A-15.5s.jpg\|200]] | ![[PDF-p3_img1.jpeg\|200]] | Same shelter, columns, bunting and bushland. The PDF photo is a V01 frame: the track loader carrying its slatted frame (Jon captions it trimming; no trimming cut is visible). | Site **high**; not from this clip. |
 
 PDF-p3_img3 (roller 5335) is under the same style of shelter, so the site match is medium-high. PDF-p1, p2 and p5 photos are different sites or scenes.
 

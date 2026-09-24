@@ -72,7 +72,7 @@ Say it plainly in the edit: **we have no grading footage.** Options, best first:
 1. **Shoot it** on the next job: a side-on grader pass with the blade trimming the wet treated base, then a low shot down the finished fall. See [[Shot Library]].
 2. **Motion graphic** (Remotion): a simple cross-section of the pad, where water runs off a crossfall and ponds on a flat pad, then a pothole forms. It tells Jon's causal story honestly without pretending to be site footage. See [[Remotion Build Notes]].
 3. **Jon's p.5 grader stills** with a slow push-in, as generic "the grader" visuals (other sites, so no "this job" caption).
-4. **AI-generated grader shot**, clearly illustrative (see [[AI Generation Prompts]]). Never present it as a SuperBase job.
+4. **Not an AI grader shot.** The promo guardrails keep AI to the problem and reframe beats and out of every method step ([[AI Generation Prompts]], [[Promo Video Brief]] §12). A generic AI grader appears only in the problem beat (A3, "the grader comes back"), never as step 03.
 
 Don't caption the V03C roller still as grading, even though Jon's PDF does. Usable supers from Jon's copy: "Trimmed to level and crossfall" and "Ponded water is where potholes start."
 

@@ -120,7 +120,7 @@ This clip belongs to **Step 04, Roll and compact** ([[Step 4 - Roll and Compact]
 
 It does **not** show [[Step 5 - Cure and Return to Service|Step 5 - Cure and return to service]]. No traffic other than the roller uses the surface, nothing is being loaded or stored, and the surface still takes tyre imprints. V04's placement in `04-cure-and-return-to-service` is therefore misleading. Judged from the pixels, both copies are step 04.
 
-Jon used the 0.5 s frame on p.3 as the photo for **03 Grade to level** ("03 — Trimmed to level and crossfall"). The frame shows a roller, not a grader trimming, but it does show a level-looking finished pad. It works as a stand-in for the "level" idea but is not evidence of trimming ([[Step 3 - Grade to Level]]).
+Jon used a still from about 0.77 s (nearest grid frame 0.5 s; measured in [[V04 - Cure and Return to Service|V04]]) on p.3 as the photo for **03 Grade to level** ("03 — Trimmed to level and crossfall"). The frame shows a roller, not a grader trimming, but it does show a level-looking finished pad. It works as a stand-in for the "level" idea but is not evidence of trimming ([[Step 3 - Grade to Level]]).
 
 **Surface state (what is visible):**
 - **Colour and moisture:** a uniform charcoal to dark grey-brown under the roof, much darker than the dry red-brown natural ground outside. A damp, recently watered or recently rolled condition is likely (inference). There is **no standing water, no ponding and no wet sheen**. The only bright spot (10.0 s) may be a damp patch or a lens artefact.
@@ -151,7 +151,7 @@ Jon used the 0.5 s frame on p.3 as the photo for **03 Grade to level** ("03 — 
 **Crew and PPE:** one operator in the cab, in orange hi-vis at 0.0 to 3.0 s. At 15.0 to 18.0 s a figure sits at the wheel, but the clothing colour cannot be made out at that distance. The face is not identifiable at any point. The camera operator is on foot and not seen. No ground crew, spotter or other workers are in shot.
 
 **Site features (identifiers and links to other clips):**
-- A large open-sided steel portal-frame canopy with dark roof sheeting, steel purlins, columns with knee braces, and hanging cable or strapping under the roof. It is the same style of structure as in `PDF-p3_img1.jpeg` (skid-steer trimming), `PDF-p3_img2.jpeg` (water cart) and `PDF-p4_img1.jpeg` (roller 5335 with a worker). This is very likely the same site (inference).
+- A large open-sided steel portal-frame canopy with dark roof sheeting, steel purlins, columns with knee braces, and hanging cable or strapping under the roof. It is the same style of structure as in `PDF-p3_img1.jpeg` (the V01 track loader, captioned by Jon as trimming), `PDF-p3_img2.jpeg` (water cart) and `PDF-p4_img1.jpeg` (roller 5335 with a worker). This is very likely the same site (inference).
 - A line of **red-flagged survey or set-out pegs** along the pad edge (0 to 5 s), with a line of red pegs and bunting-like markers across the background (15 to 18 s). Similar pegs appear in `PDF-p3_img1.jpeg` and `PDF-p3_img3.jpeg`.
 - **Red-brown soil** and eucalypt woodland with yellow-green foliage outside the canopy.
 - A **teal or blue-green container-type site building** with a tan or orange structure beside it (12.5 to 18.0 s). A round, wheel-like fitting at its right-hand end (15.0 to 18.0 s) resembles the circular fitting on the grey-green building in `PDF-p3_img2.jpeg`, which adds weight to the same-site reading (inference). Also a pale transportable-type building (7.0 to 7.5 s), orange traffic cones, and a timber or debris pile and a stockpile outside the canopy.
@@ -188,9 +188,9 @@ Jon used the 0.5 s frame on p.3 as the photo for **03 Grade to level** ("03 — 
 
 | Footage frame | PDF photo | Match | Confidence |
 |---|---|---|---|
-| ![[V03C-00.5s.jpg\|200]] | ![[PDF-p3_img3.jpeg\|200]] | Same roller (5335), same position, the same pegs, trees, sky and canopy column. The PDF photo is effectively a still from this clip at about 0.5 s (V03C and V04 carry the same footage). Jon captioned it "03 — Trimmed to level and crossfall". | **High**: same footage |
+| ![[V03C-00.5s.jpg\|200]] | ![[PDF-p3_img3.jpeg\|200]] | Same roller (5335), same position, the same pegs, trees, sky and canopy column. The PDF photo is effectively a still from this clip at about 0.77 s, nearest grid frame 0.5 s (V03C and V04 carry the same footage; the 0.77 s match, r ≈ 0.997, was measured on V04). Jon captioned it "03 — Trimmed to level and crossfall". | **High**: same footage |
 | ![[V03C-05.0s.jpg\|200]] | ![[PDF-p4_img1.jpeg\|200]] | Same unit "5335" and the same canopy structure. The PDF shot is a different clip: landscape, harsher high sun, a visibly wet sheen on the surface, and a worker with a hose. | **Medium-high**: same machine and site, different footage |
-| ![[V03C-13.0s.jpg\|200]] | ![[PDF-p3_img1.jpeg\|200]] | Same style of canopy and red-flag pegs. A tracked skid-steer trims the scarified base. | **Medium**: same site (inference), different footage |
+| ![[V03C-13.0s.jpg\|200]] | ![[PDF-p3_img1.jpeg\|200]] | Same style of canopy and red-flag pegs. It is a V01 frame: the track loader with its slatted frame raised (Jon's caption says trimming; no trimming cut is visible). | **Medium**: same site (inference), different footage |
 | ![[V03C-08.0s.jpg\|200]] | ![[PDF-p3_img2.jpeg\|200]] | Same style of canopy, red soil and a green container-type building outside. A water cart sprays. The grey-green building in the PDF has a circular fitting like the one on the teal building at V03C 15.0 to 18.0 s. | **Medium**: same site (inference), different footage |
 
 No match with `PDF-p1_img1.jpeg`, `PDF-p2_img1.jpeg`, `PDF-p4_img2.jpeg`, `PDF-p5_img1.jpeg`, `PDF-p5_img2.jpeg` or `PDF-p5_img3.jpeg`.

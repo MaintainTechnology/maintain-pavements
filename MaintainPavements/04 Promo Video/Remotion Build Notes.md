@@ -16,6 +16,16 @@ Back to [[00 Home]] · [[Promo Video Brief]] · [[Script & Storyboard]] · [[Sho
 > [!important] The project is not a fresh scaffold
 > The planning brief assumed `video-studio/` held only the Remotion template with a placeholder `MyComp`. It doesn't. As of 24 Sep 2026 14:27 it contains a working, job-driven `SuperBasePromo` build, normalised footage, four Veo-generated clips and an **internal 60 s test render** (`out/promo60.mp4`, rendered 14:13). `@remotion/google-fonts` and `@remotion/transitions` are already installed. These notes build on that code rather than starting again. Nothing in `video-studio/` was changed while writing them.
 
+> [!warning] Update: a second build appeared after these notes were written (checked 24 Sep 2026, files dated about 14:58–15:31)
+> `src/Root.tsx` now also registers **`SuperBaseComplete`** (1080x1920), from `src/complete/` (`SuperBaseCompletePromo.tsx`, `GradingSchematic.tsx`, `schema.ts`) and `src/jobs/superbase-complete.ts`, with new scripts (`prepare-complete-media.mjs`, `generate-levelling.mjs`, `generate-superbase-music.mjs`, `render-complete.mjs`, `verify-complete.mjs`), a generated music bed (`public/audio/superbase-bed.wav`), a normalised `public/footage/V04.mp4` (so the §1 line "V04 is excluded" no longer holds), and `out/complete-coverage.json`. None of it is covered by §2–§8. Checked against the footage notes and this plan, its job currently:
+> - runs **72 s** (its shot durations add up to 2160 frames), beyond the 30–60 s brief;
+> - cuts **both V03C (0.0–3.0 s) and V04 (14.5–17.5 s)**, which are the same clip ([[V04 - Cure and Return to Service|V04]]: never use both in one edit);
+> - puts "Wet rolling to final compaction." over **V03A, V03B, V03C and V04**, where no water is visible (only [[V02B - Dose and Mix B|V02B]] shows it);
+> - uses, in its intro, the three image-to-video "atmosphere" clips made from real V01, V02A and V03A frames, which §2 and [[AI Generation Prompts]] say to leave out;
+> - uses an AI **grade-levelling** clip (seeded from a V01 frame of the real site) in the step 03 method beat, which the AI guardrails rule out. Its own `grade-manifest.json` rejects both full takes and limits use to a 3 s "setup" excerpt.
+>
+> Review these with Jon before anything from `SuperBaseComplete` is published. This vault was not used to change `video-studio/`.
+
 ## 1. What already exists
 
 | Path | What it does |
@@ -28,7 +38,7 @@ Back to [[00 Home]] · [[Promo Video Brief]] · [[Script & Storyboard]] · [[Sho
 | `src/superbase/components.tsx` | `Kicker`, `TwoToneHeadline`, `StepCounter`, `BrandHeader`, `TextLines`, `EndCard` (contact plus disclaimer) |
 | `src/superbase/SuperBasePromo.tsx` | `Media` (`OffthreadVideo` or `Img`), `AiLabel`, `FootageScene` (portrait: 135 px charcoal header plus a 650–710 px charcoal copy panel), `GradeDiagram` (SVG crossfall), `GraphicScene` (grade, proof and cost cards; the cost card is the **BigNumber** panel) and the `<Sequence>` loop |
 | `src/jobs/superbase-test.ts` | The 13-shot, 60 s internal test job |
-| `public/footage/` | `V01.mp4`…`V03C.mp4`: upright 1080x1920, constant 30 fps, H.264, AAC 48 kHz. V02A and V02B keep their full landscape frame on charcoal panels. `S04B.jpeg`, the untouched originals in sub-folders, and `manifest.json` (checksums, provenance). V04 is excluded as a duplicate. The folder is Git-ignored while consent is pending |
+| `public/footage/` | `V01.mp4`…`V03C.mp4`: upright 1080x1920, constant 30 fps, H.264, AAC 48 kHz. V02A and V02B keep their full landscape frame on charcoal panels. `S04A.png` and `S04B.jpeg`, the untouched originals in sub-folders, and `manifest.json` (checksums, provenance). V04 is excluded as a duplicate. The folder is Git-ignored while consent is pending |
 | `public/ai/` | Four Veo 3.1 Fast clips (8 s, 1080x1920, 24 fps): `before-yard`, `prepare-atmosphere`, `dose-atmosphere`, `roll-atmosphere`, plus seeds and `manifest.json` (estimated US$3.84; billed cost not queried) |
 | `scripts/` | `normalise-footage.mjs`, `generate-veo.mjs` (hard cap of four requests, ledger in `.veo/`), `verify-render.mjs`, `verify-veo-safety.mjs`, `footage-catalog.mjs` |
 | `out/` | `test-promo.mp4` and `promo60.mp4` (same file: 1080x1920, 1800 frames, 60 s), `render-report.json`, `qa/` stills and contact sheet |
@@ -316,6 +326,21 @@ const DepthDiagram: React.FC = () => {
 ```
 
 The labels are Jon's own words (p.3: binder "through the full depth of the layer rather than on top of it"; C3 "around 75 mm"). Set the shot's caption to "Illustrative diagram · not to scale".
+
+### 5.5 BigNumber entrance (optional)
+
+The existing cost card already fades and slides in. If you want the figure to land with weight, wrap the "60–70%" block in a critically damped spring (no overshoot, which keeps it restrained). Add `spring` to the `remotion` import and `useContext` to the React import:
+
+```tsx
+const Settle: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const motion = useContext(PromoMotionContext);
+  const s = motion === "reduced" ? 1 : spring({ frame, fps, config: { damping: 200 } });
+  return <div style={{ opacity: s, transform: `scale(${0.94 + 0.06 * s})`, transformOrigin: "left bottom" }}>{children}</div>;
+};
+// in GraphicScene's cost branch: <Settle><div …>{shot.setup}</div></Settle>
+```
 
 ## 6. Job files
 

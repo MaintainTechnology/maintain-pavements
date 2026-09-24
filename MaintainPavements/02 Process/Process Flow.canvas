@@ -1,29 +1,29 @@
 {
-  "nodes": [
-    {"id":"title","type":"text","x":0,"y":-640,"width":780,"height":160,"text":"# SuperBase process flow\nJon's five steps (Capability Statement pp.3–4) with the key frames that show each one.\n\n[[Process Overview]] · [[Footage Index]] · [[00 Home]]"},
-    {"id":"cbr","type":"text","x":420,"y":-420,"width":1260,"height":300,"color":"6","text":"## The proof loop (CBR)\n1. **Yard walk**, then nominate one **trial area**\n2. **Soaked CBR before treatment**, lab-tested on your own yard material\n3. **Treat**: steps 01 to 05 below, dosed for that material\n4. **Density** confirmed on site against the dosage design (step 04)\n5. **Soaked CBR after cure**, then the **trial report** (CBR before and after, depth and density, dosage rate)\n6. **Roll out by area**, then hand over to your crew\n\n*None of this loop is in the footage yet. Never put a CBR number on screen.*"},
-    {"id":"s1","type":"text","x":0,"y":0,"width":360,"height":220,"text":"## 01 Prepare\nGrade off loose stone and bull dust; scarify the existing base to ~75 mm; import roadbase only where levels need it.\n\n**Footage ◐** [[V01 - Prepare|V01]] 0.0–10.0 s: track loader on the loose base (Jon's p.3 photo = 2.5–3.0 s). Scarifying itself not shown.\n\n[[Step 1 - Prepare]]"},
-    {"id":"s2","type":"text","x":420,"y":0,"width":360,"height":220,"text":"## 02 Dose and mix\nSuperBase in with water at a ratio set for your base, mixed through the full depth.\n\n**Footage ◐** [[V02A - Dose and Mix A|V02A]]: water cart \"740\" and hand hose (dose only). No mixing through depth; liquid not confirmed as SuperBase.\n\n[[Step 2 - Dose and Mix]]"},
-    {"id":"s3","type":"text","x":840,"y":0,"width":360,"height":220,"color":"1","text":"## 03 Grade to level\nTrim the treated base to design level and crossfall while it's workable, so water can't pond.\n\n**Footage: none.** No grader in any clip. Jon's p.3 photo for this step is a roller still (V03C / V04 ≈0.77 s).\n\n[[Step 3 - Grade to Level]]"},
-    {"id":"s4","type":"text","x":1260,"y":0,"width":360,"height":220,"color":"4","text":"## 04 Roll and compact\nWet rolling to final compaction with a smooth-drum roller; density checked against the dosage design.\n\n**Footage ✅** [[V02B - Dose and Mix B|V02B]] (wet), [[V03A - Roll and Compact A|V03A]], [[V03B - Roll and Compact B|V03B]], [[V03C - Roll and Compact C|V03C]] (= V04). 65.3 s unique.\n\n[[Step 4 - Roll and Compact]]"},
-    {"id":"s5","type":"text","x":1680,"y":0,"width":360,"height":220,"text":"## 05 Cure and return to service\nCures to a bound hardstand, trafficable within hours of the final roll; organic top coat on running lines.\n\n**Footage ◐ stills only.** [[S04 - Cure Stills|S04B]] cured canopy pad; S04A trafficked yard (other site). V04 is rolling, not cure.\n\n[[Step 5 - Cure and Return to Service]]"},
-    {"id":"f1a","type":"file","file":"Assets/Frames/V01/V01-03.0s.jpg","x":0,"y":260,"width":180,"height":320},
-    {"id":"f1b","type":"file","file":"Assets/Frames/V01/V01-08.0s.jpg","x":190,"y":260,"width":180,"height":320},
-    {"id":"f2a","type":"file","file":"Assets/Frames/V02A/V02A-20.5s.jpg","x":440,"y":260,"width":320,"height":180},
-    {"id":"f2b","type":"file","file":"Assets/Frames/V02A/V02A-03.5s.jpg","x":440,"y":460,"width":320,"height":180},
-    {"id":"g3","type":"text","x":840,"y":260,"width":360,"height":120,"color":"1","text":"**Gap.** Shoot a grader trim pass, or build a crossfall diagram (water runs off vs ponds).\n[[AI Generation Prompts]] · [[Remotion Build Notes]]"},
-    {"id":"f3","type":"file","file":"Assets/PDF/PDF-p3_img3.jpeg","x":930,"y":400,"width":180,"height":320},
-    {"id":"f4a","type":"file","file":"Assets/Frames/V02B/V02B-01.0s.jpg","x":1280,"y":260,"width":320,"height":180},
-    {"id":"f4b","type":"file","file":"Assets/Frames/V03B/V03B-06.5s.jpg","x":1350,"y":460,"width":180,"height":320},
-    {"id":"f5a","type":"file","file":"Assets/Stills/S04B - WhatsApp Image 2026-08-22 13.08.43.jpeg","x":1700,"y":260,"width":320,"height":291},
-    {"id":"f5b","type":"file","file":"Assets/Stills/S04A - image (2).png","x":1770,"y":570,"width":180,"height":208}
-  ],
-  "edges": [
-    {"id":"e12","fromNode":"s1","fromSide":"right","toNode":"s2","toSide":"left"},
-    {"id":"e23","fromNode":"s2","fromSide":"right","toNode":"s3","toSide":"left"},
-    {"id":"e34","fromNode":"s3","fromSide":"right","toNode":"s4","toSide":"left"},
-    {"id":"e45","fromNode":"s4","fromSide":"right","toNode":"s5","toSide":"left"},
-    {"id":"ecbr_in","fromNode":"cbr","fromSide":"left","toNode":"s1","toSide":"top","label":"CBR before treatment"},
-    {"id":"ecbr_out","fromNode":"s5","fromSide":"top","toNode":"cbr","toSide":"right","label":"CBR after cure, then trial report"}
-  ]
+	"nodes":[
+		{"id":"title","type":"text","text":"# SuperBase process flow\nJon's five steps (Capability Statement pp.3–4) with the key frames that show each one.\n\n[[Process Overview]] · [[Footage Index]] · [[00 Home]]","x":0,"y":-640,"width":780,"height":160},
+		{"id":"cbr","type":"text","text":"## The proof loop (CBR)\n1. **Yard walk**, then nominate one **trial area**\n2. **Soaked CBR before treatment**, lab-tested on your own yard material\n3. **Treat**: steps 01 to 05 below, dosed for that material\n4. **Density** confirmed on site against the dosage design (step 04)\n5. **Soaked CBR after cure**, then the **trial report** (CBR before and after, depth and density, dosage rate)\n6. **Roll out by area**, then hand over to your crew\n\n*None of this loop is in the footage yet. Never put a CBR number on screen.*","x":420,"y":-420,"width":1260,"height":300,"color":"6"},
+		{"id":"s1","type":"text","text":"## 01 Prepare\nGrade off loose stone and bull dust; scarify the existing base to ~75 mm; import roadbase only where levels need it.\n\n**Footage ◐** [[V01 - Prepare|V01]] 0.0–10.0 s: track loader on the loose base (Jon's p.3 photo = 2.5–3.0 s). Scarifying itself not shown.\n\n[[Step 1 - Prepare]]","x":0,"y":0,"width":360,"height":220},
+		{"id":"s2","type":"text","text":"## 02 Dose and mix\nSuperBase in with water at a ratio set for your base, mixed through the full depth.\n\n**Footage ◐** [[V02A - Dose and Mix A|V02A]]: water cart \"740\" and hand hose (dose only). No mixing through depth; liquid not confirmed as SuperBase.\n\n[[Step 2 - Dose and Mix]]","x":420,"y":0,"width":360,"height":220},
+		{"id":"s3","type":"text","text":"## 03 Grade to level\nTrim the treated base to design level and crossfall while it's workable, so water can't pond.\n\n**Footage: none.** No grader in any clip. Jon's p.3 photo for this step is a roller still (V03C / V04 ≈0.77 s).\n\n[[Step 3 - Grade to Level]]","x":840,"y":0,"width":360,"height":220,"color":"1"},
+		{"id":"s4","type":"text","text":"## 04 Roll and compact\nWet rolling to final compaction with a smooth-drum roller; density checked against the dosage design.\n\n**Footage ✅** [[V02B - Dose and Mix B|V02B]] (wet), [[V03A - Roll and Compact A|V03A]], [[V03B - Roll and Compact B|V03B]], [[V03C - Roll and Compact C|V03C]] (= V04). 65.3 s unique.\n\n[[Step 4 - Roll and Compact]]","x":1260,"y":0,"width":360,"height":220,"color":"4"},
+		{"id":"s5","type":"text","text":"## 05 Cure and return to service\nCures to a bound hardstand, trafficable within hours of the final roll; organic top coat on running lines.\n\n**Footage ◐ stills only.** [[S04 - Cure Stills|S04B]] cured canopy pad; S04A trafficked yard (other site). V04 is rolling, not cure.\n\n[[Step 5 - Cure and Return to Service]]","x":1680,"y":0,"width":360,"height":220},
+		{"id":"f1a","type":"file","file":"Assets/Frames/V01/V01-03.0s.jpg","x":0,"y":260,"width":180,"height":320},
+		{"id":"f1b","type":"file","file":"Assets/Frames/V01/V01-08.0s.jpg","x":190,"y":260,"width":180,"height":320},
+		{"id":"f2a","type":"file","file":"Assets/Frames/V02A/V02A-20.5s.jpg","x":440,"y":260,"width":320,"height":180},
+		{"id":"f2b","type":"file","file":"Assets/Frames/V02A/V02A-03.5s.jpg","x":440,"y":460,"width":320,"height":180},
+		{"id":"g3","type":"text","text":"**Gap.** Shoot a grader trim pass. Interim: Jon's p.5 grader still with a crossfall line, or a crossfall diagram (water runs off vs ponds). No AI shot in a method beat.\n[[Script & Storyboard]] · [[Remotion Build Notes]]","x":840,"y":260,"width":360,"height":135,"color":"1"},
+		{"id":"f3","type":"file","file":"Assets/PDF/PDF-p3_img3.jpeg","x":930,"y":400,"width":180,"height":320},
+		{"id":"f4a","type":"file","file":"Assets/Frames/V02B/V02B-01.0s.jpg","x":1280,"y":260,"width":320,"height":180},
+		{"id":"f4b","type":"file","file":"Assets/Frames/V03B/V03B-06.5s.jpg","x":1350,"y":460,"width":180,"height":320},
+		{"id":"f5a","type":"file","file":"Assets/Stills/S04B - WhatsApp Image 2026-08-22 13.08.43.jpeg","x":1700,"y":260,"width":320,"height":291},
+		{"id":"f5b","type":"file","file":"Assets/Stills/S04A - image (2).png","x":1770,"y":570,"width":180,"height":208}
+	],
+	"edges":[
+		{"id":"e12","fromNode":"s1","fromSide":"right","toNode":"s2","toSide":"left"},
+		{"id":"e23","fromNode":"s2","fromSide":"right","toNode":"s3","toSide":"left"},
+		{"id":"e34","fromNode":"s3","fromSide":"right","toNode":"s4","toSide":"left"},
+		{"id":"e45","fromNode":"s4","fromSide":"right","toNode":"s5","toSide":"left"},
+		{"id":"ecbr_in","fromNode":"cbr","fromSide":"left","toNode":"s1","toSide":"top","label":"CBR before treatment"},
+		{"id":"ecbr_out","fromNode":"s5","fromSide":"top","toNode":"cbr","toSide":"right","label":"CBR after cure, then trial report"}
+	]
 }

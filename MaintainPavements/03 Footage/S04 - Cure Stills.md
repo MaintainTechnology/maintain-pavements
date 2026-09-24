@@ -172,15 +172,15 @@ An ultra-wide phone photo from near the centreline of the large open-sided steel
 ### What it proves about SuperBase
 - **The cured, finished state at the canopy site.** It supports the *cure* half of [[Step 5 - Cure and Return to Service]] and the page 4 statement that the surface "cures to a bound, hard-wearing hardstand".
 - **A level, even, closed surface.** It gives visual support to **C10** ("holds its shape") and, weakly, to [[Step 3 - Grade to Level]] ("trimmed to design level and crossfall"). Crossfall can't be measured from a photo.
-- **"Built, not coated" (C6) and "no pour" (C5):** only in combination with the process footage (V01 to V04), which shows the same canopy with a grader/skid-steer, water cart and roller and no pour. **On its own, S04B looks like a concrete slab.**
-- **What it does NOT prove:** **C2** "trafficable within hours" (no vehicles, no time stamp), any CBR or strength figure (**C9**), whether an organic top coat was applied (the even sheen can't be told apart from a plain rolled finish), or the site's name (**C14**, Eloise Copper Project, needs Jon's approval).
+- **"Built, not coated" (C6) and "no pour" (C5):** only in combination with the process footage (V01 to V04), which shows the same canopy with a track loader, water cart and roller and no pour (no grader appears in any clip). **On its own, S04B looks like a concrete slab.**
+- **What it does NOT prove:** **C2** "trafficable within hours" (no vehicles, no time stamp), any CBR or strength figure (**C9**), whether an organic top coat was applied (the even sheen can't be told apart from a plain rolled finish), or the site's name. Nothing in the image names the site, and nothing links it to Jon's C14 reference project (Eloise Copper Project); any naming needs Jon's approval.
 
 ### PDF and footage matches
 
 | This still | Match | Verdict |
 |---|---|---|
-| ![[S04B - WhatsApp Image 2026-08-22 13.08.43.jpeg\|240]] | ![[PDF-p3_img1.jpeg\|130]] ![[PDF-p3_img3.jpeg\|130]] | **Same canopy, earlier stage** (inference, high confidence; step 01 trimming and step 03/04 roller 5335). The knee-braced portal columns, ribbed roof and bushland outside match. (The red soil and red-flag pegs seen in the PDF photos are not visible in S04B.) It is not the same photograph (greyscale correlation with every PDF image is about 0.36 or lower, depending on method). **S04B is not in Jon's PDF.** |
-| ![[S04B - WhatsApp Image 2026-08-22 13.08.43.jpeg\|240]] | ![[PDF-p3_img2.jpeg\|200]] ![[PDF-p4_img1.jpeg\|200]] | **Same canopy** (inference, high confidence), during water-cart dosing (fleet 740) and wet rolling. The floor there is dark and wet, and in S04B it is pale and dry. |
+| ![[S04B - WhatsApp Image 2026-08-22 13.08.43.jpeg\|240]] | ![[PDF-p3_img1.jpeg\|130]] ![[PDF-p3_img3.jpeg\|130]] | **Same canopy, earlier stage** (inference, high confidence; the step 01 track loader and the step 03/04 roller 5335). The knee-braced portal columns, ribbed roof and bushland outside match. (The red soil and red-flag pegs seen in the PDF photos are not visible in S04B.) It is not the same photograph (greyscale correlation with every PDF image is about 0.36 or lower, depending on method). **S04B is not in Jon's PDF.** |
+| ![[S04B - WhatsApp Image 2026-08-22 13.08.43.jpeg\|240]] | ![[PDF-p3_img2.jpeg\|200]] ![[PDF-p4_img1.jpeg\|200]] | **Same canopy** (inference, high confidence), during water-cart dosing (tank decal "740") and wet rolling. The floor there is dark and wet, and in S04B it is pale and dry. |
 | ![[S04B - WhatsApp Image 2026-08-22 13.08.43.jpeg\|240]] | ![[V02B-11.0s.jpg\|240]] | **Strongest site match.** Same view down the canopy's long axis, the same three slender far-gable posts, and a pale stack at far right in the same position as S04B's IBC stacks. V02B also shows a blue-and-white container at far left beyond the columns, roughly where S04B has its blurred pale block (not confirmed). |
 | ![[S04B - WhatsApp Image 2026-08-22 13.08.43.jpeg\|240]] | ![[V04-18.0s.jpg\|130]] ![[V01-08.0s.jpg\|130]] | Same structure. V04 (= V03C) shows the rolled pad, dark grey-brown and matte, with CAT roller 5335 (the decal is legible elsewhere in V04 but not in this 18.0 s frame, where the roller is small at left). V01 shows the loose, tracked scarified base with a CAT tracked skid-steer. **S04B is the end of the same story on a later day** (inference: no plant, dry, clean). |
 | ![[S04B - WhatsApp Image 2026-08-22 13.08.43.jpeg\|240]] | ![[PDF-p4_img2.jpeg\|130]] | Jon's current step 05 image shows a **different site** (garden and palms). S04B would suit the canopy narrative better. |
@@ -209,7 +209,7 @@ An ultra-wide phone photo from near the centreline of the large open-sided steel
 - **It looks like concrete.** A viewer seeing S04B alone could take it for a poured slab, which would undercut "no pour". **Always sequence it after the process footage from the same canopy.**
 - **Unconfirmed that this floor is the SuperBase pad.** It is highly likely, given the same structure as V01 to V04, but ask Jon.
 - **No evidence of service.** There are no vehicles or tyre marks, so it shows *cured*, not *trafficked*. Pair it with S04A for *return to service*.
-- **Site naming.** If this is the Eloise Copper Project hardstand (C14), don't name it on screen without Jon's approval, and don't imply the owner is a customer.
+- **Site naming.** The site is unidentified. Don't name it on screen, don't imply it is the Eloise Copper Project (C14) or any other named project, and don't imply the owner is a customer, unless Jon confirms.
 - **Resolution and clipped sky.** Ask Jon for the original from the phone. The "(7)" batch probably holds sister images.
 
 ---
@@ -238,7 +238,7 @@ Together they make a two-shot step 05 sequence: **S04B (cured pad, wide) then S0
 4. **S04A:** which site and yard is this? Is it the same yard as the cover photo (`PDF-p1_img1.jpeg`)? Was it treated with SuperBase, and how long before the photo?
 5. **S04A:** do you have the original camera file? Ours is a cropped PNG of a JPEG, and the PDF copy is dated 16 Jul 2026 14:18.
 6. **S04A:** what made the two dark scrub marks (forklift, loader, truck)? Can we describe them on screen as "tyre scrub, no ravelling"?
-7. **Both:** can we show the recycler's skip (blurred) or must it be cropped? Is there any restriction on showing either site, or naming the canopy site (Eloise Copper Project, C14)?
+7. **Both:** can we show the recycler's skip (blurred) or must it be cropped? Is there any restriction on showing either site? Which site is the canopy site, and is it connected to the Eloise Copper Project reference (C14) at all?
 8. **Both:** is there any timed evidence, such as a photo of plant driving on the pad on the same day as the final roll, that we could use to support "trafficable within hours" (C2)?
 
 > [!check] Verification (independent re-watch)

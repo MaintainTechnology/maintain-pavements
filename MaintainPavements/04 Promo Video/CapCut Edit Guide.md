@@ -206,7 +206,7 @@ Headlines drop to about 60–64 px, and the step counter and supers move into a 
 - [ ] Contact reads **Jon Pepper · 0414 530 836 · maintain.com.au**
 - [ ] `AI-generated · illustrative` on every frame of every AI shot; no AI shot in a method beat
 - [ ] No "wet rolling" over V03A, V03B or V03C; no "trimming" over V01 7.0–10.0; no "SuperBase" caption over any spray, hose or IBC shot
-- [ ] Hastings Deering dealer decal (V03C 9.0–11.0 s) not in any shot; decision recorded on blurring "740" and "5335"; faces consented or blurred
+- [ ] Hastings Deering dealer decal (V03C legible 9.0–11.0 s, small patch 5.5–13.5 s; V03A 0.0–1.5 s) not readable in any shot; decision recorded on blurring "740" and "5335"; faces consented or blurred
 - [ ] Text inside the safe zones and always on a panel, never over busy footage
 - [ ] Captions match the VO word for word and never duplicate a super
 - [ ] VO clear over music on phone speakers; alarm pulses ducked; about −14 LUFS; no clipping

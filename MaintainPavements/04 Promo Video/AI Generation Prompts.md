@@ -1,7 +1,7 @@
 ---
 type: promo
 subject: "Prompts, direction and guardrails for the AI-generated parts of the SuperBase promo"
-status: "v1; nothing new generated yet"
+status: "v1; none of these prompts has been generated yet (other clips already on disk are listed below)"
 updated: 2026-09-24
 format: "portrait 9:16, 1080x1920"
 ai_shots: [A1, A1b, A2, A3, A4, B1, B2, C1]
@@ -12,7 +12,7 @@ tags: [promo, superbase, ai, prompts, voiceover, music]
 
 Back to [[00 Home]] · [[Promo Video Brief]] · [[Script & Storyboard]] · [[Shot Library]] · [[Remotion Build Notes]] · [[Claims Register]]
 
-AI fills only the gaps the real footage can't: the **problem** (the unbound yard going backwards, the concrete alternative), the **reframe**, and an **abstract diagram**. Every method beat, 01 to 05, uses Jon's real footage or photos. Read the [guardrails](#Guardrails) before generating anything.
+AI fills only the gaps the real footage can't: the **problem** (the unbound yard going backwards, the concrete alternative), the **reframe**, and an **abstract diagram**. Every method beat, 01 to 05, uses Jon's real footage or photos. Read the Guardrails section at the end before generating anything.
 
 ## Where each AI shot is used
 
@@ -29,7 +29,7 @@ AI fills only the gaps the real footage can't: the **problem** (the unbound yard
 
 ## What's already on disk
 
-`video-studio/` already holds four Veo 3.1 Fast clips (8 s each, 1080x1920, 24 fps; estimated US$3.84 in total, billed cost not yet checked), recorded in `public/ai/manifest.json` and `.veo/superbase-test.json`.
+`video-studio/` already holds four Veo 3.1 Fast clips (8 s each, 1080x1920, 24 fps; estimated US$3.84 in total, billed cost not yet checked), recorded in `public/ai/manifest.json` and `.veo/superbase-test.json`, plus two later "grade-levelling" takes recorded in `public/ai/grade-manifest.json` (last row below).
 
 | File | What it is | Verdict for the public cuts |
 |---|---|---|
@@ -37,6 +37,7 @@ AI fills only the gaps the real footage can't: the **problem** (the unbound yard
 | `public/ai/prepare-atmosphere.mp4` | Image-to-video from V01 at 2.0 s | **Don't use.** It's a synthetic animation of a real method frame |
 | `public/ai/dose-atmosphere.mp4` | Image-to-video from V02A at 20.0 s | **Don't use**, for the same reason |
 | `public/ai/roll-atmosphere.mp4` | Image-to-video from V03A at 7.0 s. Its QA still (`out/qa/roll-atmosphere-ai.jpg`) shows the CAT badge carried over from the seed frame | **Don't use**: a method frame, and a real brand mark in generated imagery |
+| `public/ai/grade-levelling.mp4` (= `grade-levelling-take1.mp4`) and `grade-levelling-take2.mp4` | Added after these notes (about 15:01–15:18), with `grade-manifest.json`. Veo image-to-video seeded from `seeds/grade-reference.png`, a V01 frame of the real site (track loader with its slatted frame raised). The prompt asks the loader to drag the frame as a "levelling attachment", which V01 itself never shows. The manifest rejects both full takes (the frame morphs into bucket-like plates) and limits take 1 to a 3 s "setup" excerpt | **Don't use** in the public cuts: it animates a real method frame (Guardrails 3 and 6), sits in the step 03 method beat, and its seed frame carries the loader's CAT badge. It is used in the separate `SuperBaseComplete` build (see [[Remotion Build Notes]]) |
 
 ## Look bible (append to every photoreal prompt)
 
@@ -189,5 +190,5 @@ Structure per cut (so the hits land on the storyboard):
 6. **No identifiable people.** Any workers wear full PPE and stand clear of moving plant.
 7. **No real site or customer.** Problem shots show a generic Australian yard, never one that resembles the V01–V04 canopy site.
 8. **Diagrams as graphics.** Anything that explains how SuperBase works (B2) is drawn, not generated, and captioned "Illustrative diagram · not to scale".
-9. **Keep provenance.** Log every generation (table above). `video-studio` already does this for its four clips.
+9. **Keep provenance.** Log every generation (table above). `video-studio` already does this for its clips (`public/ai/manifest.json` and `grade-manifest.json`).
 10. **Approve spend.** Every paid generation needs an explicit OK. Don't reroll endlessly; three takes per shot is plenty.

@@ -1,5 +1,42 @@
 # Maintain Pavements SuperBase video studio
 
+## SuperBaseComplete — every source and all five steps
+
+The new `SuperBaseComplete` composition is **72 seconds, 1080 × 1920, 30 fps**. It includes all seven original video files, both supplied surface stills, a photo-based AI levelling illustration, the four existing AI atmosphere clips, and a newly generated instrumental music bed. The previous 60-second test and its outputs remain separate.
+
+```console
+npm run normalise:complete
+npm run lint
+npm run preview:complete
+npm run render:complete
+npm run verify:complete
+```
+
+The final file is `out/superbase-complete.mp4`. `out/complete-coverage.json` records every shot, source trim and step. Verification reads the delivered file, decodes every video/audio frame, measures the exported stereo mix, and writes `out/complete-render-report.json`. Rendering and verification do not generate new media. The direct renderer passes an empty browser environment and never loads the Gemini key.
+
+| Edit time | Coverage |
+| --- | --- |
+| 0–6 s | Labelled AI yard and three atmosphere shots |
+| 6–11.5 s | 01 Prepare — V01 |
+| 11.5–16.5 s | 02 Dose and mix — V02A |
+| 16.5–24.5 s | 03 Grade to level — 3 s AI loader setup from the supplied photo, then 5 s animated grading schematic |
+| 24.5–41.5 s | 04 Roll and compact — V02B, V03A, V03B, V03C and V04 |
+| 41.5–49.5 s | 05 Cure and return — S04B and S04A surface stills |
+| 49.5–60 s | Testing method and qualified indicative cost comparison |
+| 60–72 s | Jon's contact and exact Claims Register disclaimer |
+
+V04 duplicates the V03C action, so the edit uses distinct portions of the two files. It is rolling footage, regardless of its source folder name. The available sources do not show scarifying, mixing through depth, measured curing or return to traffic; the captions retain those limits. S04A is from a different yard. All five steps are explained without presenting missing actions or timing as recorded evidence.
+
+The reusable zod props and rendering components are in `src/complete/`; the shot list is `src/jobs/superbase-complete.ts`. Change the job's media, trims, copy and contact to reuse it. AI disclosures remain visible throughout every generated shot. Landscape source framing preserves the complete original field of view. The instrumental bed is gently ducked under recorded machinery and fades at both ends.
+
+### New AI media and cost records
+
+`scripts/generate-levelling.mjs` is Node-only and uses the photo saved at `public/ai/seeds/grade-reference.png`. The separate `.veo/superbase-levelling.json` ledger preserves both the initial take and one bounded corrective take; no more than two grading requests are allowed. Both full takes failed visual review: the attachment distorted, and the corrective take invented an implausible finished pad. Only take 1's clean first three seconds are approved as a labelled loader setup. The edit then changes to a designed grading schematic for five seconds; neither rejected long action is shown. The manifests record this limited use. Ordinary reruns resume existing work; a corrective request requires the explicit `--corrective` flag. The original four-request `.veo/superbase-test.json` ledger is unchanged.
+
+`scripts/generate-superbase-music.mjs` has a separate one-request ledger at `.veo/superbase-music.json`. The 72-second master is `public/audio/superbase-bed.wav`; its manifest records the prompt, model, cost estimate, source duration and loudness measurements. No external recording or named artist imitation was requested.
+
+At the recorded provider rates, two 8-second Veo Standard 1080p takes cost an estimated **US$6.40**, and one Lyria track costs **US$0.08**: **US$6.48 new generation spend**, in addition to the existing US$3.84 atmosphere clips. These are estimates, not billing readback. Sanitised provenance is in `public/ai/grade-manifest.json` and `public/audio/superbase-bed.manifest.json`; actual billed amounts remain `null`. Never delete ledgers to trigger retries.
+
 ## SuperBasePromo — 60-second internal test
 
 The reusable `SuperBasePromo` composition is 1080 × 1920 at 30 fps (1800 frames). `SuperBasePromo-Square` and `SuperBasePromo-Landscape` reuse the same job at 1080 × 1080 and 1920 × 1080. The older `PavementsProcessTemplate` remains available below.

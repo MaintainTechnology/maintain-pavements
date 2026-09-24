@@ -223,7 +223,7 @@ These features match the shed and red-soil setting in PDF p3_img1, p3_img2 and p
 | ![[V02B-00.5s.jpg\|200]] | ![[PDF-p4_img1.jpeg\|200]] | PDF p.4 step-04 photo *"04 — Wet rolling to final compaction"* is a frame of this clip at about 0.5 s (drum, cab, "5335", sprayer pose and background all line up; the PDF copy is a 1200x675 upscale) | **High (same clip)** |
 | ![[V02B-13.5s.jpg\|200]] | ![[PDF-p3_img3.jpeg\|200]] | Same roller: fleet number 5335 on the rear body and bumper plate, with the same small label below the number. Same style of shed, with red flag pegs outside (none are visible in V02B). But the light is soft and low (dawn or dusk, inference), the pad looks dry and uniformly grey, and the framing is portrait. Jon captions it as step 03 "Trimmed to level and crossfall". Different clip or session. | **High for the same machine; not this clip** |
 | ![[V02B-08.0s.jpg\|200]] | ![[PDF-p3_img2.jpeg\|200]] | Same shed design, red soil and dark pad; an articulated water cart spraying (step 02). Site match only. | Medium (same site, inference) |
-| ![[V02B-06.0s.jpg\|200]] | ![[PDF-p3_img1.jpeg\|200]] | Same shed design and red-soil surrounds; tracked skid-steer trimming (step 01). Site match only. | Medium (same site, inference) |
+| ![[V02B-06.0s.jpg\|200]] | ![[PDF-p3_img1.jpeg\|200]] | Same shed design and red-soil surrounds; the V01 track loader with its slatted frame (Jon's step 01 "trimming" caption; no cut visible). Site match only. | Medium (same site, inference) |
 
 The other PDF photos (p1_img1, p2_img1, p4_img2, p5_img1, p5_img2, p5_img3) show other settings (no open-sided portal shed over a dark pad) and don't match this footage.
 

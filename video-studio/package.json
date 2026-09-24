@@ -37,7 +37,13 @@
     "render:test": "remotion render SuperBasePromo out/test-promo.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=2",
     "render:promo60": "remotion render SuperBasePromo out/promo60.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=2",
     "verify:render": "node scripts/verify-render.mjs",
-    "verify:veo": "node scripts/verify-veo-safety.mjs"
+    "verify:veo": "node scripts/verify-veo-safety.mjs",
+    "normalise:complete": "node scripts/prepare-complete-media.mjs",
+    "levelling:status": "node scripts/generate-levelling.mjs --status",
+    "music:status": "node scripts/generate-superbase-music.mjs --status",
+    "preview:complete": "node scripts/render-complete.mjs --stills",
+    "render:complete": "node scripts/render-complete.mjs",
+    "verify:complete": "node scripts/verify-complete.mjs"
   },
   "sideEffects": [
     "*.css"

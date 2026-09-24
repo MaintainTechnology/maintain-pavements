@@ -8,10 +8,32 @@ import {
   type SuperBasePromoProps,
 } from "./superbase";
 import { superBaseTestJob } from "./jobs/superbase-test";
+import {
+  SuperBaseCompletePromo,
+  SuperBaseCompleteSchema,
+  getCompleteDurationInFrames,
+  type SuperBaseCompleteProps,
+} from "./complete";
+import { superBaseCompleteJob } from "./jobs/superbase-complete";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="SuperBaseComplete"
+        component={SuperBaseCompletePromo}
+        schema={SuperBaseCompleteSchema}
+        defaultProps={superBaseCompleteJob}
+        width={1080}
+        height={1920}
+        fps={30}
+        durationInFrames={getCompleteDurationInFrames(superBaseCompleteJob)}
+        calculateMetadata={({ props }: { props: SuperBaseCompleteProps }) => ({
+          durationInFrames: getCompleteDurationInFrames(
+            SuperBaseCompleteSchema.parse(props),
+          ),
+        })}
+      />
       {[
         { id: "SuperBasePromo", width: 1080, height: 1920 },
         { id: "SuperBasePromo-Square", width: 1080, height: 1080 },

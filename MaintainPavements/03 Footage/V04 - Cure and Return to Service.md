@@ -149,7 +149,7 @@ tags: [footage, superbase, roll-and-compact]
   - A cream building and roofed structure (7.0 to 7.5 s).
   - An orange/white cone (12.5 to 15.0 s), a wire fence, and parked vehicles far off (16.5 to 18.0 s).
   
-  The same canopy and red-flag pegs appear in Jon's `PDF-p3_img1.jpeg` (skid-steer trim) and `PDF-p3_img2.jpeg` (water cart "740", with a grey-green container and a reel in the background). A roller with the same 5335 fleet decal appears in `PDF-p4_img1.jpeg` (the label below it is not legible in that photo), with a blue container in the background. It is very likely one site across these images (inference). Other than the decals, no readable site signage.
+  The same canopy and red-flag pegs appear in Jon's `PDF-p3_img1.jpeg` (the V01 track loader, Jon's "trimming" caption) and `PDF-p3_img2.jpeg` (water cart "740", with a grey-green container and a reel in the background). A roller with the same 5335 fleet decal appears in `PDF-p4_img1.jpeg` (the label below it is not legible in that photo), with a blue container in the background. It is very likely one site across these images (inference). Other than the decals, no readable site signage.
 
 ### Safety & compliance observations
 

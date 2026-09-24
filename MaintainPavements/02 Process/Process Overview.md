@@ -61,7 +61,7 @@ The principle behind the five steps: **the binder goes *into* the existing base,
 ## 4. Timeline by WhatsApp timestamp
 
 > [!warning] These are WhatsApp save/receive times, not capture times
-> Two clips prove it: V03A and V03B are stamped 13:10 but are lit by a very low sun, and V01 is stamped 18:41 but is in flat daylight. The stamps only tell us the latest date by which each piece of footage existed.
+> The light points to it (inference): V03A, V03B and V03C are stamped 13:10 but are lit by a very low sun, and V01 is stamped 18:41 but is in flat daylight. The stamps only tell us the latest date by which each piece of footage existed.
 
 | WhatsApp stamp | Item | Folder | What the pixels show (doc step) | Light |
 |---|---|---|---|---|
@@ -131,7 +131,7 @@ The chain that holds it together: the **same roller 5335** in four clips; the **
 
 ## 7. Where Jon's brochure photos came from
 
-Four of Jon's five step photos are frames from these clips, and two of the five don't show what their caption says.
+Four of Jon's five step photos are frames from these clips. The 01 and 03 photos don't show the action their captions name (no trimming cut; a roller, not a grader), the 02 photo can't show depth, and the 05 photo is another site.
 
 | Jon's photo and caption | Source | What it actually shows |
 |---|---|---|
@@ -165,12 +165,12 @@ Ranked by how much the promo needs them. "Fill" says how: **Shoot** (next job), 
 
 | # | Gap | Step / claim | Why it matters | Fill |
 |---|---|---|---|---|
-| 1 | **Grader trimming the treated base to level and crossfall** (side-on pass, blade in the material, level staff or laser in shot) | 03 · C5 | Step 3 has zero footage, and the C5 kit line needs a grader | **Shoot** first. Interim: Motion graphic cross-section (fall sheds water vs flat pad ponds and potholes), Jon's p.5 grader stills with a slow push-in (other sites, don't caption as this job), or an **AI** grader shot labelled illustrative |
+| 1 | **Grader trimming the treated base to level and crossfall** (side-on pass, blade in the material, level staff or laser in shot) | 03 · C5 | Step 3 has zero footage, and the C5 kit line needs a grader | **Shoot** first. Interim: Motion graphic cross-section (fall sheds water vs flat pad ponds and potholes), or Jon's p.5 grader stills with a slow push-in (other sites, don't caption as this job; the storyboard's choice). No AI grader in the method beat: the promo guardrails keep AI to the problem and reframe beats ([[AI Generation Prompts]]) |
 | 2 | **Mixing through the full depth** (the wetted base being turned through by blade or ripper, close enough to see depth) | 02 · C6 | Without it the dose footage reads as a surface spray, the one thing Jon says SuperBase isn't | **Shoot**. Interim: Motion graphic cross-section, binder through ~75 mm against a coat on top |
 | 3 | **Binder going into the water cart, and the product itself** (IBC with a legible label, dosing line into the tank, a jar of product) | 02 | The IBCs in V02A have illegible labels and nothing links them to the cart | **Shoot** only. Don't AI-generate the product or its packaging |
 | 4 | **The finished canopy pad in service**: trucks, forklifts or loaders driving and turning on it, ideally on the day of the final roll with a visible time reference | 05 · C2, C10 | No video shows traffic on the treated pad; "within hours" has no visual support at all | **Shoot** only. An AI version would be fabricated evidence |
 | 5 | **Before-state problem yard**: potholes, ruts, ravelling, puddles, mud at the gate, dust, the grader coming back | Problem beat · p.2 | The promo's opening. We only have Jon's still PDF-p2_img1 | **Shoot** at a prospect's yard (with permission), **Stock**, or **AI** generic yard labelled illustrative |
-| 6 | **Scarifying close-up** (tynes ripping the existing base) and **grading off loose stone and bull dust** | 01 · C3 | V01 shows the base after scarifying, not the act | **Shoot**; **Stock** or **AI** as generic cutaways |
+| 6 | **Scarifying close-up** (tynes ripping the existing base) and **grading off loose stone and bull dust** | 01 · C3 | V01 shows a scarified-looking base (inference), not the act | **Shoot**; **Stock** as a generic cutaway (no AI in a method beat) |
 | 7 | **Density test on the rolled pad** (gauge on the surface, tester reading it) | 04 · C8 | "Compaction is confirmed on site" has no image | **Shoot** (tester's consent); **Stock** as a fallback |
 | 8 | **Soaked CBR in the lab** (samples soaking, the CBR press) | Proof loop · C9 | "Measured, not asserted" is Jon's credibility line | **Shoot** at the lab; **Stock** generic CBR press. No numbers on screen |
 | 9 | **Jon to camera** (intro and "Nominate one area" CTA) | Ask · p.6 | Authentic voice; there's no speech anywhere in the footage | **Shoot**. Never generate Jon's face or voice without his explicit consent |

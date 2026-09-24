@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "252f6f9d813d12c2",
+        "id": "885a47df81c4482a",
         "type": "tabs",
         "children": [
           {
-            "id": "39ff71fc60d7bb6e",
+            "id": "a62ded7b8cbd0754",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Footage/V02A - Dose and Mix A.md",
+                "file": "03 Footage/V02B - Dose and Mix B.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "V02A - Dose and Mix A"
+              "title": "V02B - Dose and Mix B"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 Footage/V02A - Dose and Mix A.md",
+                "file": "03 Footage/V02B - Dose and Mix B.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03 Footage/V02A - Dose and Mix A.md",
+                "file": "03 Footage/V02B - Dose and Mix B.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Footage/V02A - Dose and Mix A.md",
+                "file": "03 Footage/V02B - Dose and Mix B.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,39 +188,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "39ff71fc60d7bb6e",
+  "active": "a62ded7b8cbd0754",
   "lastOpenFiles": [
-    "04 Promo Video/Remotion Build Notes.md.tmp.41044.91e342a3b5e0",
-    "04 Promo Video/Remotion Build Notes.md",
-    "04 Promo Video/CapCut Edit Guide.md.tmp.41044.c74040dc3f24",
-    "04 Promo Video/CapCut Edit Guide.md",
-    "04 Promo Video/CapCut Edit Guide.md.tmp.41044.c84e9ad00aa7",
-    "04 Promo Video/Shot Library.md",
-    "04 Promo Video/Shot Library.md.tmp.41044.c5f77f112fd8",
-    "04 Promo Video/Script & Storyboard.md",
-    "04 Promo Video/Script & Storyboard.md.tmp.41044.f79689d2fb89",
-    "04 Promo Video/Promo Video Brief.md.tmp.41044.151fca1e90cb",
-    "04 Promo Video/Promo Video Brief.md.tmp.41044.baf05a3ab08c",
-    "04 Promo Video/Promo Video Brief.md",
-    "04 Promo Video/Promo Video Brief.md.tmp.41044.5d7b26a27826",
-    "04 Promo Video",
-    "00 Home.md",
-    "00 Home.md.tmp.41044.5a5aa9acbf63",
-    "02 Process/Process Flow.canvas",
-    "02 Process/Process Flow.canvas.tmp.41044.520257c1dd7e",
-    "03 Footage/Footage Index.md",
+    "01 Jon's Plan/Glossary.md.tmp.41044.4227f21279d7",
+    "01 Jon's Plan/Jon's Thinking - Strategy & Positioning.md.tmp.41044.fe139de2bc0e",
+    "01 Jon's Plan/SuperBase Capability Statement - Rev A.md.tmp.41044.33ac56a57f52",
+    "04 Promo Video/Remotion Build Notes.md.tmp.41044.5b7f318657d4",
+    "02 Process/Process Flow.canvas.tmp.41044.4844ee5e9fb7",
+    "03 Footage/V03A - Roll and Compact A.md.tmp.41044.8a2ebc9cc5e2",
+    "03 Footage/V03B - Roll and Compact B.md.tmp.41044.ff507c18d438",
+    "03 Footage/V03B - Roll and Compact B.md.tmp.41044.9e5a6c49800d",
+    "03 Footage/V03C - Roll and Compact C.md.tmp.41044.60b5c7614af9",
+    "03 Footage/V03C - Roll and Compact C.md.tmp.41044.c0a279bb2626",
+    "04 Promo Video/Remotion Build Notes.md.tmp.41044.041e3a750b90",
+    "Assets/PDF/PDF-p1_img1.jpeg",
+    "02 Process/Step 2 - Dose and Mix.md",
+    "02 Process/Step 1 - Prepare.md",
     "02 Process/Step 5 - Cure and Return to Service.md",
     "02 Process/Step 4 - Roll and Compact.md",
     "02 Process/Step 3 - Grade to Level.md",
-    "02 Process/Step 2 - Dose and Mix.md",
-    "02 Process/Step 1 - Prepare.md",
+    "01 Jon's Plan/SuperBase Capability Statement - Rev A.md",
+    "01 Jon's Plan/Jon's Thinking - Strategy & Positioning.md",
+    "01 Jon's Plan/Brand & Visual Language.md",
+    "02 Process/Process Flow.canvas",
+    "03 Footage/V02A - Dose and Mix A.md",
+    "04 Promo Video/AI Generation Prompts.md",
+    "04 Promo Video/Remotion Build Notes.md",
+    "04 Promo Video/CapCut Edit Guide.md",
+    "04 Promo Video/Shot Library.md",
+    "04 Promo Video/Script & Storyboard.md",
+    "04 Promo Video/Promo Video Brief.md",
+    "00 Home.md",
+    "03 Footage/Footage Index.md",
     "02 Process/Process Overview.md",
     "03 Footage/S04 - Cure Stills.md",
     "03 Footage/V04 - Cure and Return to Service.md",
     "03 Footage/V03B - Roll and Compact B.md",
     "03 Footage/V01 - Prepare.md",
     "03 Footage/V03C - Roll and Compact C.md",
-    "03 Footage/V02A - Dose and Mix A.md",
     "03 Footage/V03A - Roll and Compact A.md",
     "03 Footage/V02B - Dose and Mix B.md",
     "Assets/PDF/PDF-page3.png",
@@ -228,14 +233,9 @@
     "Assets/PDF/PDF-p5_img3.jpeg",
     "Assets/PDF/PDF-p3_img3.jpeg",
     "Assets/PDF/PDF-p3_img1.jpeg",
-    "Assets/PDF/PDF-p1_img1.jpeg",
     "Assets/Frames/V01/V01-09.5s.jpg",
     "Assets/Frames/V01/V01-08.5s.jpg",
     "Assets/Frames/V01/V01-07.5s.jpg",
-    "Assets/Frames/V01/V01-06.0s.jpg",
-    "Welcome.md",
-    "01 Jon's Plan/Glossary.md",
-    "01 Jon's Plan/Brand & Visual Language.md",
-    "01 Jon's Plan/Claims Register.md"
+    "Assets/Frames/V01/V01-06.0s.jpg"
   ]
 }

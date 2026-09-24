@@ -1,9 +1,9 @@
 ---
 type: footage
 id: V01
-aliases: ["Track loader trimming the scarified base under the shed"]
+aliases: ["Track loader carrying a slatted frame on the loose base under the shed"]
 folder: "01-prepare"
-doc_step: "01 Prepare (0.0-10.0 s); 11.0-16.0 s hand-hose wetting of the base, stage unconfirmed (01 moisture conditioning or 02 Dose and mix)"
+doc_step: "01 Prepare (0.0-10.0 s and 14.0-16.0 s loader); 11.0-14.5 s hand-hose wetting of the base, stage unconfirmed (01 moisture conditioning or 02 Dose and mix)"
 source_file: "videos/01-prepare/WhatsApp Video 2026-08-16 at 18.41.33.mp4"
 whatsapp_timestamp: "2026-08-16 18:41:33"
 duration_s: 16.4
@@ -192,7 +192,7 @@ What the pixels show:
 The other PDF photos have no match to this clip, and none shows this shed: p1_img1 (cover yard), p2_img1 (untreated yard), p4_img2 (blower on a finished surface), p5_img1 and p5_img3 (open pad with domes) and p5_img2 (close-up of a finished surface beside steel rings and a red skip bin).
 
 **Claims ([[Claims Register]])**
-- **Visually supported (partly):** **C3** (scarified base: a loose, scarified-looking base is being trimmed, but the ~75 mm depth isn't visible). **C4** (the existing base: no imported material is visible being placed, but that can't be proven). **C16** (area by area: the work zone is delineated by bunting within a larger site; weak, inference).
+- **Visually supported (partly):** **C3** (scarified base: a loose, scarified-looking base is being worked, though no trimming cut is shown and the ~75 mm depth isn't visible). **C4** (the existing base: no imported material is visible being placed, but that can't be proven). **C16** (area by area: the work zone is delineated by bunting within a larger site; weak, inference).
 - **Not supported by this footage:** C1 (cost), C2 (trafficable within hours), **C5** (grader, water cart, roller: none appear here; the machine is a track loader), C6 (mixed through the full depth: not shown; the hose shot is surface wetting), C7, C8 (compaction), C9 (CBR), C10, C11, C12, C13, C14, C15.
 
 ## Promo use

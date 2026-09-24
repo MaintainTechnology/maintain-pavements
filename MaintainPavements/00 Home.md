@@ -80,13 +80,13 @@ Rule for everything here: **describe only what's visible; mark readings as (infe
 
 ### Questions for Jon
 - [ ] What's in the hose, the water cart and the IBCs: plain water or SuperBase-dosed water? Can we see the product and its label?
-- [ ] Where and when was this filmed? Can we show the site? Can it be named (Eloise Copper Project, C14)?
+- [ ] Where and when was this filmed? Can we show the site, and can it be named? (Nothing in the footage names it or links it to the Eloise Copper Project reference, C14.)
 - [ ] Do the operators and crew consent to appearing? Who filmed the clips, and do we have commercial rights?
 - [ ] Can you send the **original phone files** (not WhatsApp copies), including the rest of the S04B batch?
 - [ ] Was V04 meant to be a different cure or return-to-service clip? Is there any footage of trucks or forklifts on the finished pad?
 - [ ] Is there any grader footage for Step 3? (Your PDF's step-03 photo is the roller.)
 - [ ] Is the pale floor in S04B the SuperBase pad, and how long after the final roll was it taken? Any top coat?
-- [ ] Show or blur the CAT branding, fleet numbers 5335 and "740", and the Hastings Deering decal?
+- [ ] Show or blur the CAT branding, the roller's fleet number 5335, the water cart's "740" tank decal (model badge or fleet number, not confirmed) and the Hastings Deering decal?
 - [ ] What's the slatted frame the track loader carries in V01?
 - [ ] Logo as SVG, and the brand font files or names.
 - [ ] Voiceover: your own voice, or an AI voice?
@@ -103,7 +103,7 @@ Rule for everything here: **describe only what's visible; mark readings as (infe
 ### Edit decisions
 - [ ] Lock the master format: 9:16 first (five portrait clips); letterbox V02A and V02B on a charcoal panel or crop them 1:1
 - [ ] Cut from V03C, never V04, and never both
-- [ ] Choose the Step 3 treatment: new footage, a Remotion crossfall diagram, or an illustrative AI shot
+- [ ] Choose the Step 3 treatment: new footage, Jon's p.5 grader still with a crossfall line (the storyboard's choice), or a Remotion crossfall diagram. No AI shot in a method beat ([[AI Generation Prompts]] guardrails)
 - [ ] Always follow a spray shot with a mix or roll shot; keep "Built, not coated." on roller frames
 - [ ] Use S04B only after the process footage (alone, it reads as a concrete slab)
 - [ ] Supers from the Claims Register video-safe wording only, plus the end-card micro-disclaimer

@@ -120,7 +120,7 @@ The timed shot lists are in [[Script & Storyboard]]. Every row there has an exac
 
 ## 9. Music and sound
 
-- **Music:** a driving, low-key instrumental bed at **120 BPM**, where one beat is 0.5 s, so every cut in the storyboard (all on 0.5 s boundaries) lands on a beat. Muted kick, tight low synth-bass pulse, a little metallic percussion, no vocals. It builds in two steps (method start, value panel) and ends on one low hit with a short ring-out under the end card. It needs a commercial licence (stock library, or an AI music tool whose terms allow commercial use). A prompt is in [[AI Generation Prompts]].
+- **Music:** a driving, low-key instrumental bed at **120 BPM**, where one beat is 0.5 s, so every cut in the storyboard (all on 0.5 s boundaries) lands on a beat. Muted kick, tight low synth-bass pulse, a little metallic percussion, no vocals. It builds in two steps (when the method starts, and again on the cure shot) and ends on one low hit with a short ring-out under the end card. It needs a commercial licence (stock library, or an AI music tool whose terms allow commercial use). A prompt is in [[AI Generation Prompts]].
 - **Natural sound:** keep the real machine sound from each clip at a low level under the music (roughly -28 to -24 dB below the mix peak). It gives the footage weight. There is **no speech in any clip**: faster-whisper with VAD found zero speech segments, and the non-VAD "Thank you for watching" text is a known hallucination on noise.
 - **Hits:** V02B has a strong low-frequency onset at about 0.7–1.0 s in the source (it lands on the roll beat in every cut). V03B peaks at 6.5 s, just after the closest pass. Use them as the "drum" moments.
 - **Duck:** the pulsed alarm-like signals in V03A, V03B and V03C (consistent with reversing alarms, inference) fight a 120 BPM track. Duck them under the VO and music.
@@ -164,7 +164,7 @@ These limits come straight from the verified footage notes. They shape the scrip
 2. **Voice.** Jon's own voice, an AI voice, or both (an AI draft, then Jon records the final)?
 3. **Logo and fonts.** Vector logo files and the real typeface names (the PDF fonts are rasterised Type3).
 4. **Footage rights and consent.** Who filmed the WhatsApp clips, and may they be used commercially? Consent from the operators and ground crew (faces are partly visible in V01, V02A and V02B), and from the site owner.
-5. **Third-party marks.** CAT logos appear on almost every machine. Decide whether to show or soften them. The Hastings Deering dealer decal (V03C 9.0–10.5 s) and the fleet numbers "740" and "5335" should be blurred unless the owners agree.
+5. **Third-party marks.** CAT logos appear on almost every machine. Decide whether to show or soften them. The Hastings Deering dealer decal (legible in V03C at 9.0–11.0 s and a small patch from 5.5 to about 13.5 s; fragments in V03A at 0.0–1.5 s), the roller's fleet number "5335" and the water cart's "740" tank decal (model badge or fleet number, not confirmed) should be blurred unless the owners agree.
 6. **Liquid on screen.** Is the V02A cart and hose applying SuperBase with water, or plain water? What's in the IBC totes (V02A 0.0–2.0 s)? The answer decides whether a product beat is possible.
 7. **Step 03 pickup.** Can someone film 5–8 s of the grader trimming to level and crossfall, portrait, at the next job? It would replace the stand-in still.
 8. **End-state.** Is S04B the treated pad from the V01–V04 job, and how long after the final roll was it taken? Is there a photo or clip of plant on the finished pad?
@@ -175,4 +175,5 @@ These limits come straight from the verified footage notes. They shape the scrip
 ## 14. Status (24 Sep 2026)
 
 - `video-studio/` already holds a working Remotion build (`SuperBasePromo`) and an **internal 60 s test render**, `video-studio/out/promo60.mp4` (1080x1920, 1800 frames, rendered 24 Sep 2026 14:13). It has no voiceover and no music, uses four Veo-generated clips in the first 10 s (labelled), a diagram for step 03 and a 16 s end card. See [[Remotion Build Notes]] for what exists and how to move it to the three storyboard cuts.
+- Later the same afternoon (about 14:58–15:31) a second composition, `SuperBaseComplete`, was added to `video-studio/` with its own job, a generated music bed and AI "grade-levelling" clips. It departs from this plan in ways that need review before any public use; see the update callout in [[Remotion Build Notes]].
 - This pack (brief, storyboard, shot library, CapCut guide, Remotion notes, AI prompts) is the editorial plan for the public cuts. Nothing here has been published.

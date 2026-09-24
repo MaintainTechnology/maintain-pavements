@@ -95,7 +95,7 @@ That's **Problem → Agitate → Solve → Prove → Ask**, a standard B2B persu
 | Problem | 0–6 s: rutted, potholed, muddy or dusty yard; the grader coming back | "The yard never actually gets finished." |
 | Reframe | 6–9 s | "Patch it again? Pour a slab? There's a third option." |
 | Method | 9–40 s: the real footage, in step order (prepare → dose/mix → level → roll → cure) | "Bind the base you already have." / "Built, not coated." |
-| Speed | a beat before the CTA | "Trafficable within hours, not weeks." |
+| Speed | a beat before the CTA | "Back in service within hours, not weeks." (C2 video-safe wording, with a small "cure times vary by site") |
 | Value | super on a clean finished-surface shot | "Indicatively 60–70% below engineered concrete*" |
 | Proof | super | "Soaked CBR tested, before and after, on your own yard material." |
 | Ask | end card | "Nominate one area. We'll treat it, test it, and put the numbers beside a concrete quote." + Jon Pepper · 0414 530 836 · maintain.com.au |
@@ -110,6 +110,6 @@ The full plan is in [[Promo Video Brief]] and [[Script & Storyboard]].
 4. **Can we state a typical CBR uplift?** The document deliberately doesn't give a number. Confirm we should keep it that way.
 5. **Product form:** what does SuperBase look like (liquid concentrate, IBC totes, how it's dosed into the water cart)? A 1–2 s "product" shot would help the video.
 6. **Top coat:** is the "organic top coat" a separate named product?
-7. **Target channels:** LinkedIn, website hero, sales-meeting loop, trade shows? This decides 16:9 vs 9:16 vs 1:1 (the footage is **portrait 9:16**).
+7. **Target channels:** LinkedIn, website hero, sales-meeting loop, trade shows? This decides 16:9 vs 9:16 vs 1:1. The footage is mixed: **five clips are portrait 9:16** (V01, V03A, V03B, V03C, V04) and **two are landscape 16:9** (V02A, V02B). See [[Footage Index]].
 8. **Fonts:** the PDF embeds rasterised Type3 fonts, so we need the actual typeface names for supers.
 9. **Voiceover:** Jon's own voice (authentic) vs an AI voice?
