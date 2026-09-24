@@ -1,0 +1,60 @@
+filters:
+  and:
+    - file.inFolder("03 Footage")
+    - or:
+        - type == "footage"
+        - type == "footage-stills"
+properties:
+  id:
+    displayName: ID
+  folder:
+    displayName: Folder
+  doc_step:
+    displayName: Doc step shown
+  duration_s:
+    displayName: Duration (s)
+  promo_value:
+    displayName: Promo value
+  best_clip:
+    displayName: Best clip
+  whatsapp_timestamp:
+    displayName: WhatsApp timestamp
+  orientation:
+    displayName: Orientation
+  video_bitrate_kbps:
+    displayName: Video kbps
+views:
+  - type: table
+    name: All footage
+    order:
+      - file.name
+      - doc_step
+      - duration_s
+      - promo_value
+      - best_clip
+      - whatsapp_timestamp
+    sort:
+      - property: promo_value
+        direction: DESC
+  - type: table
+    name: By WhatsApp timestamp
+    order:
+      - file.name
+      - whatsapp_timestamp
+      - folder
+      - doc_step
+      - duration_s
+    sort:
+      - property: whatsapp_timestamp
+        direction: ASC
+  - type: table
+    name: Technical
+    order:
+      - file.name
+      - orientation
+      - duration_s
+      - video_bitrate_kbps
+      - folder
+    sort:
+      - property: file.name
+        direction: ASC
