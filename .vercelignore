@@ -1,0 +1,9 @@
+# Vercel deploys only the website (project Root Directory: website). Everything else stays
+# local: the .env with the image-generation API keys, the source footage, the vault and the
+# Remotion studio. The CLI's own defaults skip .env.local but not .env, hence the allowlist.
+/*
+!website
+!design-system
+design-system/*
+!design-system/tokens.css
+.env*
