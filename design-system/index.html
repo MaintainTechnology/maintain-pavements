@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maintain Pavements Design System</title>
+<meta name="description" content="The Maintain Pavements brand kit and design system: charcoal #26282B, the drawn wordmark, tokens, type, motifs and components.">
+<meta name="theme-color" content="#26282B">
+<link rel="icon" href="assets/logo/app-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  body{
+    font-family:var(--font-body); color:var(--mp-on-dark);
+    background:var(--mp-charcoal); line-height:var(--leading-body);
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  img,svg{display:block}
+  .wrap{max-width:1140px;margin-inline:auto;padding-inline:var(--space-5)}
+  @media(max-width:560px){.wrap{padding-inline:var(--space-4)}}
+  h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:var(--tracking-display);line-height:var(--leading-display);text-wrap:balance;font-weight:800}
+  p{text-wrap:pretty}
+  a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
+  :focus-visible{outline:2px solid var(--color-focus);outline-offset:3px}
+  .paper :focus-visible{outline-color:var(--color-focus-on-light)}
+  .paper .on-charcoal :focus-visible,.paper .block-charcoal :focus-visible,.paper .figure-panel :focus-visible,.paper .dark :focus-visible{outline-color:var(--color-focus)}
+  .skip{position:absolute;left:var(--space-4);top:-100px;z-index:var(--z-tooltip);background:var(--mp-white);color:var(--mp-charcoal);padding:var(--space-2) var(--space-4);border-radius:var(--radius-sm);font-weight:600}
+  .skip:focus{top:var(--space-3)}
+  .icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+  /* ---- the two states: every section is one or the other ----------------- */
+  .dark{background:var(--mp-charcoal);color:var(--mp-on-dark);
+    --fg:var(--mp-white);--fg-muted:var(--mp-on-dark-muted);--fg-faint:var(--mp-on-dark-faint);
+    --line:var(--color-line);--line-strong:var(--color-line-strong);--tk:var(--mp-grey-light);--code:rgba(255,255,255,.08)}
+  .on-charcoal,.block-charcoal,.figure-panel,.callout{--code:rgba(255,255,255,.1)}
+  .paper{background:var(--mp-paper);color:var(--mp-charcoal);
+    --fg:var(--mp-charcoal);--fg-muted:var(--mp-slate);--fg-faint:var(--mp-slate);
+    --line:var(--color-line-light);--line-strong:rgba(38,40,43,.32);--tk:var(--mp-slate);--code:var(--mp-tint)}
+  section{padding-block:var(--space-9)}
+  @media(max-width:640px){section{padding-block:var(--space-8)}}
+  .head{display:grid;gap:var(--space-4);margin-bottom:var(--space-7)}
+  .head h2{font-size:var(--text-h1)}
+  .lead{font-size:var(--text-body-lg);max-width:62ch;color:var(--fg-muted)}
+  .sub{font-size:var(--text-h4);font-weight:700;letter-spacing:var(--tracking-tight);margin-bottom:var(--space-4)}
+  .note{font-size:var(--text-sm);max-width:68ch;color:var(--fg-muted)}
+  .block+.block{margin-top:var(--space-8)}
+  code{font-family:var(--font-mono);font-size:.85em;background:var(--code);padding:.12em .42em;border-radius:var(--radius-sm)}
+  .mono{font-family:var(--font-mono);font-size:var(--text-xs)}
+
+  /* ---- nav --------------------------------------------------------------- */
+  .nav{position:sticky;top:0;z-index:var(--z-sticky);background:var(--mp-charcoal);border-bottom:1px solid var(--color-line)}
+  .nav .wrap{display:flex;align-items:center;gap:var(--space-6);height:64px}
+  .nav .logo{height:28px;width:auto;color:var(--mp-white);flex:none}
+  .nav .links{margin-left:auto;display:flex;gap:var(--space-5);min-width:0}
+  .nav .links a{color:var(--mp-on-dark-muted);text-decoration:none;font-size:var(--text-sm);font-weight:500;white-space:nowrap;padding-block:var(--space-2);border-bottom:2px solid transparent;transition:color var(--dur-base) var(--ease-out),border-color var(--dur-base) var(--ease-out)}
+  .nav .links a:hover{color:var(--mp-white);border-bottom-color:currentColor}
+  @media(max-width:860px){
+    .nav .wrap{gap:var(--space-4)}
+    .nav .links{gap:var(--space-4);overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,var(--mp-black) 80%,transparent);mask-image:linear-gradient(90deg,var(--mp-black) 80%,transparent);padding-right:var(--space-5)}
+    .nav .links::-webkit-scrollbar{display:none}
+    .nav .links a:focus-visible{outline-offset:-2px}
+  }
+
+  /* ---- hero: charcoal cover, the mark in both states ---------------------- */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--color-line)}
+  .hero::before{content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(90deg,rgba(38,40,43,.97) 28%,rgba(38,40,43,.6) 64%,rgba(38,40,43,.34)),
+      linear-gradient(0deg,rgba(38,40,43,.92),rgba(38,40,43,0) 50%),
+      url("graphics/web/cover.jpg") right bottom/cover no-repeat}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);
+    background-size:var(--grid-size) var(--grid-size);
+    -webkit-mask-image:linear-gradient(90deg,var(--mp-black) 10%,transparent 62%);mask-image:linear-gradient(90deg,var(--mp-black) 10%,transparent 62%)}
+  .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:var(--space-8);align-items:end;padding-block:var(--space-9) var(--space-8)}
+  .hero h1{font-size:var(--text-display);max-width:11ch}
+  .hero .lead{margin-top:var(--space-5)}
+  .hero .lane{margin-top:var(--space-7);max-width:320px;color:var(--mp-white);animation:mp-lane-crawl 2.4s linear 2}
+  @keyframes mp-lane-crawl{to{background-position:-40px 0}}
+  .meta{margin-top:var(--space-6);display:flex;gap:var(--space-2);flex-wrap:wrap}
+  .chiplet{font-size:var(--text-xs);color:var(--mp-on-dark-muted);border:1px solid var(--color-line-strong);border-radius:var(--radius-sm);padding:.4em .75em}
+  .states{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--color-line-strong)}
+  .state{position:relative;aspect-ratio:1;display:grid;place-items:center}
+  .state svg{width:54%;height:auto}
+  .state.on-charcoal{background:var(--mp-charcoal);color:var(--mp-white)}
+  .state.on-paper{background:var(--mp-paper);color:var(--mp-charcoal)}
+  .state figcaption{position:absolute;left:var(--space-3);right:var(--space-3);bottom:var(--space-3);white-space:nowrap}
+  @media(max-width:420px){.state figcaption.mp-label{letter-spacing:.14em}.state figcaption.mp-label::before{width:1rem}}
+  .states+.caption{margin-top:var(--space-3);color:var(--mp-on-dark-faint);font-size:var(--text-xs)}
+  @media(max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:var(--space-7);padding-block:var(--space-8) var(--space-7)}.hero .plate{max-width:440px}}
+
+  /* ---- colour -------------------------------------------------------------- */
+  .brand{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);border:1px solid var(--line)}
+  .brand .block-charcoal{background:var(--mp-charcoal);color:var(--mp-white);min-height:260px;padding:var(--space-6);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-6)}
+  .brand .block-charcoal svg{width:72px;height:auto}
+  .brand .hex{font-family:var(--font-display);font-weight:800;font-size:var(--text-display);letter-spacing:var(--tracking-display);line-height:1}
+  .brand .data{background:var(--mp-white);padding:var(--space-6);display:grid;gap:var(--space-4);align-content:start}
+  .brand .data h3{font-size:var(--text-h2)}
+  .brand dl{display:grid;grid-template-columns:auto 1fr;gap:var(--space-2) var(--space-4);font-size:var(--text-sm)}
+  .brand dt{color:var(--mp-slate)}
+  .brand dd{margin:0;font-weight:600}
+  @media(max-width:760px){.brand{grid-template-columns:1fr}}
+
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:var(--space-4)}
+  .sw{border:1px solid var(--line);background:var(--mp-white)}
+  .sw .chip{height:96px;display:flex;align-items:flex-end;padding:var(--space-3);font:600 var(--text-xs)/1 var(--font-mono)}
+  .sw .chip.hair{box-shadow:inset 0 -1px 0 var(--color-line-light)}
+  .ink-w{color:var(--mp-white)} .ink-c{color:var(--mp-charcoal)}
+  .sw .cap{padding:var(--space-3);display:grid;gap:.25em}
+  .sw .tk{font:500 var(--text-xs)/1.3 var(--font-mono);color:var(--mp-charcoal)}
+  .sw .role{font-size:var(--text-xs);color:var(--mp-slate);line-height:1.45}
+
+  .greyrule{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line)}
+  .greyrule>div{padding:var(--space-6) var(--space-5);display:grid;gap:var(--space-4);align-content:space-between}
+  .greyrule .on-charcoal{background:var(--mp-charcoal);color:var(--mp-white)}
+  .greyrule .on-paper{background:var(--mp-white)}
+  .greyrule .hl{font-family:var(--font-display);font-weight:800;font-size:var(--text-h2);letter-spacing:var(--tracking-display);line-height:1.1}
+  .greyrule .ratio{font-size:var(--text-xs)}
+  .greyrule .on-charcoal .ratio{color:var(--mp-on-dark-muted)}
+  .greyrule .on-paper .ratio{color:var(--mp-slate)}
+  @media(max-width:640px){.greyrule{grid-template-columns:1fr}}
+
+  .sevs{display:flex;gap:var(--space-2);flex-wrap:wrap}
+  .sev{display:inline-flex;align-items:center;gap:.45em;font-size:var(--text-sm);font-weight:600;padding:.32em .7em;border-radius:var(--radius-sm)}
+  .sev .icon{width:15px;height:15px;stroke-width:2.4}
+  .s-pass{background:var(--sev-pass-bg);color:var(--sev-pass-fg)}
+  .s-low{background:var(--sev-low-bg);color:var(--sev-low-fg)}
+  .s-med{background:var(--sev-medium-bg);color:var(--sev-medium-fg)}
+  .s-high{background:var(--sev-high-bg);color:var(--sev-high-fg)}
+  .s-crit{background:var(--sev-critical-bg);color:var(--sev-critical-fg)}
+
+  /* ---- type ----------------------------------------------------------------- */
+  .spec{display:grid}
+  .spec .row{display:grid;grid-template-columns:132px minmax(0,1fr);gap:var(--space-5);align-items:baseline;border-top:1px solid var(--line);padding-block:var(--space-5)}
+  .spec .row:last-child{border-bottom:1px solid var(--line)}
+  .spec .row small{color:var(--fg-faint);font:500 var(--text-xs)/1.5 var(--font-mono)}
+  .disp{font-family:var(--font-display);font-weight:800;letter-spacing:var(--tracking-display);line-height:1.05;text-wrap:balance}
+  .figure{font-family:var(--font-display);font-weight:800;font-size:var(--text-figure);letter-spacing:var(--tracking-display);line-height:.95;font-variant-numeric:tabular-nums}
+  .weights{display:flex;gap:var(--space-6);flex-wrap:wrap;font-family:var(--font-display);font-size:var(--text-h3);letter-spacing:var(--tracking-tight)}
+  @media(max-width:640px){.spec .row{grid-template-columns:1fr;gap:var(--space-2)}}
+
+  /* ---- logo ------------------------------------------------------------------ */
+  .lockups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4)}
+  .lock{position:relative;border:1px solid var(--line);min-height:180px;display:grid;place-items:center;padding:var(--space-6)}
+  .lock svg{height:44px;width:auto;max-width:100%}
+  .lock.l-charcoal{background:var(--mp-charcoal);color:var(--mp-white)}
+  .lock.l-paper{background:var(--mp-white);color:var(--mp-charcoal)}
+  .lock.l-grid{color:var(--mp-white)}
+  .lock.l-image{background:var(--mp-charcoal);color:var(--mp-white);overflow:hidden}
+  .lock.l-image::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(38,40,43,.5),rgba(38,40,43,.5)),url("graphics/web/mountain-forms-2.jpg") center/cover no-repeat}
+  .lock.l-image svg{position:relative}
+  .lock figcaption{position:absolute;left:var(--space-3);bottom:var(--space-3);font:500 var(--text-xs)/1 var(--font-mono);opacity:.8}
+  .lock.l-image figcaption{z-index:1}
+  @media(max-width:760px){.lockups{grid-template-columns:1fr}}
+
+  .marks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-4)}
+  .markt{border:1px solid var(--line);background:var(--mp-white)}
+  .markt .art{height:150px;display:grid;place-items:center}
+  .markt .art svg{width:88px;height:auto}
+  .markt .art img{width:96px;height:96px}
+  .markt .art.on-charcoal{background:var(--mp-charcoal);color:var(--mp-white)}
+  .markt .art.on-paper{color:var(--mp-charcoal)}
+  .markt .cap{padding:var(--space-3);border-top:1px solid var(--line);display:grid;gap:.2em}
+  .markt .cap b{font:500 var(--text-xs)/1.3 var(--font-mono)}
+  .markt .cap span{font-size:var(--text-xs);color:var(--mp-slate)}
+
+  .rules{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-6);align-items:start}
+  .clear{background:var(--mp-white);border:1px solid var(--line);padding:var(--space-6);display:grid;place-items:center;gap:var(--space-4)}
+  .clear .zone{--h:clamp(30px,8vw,56px);max-width:100%;padding:calc(var(--h) * .47);outline:1px dashed var(--mp-slate);outline-offset:0;background:repeating-linear-gradient(135deg,rgba(38,40,43,.05) 0 6px,transparent 6px 12px);color:var(--mp-charcoal)}
+  .clear .zone svg{height:var(--h);width:auto;max-width:100%;background:var(--mp-white)}
+  .clear p{font-size:var(--text-xs);color:var(--mp-slate);text-align:center}
+  .dolist{display:grid;gap:var(--space-3);font-size:var(--text-sm);padding:0;list-style:none}
+  .dolist li{display:grid;grid-template-columns:auto 1fr;gap:var(--space-3);align-items:baseline;border-top:1px solid var(--line);padding-top:var(--space-3)}
+  .dolist b{font:600 var(--text-overline)/1 var(--font-body);letter-spacing:var(--tracking-label);text-transform:uppercase;min-width:4.5em}
+  @media(max-width:760px){.rules{grid-template-columns:minmax(0,1fr)}.clear{padding:var(--space-5) var(--space-4)}}
+
+  /* ---- icons -------------------------------------------------------------------- */
+  .icons{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:var(--space-2)}
+  .ico{border:1px solid var(--line);padding:var(--space-5) var(--space-3);display:flex;flex-direction:column;align-items:center;gap:var(--space-3);transition:background-color var(--dur-base) var(--ease-out)}
+  .ico:hover{background:var(--mp-panel)}
+  .ico .icon{width:28px;height:28px;color:var(--mp-grey-light)}
+  .ico span{font:500 var(--text-xs)/1 var(--font-mono);color:var(--mp-on-dark-faint)}
+
+  /* ---- motifs ------------------------------------------------------------------- */
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);background:var(--mp-white)}
+  .method{width:100%;min-width:560px;border-collapse:collapse;font-size:var(--text-sm)}
+  .method caption{text-align:left;padding:var(--space-4);color:var(--mp-slate);font-size:var(--text-xs);caption-side:bottom;border-top:1px solid var(--line)}
+  .method th{background:var(--mp-charcoal);color:var(--mp-white);text-align:left;font:600 var(--text-overline)/1.4 var(--font-body);letter-spacing:var(--tracking-label);text-transform:uppercase;padding:var(--space-3) var(--space-4)}
+  .method td{padding:var(--space-4);vertical-align:baseline;color:var(--mp-slate);border-top:1px solid var(--color-line-light)}
+  .method tbody tr:nth-child(even) td{background:var(--mp-row)}
+  .method .n{width:1%;white-space:nowrap;font:800 var(--text-h2)/1 var(--font-display);letter-spacing:var(--tracking-display);color:var(--mp-charcoal);font-variant-numeric:tabular-nums}
+  .method .step{font:700 var(--text-body)/1.3 var(--font-display);color:var(--mp-charcoal);white-space:nowrap}
+
+  .motifs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4)}
+  .figure-panel{background:var(--mp-charcoal);color:var(--mp-white);padding:var(--space-7) var(--space-6);display:grid;gap:var(--space-4);align-content:end;min-height:320px}
+  .figure-panel .mp-label{color:var(--mp-white)}
+  .figure-panel .qual{font-size:var(--text-xs);color:var(--mp-on-dark-faint);max-width:40ch}
+  .callout{background:var(--mp-panel);padding:var(--space-7) var(--space-6);display:grid;gap:var(--space-5);align-content:end;min-height:320px}
+  .callout .mp-two-tone{font-family:var(--font-display);font-weight:800;font-size:var(--text-h2);letter-spacing:var(--tracking-display);line-height:1.12}
+  .callout .note{color:var(--mp-on-dark-muted)}
+  .lower{position:relative;min-height:260px;grid-column:1/-1;display:flex;align-items:flex-end;background:url("graphics/web/section.jpg") center/cover no-repeat}
+  .lower .bar{width:100%;background:rgba(38,40,43,.92);padding:var(--space-4) var(--space-5);display:grid;gap:var(--space-3);color:var(--mp-white)}
+  .lower .mp-laneline{max-width:180px;height:3px}
+  .motif-cap{margin-top:var(--space-3);font-size:var(--text-xs);color:var(--mp-slate)}
+  @media(max-width:760px){.motifs{grid-template-columns:1fr}}
+
+  /* ---- textures & imagery -------------------------------------------------------- */
+  .bgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-4)}
+  .bgtile{height:180px;border:1px solid var(--line);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:var(--space-3)}
+  .bgtile span{position:relative;z-index:1;font:500 var(--text-xs)/1 var(--font-mono);background:rgba(19,20,22,.6);color:var(--mp-white);padding:.35em .55em}
+  .bg-lane-dark{background:var(--mp-charcoal);flex-direction:column;justify-content:space-between;align-items:stretch}
+  .bg-lane-dark .mp-laneline{color:var(--mp-white);margin-top:var(--space-7);align-self:center;width:72%}
+  .bg-lane-paper{background:var(--mp-paper);flex-direction:column;justify-content:space-between;align-items:stretch}
+  .bg-lane-paper .mp-laneline{color:var(--mp-charcoal);margin-top:var(--space-7);align-self:center;width:72%}
+  .bg-lane-paper span{background:var(--mp-charcoal);align-self:flex-start}
+  .bg-lane-dark span{align-self:flex-start}
+  .bg-combo{background-color:var(--mp-charcoal);background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px),linear-gradient(0deg,rgba(38,40,43,.35),rgba(38,40,43,.35)),url("graphics/web/cover.jpg");background-size:var(--grid-size) var(--grid-size),var(--grid-size) var(--grid-size),cover,cover;background-position:0 0,0 0,center,center bottom}
+
+  .grouplabel{margin-top:var(--space-7);margin-bottom:var(--space-3);color:var(--fg)}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));grid-auto-rows:180px;grid-auto-flow:dense;gap:var(--space-4)}
+  .gfx{position:relative;border:1px solid var(--line);overflow:hidden;background-size:cover;background-position:center;background-repeat:no-repeat;display:flex;align-items:flex-end}
+  .gfx.wide{grid-column:span 2}
+  .gfx.full{grid-column:1/-1}
+  .gfx.tall{grid-row:span 2}
+  .gfx figcaption{width:100%;display:grid;gap:.15em;padding:var(--space-3);background:linear-gradient(0deg,rgba(38,40,43,.94),rgba(38,40,43,.5) 65%,transparent)}
+  .gfx figcaption b{font:500 var(--text-xs)/1.3 var(--font-mono);color:var(--mp-white)}
+  .gfx figcaption span{font-size:var(--text-xs);color:var(--mp-on-dark-muted)}
+  .gfx.light figcaption{background:rgba(245,244,241,.95);border-top:1px solid var(--color-line-light)}
+  .gfx.light figcaption b{color:var(--mp-charcoal)}
+  .gfx.light figcaption span{color:var(--mp-slate)}
+  @media(max-width:560px){.gfx.wide{grid-column:span 1}}
+
+  /* ---- components ------------------------------------------------------------------ */
+  .demo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4)}
+  .panel{padding:var(--space-6) var(--space-5);display:grid;gap:var(--space-5);align-content:start}
+  .panel.on-charcoal{background:var(--mp-charcoal);color:var(--mp-white)}
+  .panel.on-white{background:var(--mp-white);border:1px solid var(--line)}
+  .panel h3{font-size:var(--text-h4);font-weight:700;letter-spacing:var(--tracking-tight)}
+  .panel .note{margin-top:calc(var(--space-3) * -1)}
+  .panel.on-charcoal .note{color:var(--mp-on-dark-muted)}
+  @media(max-width:760px){.demo{grid-template-columns:1fr}}
+
+  .btnrow{display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center}
+  .btn{display:inline-flex;align-items:center;gap:.55em;font:600 var(--text-body)/1 var(--font-body);padding:.85em 1.2em;border:1px solid transparent;border-radius:var(--radius-sm);cursor:pointer;text-decoration:none;transition:background-color var(--dur-base) var(--ease-out),border-color var(--dur-base) var(--ease-out),color var(--dur-base) var(--ease-out),transform var(--dur-fast) var(--ease-out)}
+  .btn:active{transform:translateY(1px)}
+  .btn .icon{width:18px;height:18px;transition:transform var(--dur-base) var(--ease-out)}
+  .btn:hover .go{transform:translateX(3px)}
+  .btn[disabled]{opacity:.5;cursor:not-allowed}
+  .btn[disabled]:active{transform:none}
+  .btn-primary{background:var(--color-primary);color:var(--color-primary-ink)}
+  .btn-primary:hover{background:var(--mp-grey-light)}
+  .btn-quiet{background:var(--mp-panel);color:var(--mp-white);border-color:var(--color-line-strong)}
+  .btn-quiet:hover{border-color:var(--mp-grey)}
+  .btn-quiet .icon{color:var(--mp-grey-light)}
+  .btn-ghost{background:transparent;color:var(--mp-white);border-color:var(--mp-grey)}
+  .btn-ghost:hover{border-color:var(--mp-white)}
+  .btn-primary-light{background:var(--color-primary-on-light);color:var(--color-primary-on-light-ink)}
+  .btn-primary-light:hover{background:var(--mp-panel)}
+  .btn-ghost-light{background:transparent;color:var(--mp-charcoal);border-color:var(--mp-charcoal)}
+  .btn-ghost-light:hover{background:var(--mp-charcoal);color:var(--mp-white)}
+  .btn-ghost-light[disabled]:hover{background:transparent;color:var(--mp-charcoal)}
+  .textlink{font-weight:600;font-size:var(--text-sm);color:var(--mp-charcoal)}
+
+  .field{display:grid;gap:var(--space-2);max-width:380px}
+  .field label{font-size:var(--text-sm);font-weight:600;color:var(--mp-charcoal)}
+  .field input{font:400 var(--text-body)/1.4 var(--font-body);color:var(--mp-charcoal);background:var(--mp-white);border:1px solid var(--mp-slate);border-radius:var(--radius-sm);padding:.72em .85em;width:100%;transition:border-color var(--dur-base) var(--ease-out)}
+  .field input::placeholder{color:var(--mp-slate)}
+  .field input:hover{border-color:var(--mp-charcoal)}
+  .field input:focus-visible{outline:2px solid var(--mp-charcoal);outline-offset:1px;border-color:var(--mp-charcoal)}
+  .field .hint{font-size:var(--text-xs);color:var(--mp-slate)}
+  .field.error input{border-color:var(--sev-critical-fg)}
+  .field.error .hint{color:var(--sev-critical-fg);font-weight:500}
+
+  .finding{background:var(--mp-white);border:1px solid var(--line);padding:var(--space-5);display:grid;gap:var(--space-3);align-content:start}
+  .finding .ftop{display:flex;justify-content:space-between;align-items:center;gap:var(--space-3)}
+  .finding .ftop .icon{color:var(--mp-slate)}
+  .finding h4{font-size:var(--text-h4);font-weight:700;letter-spacing:var(--tracking-tight);color:var(--mp-charcoal)}
+  .finding p{color:var(--mp-slate);font-size:var(--text-sm)}
+  .finding .mp-label{color:var(--mp-slate);margin-top:var(--space-2)}
+  .specimen{margin-top:var(--space-5);font-size:var(--text-xs);color:var(--fg-faint)}
+
+  /* ---- footer ----------------------------------------------------------------------- */
+  footer{position:relative;overflow:hidden;background:var(--mp-deep);border-top:1px solid var(--color-line)}
+  footer::before{content:"";position:absolute;inset:0;opacity:.5;background:linear-gradient(180deg,rgba(28,30,32,.75),rgba(28,30,32,.98)),url("graphics/web/mountain-forms-1.jpg") center bottom/cover no-repeat}
+  footer .wrap{position:relative;padding-block:var(--space-8);display:grid;gap:var(--space-6);grid-template-columns:1.4fr 1fr;align-items:start}
+  footer .logo{height:30px;width:auto;color:var(--mp-white)}
+  footer .desc{margin-top:var(--space-4);color:var(--mp-on-dark-muted);font-size:var(--text-sm);max-width:46ch}
+  footer .contact{display:grid;gap:var(--space-3);font-size:var(--text-sm)}
+  footer .contact a{display:inline-flex;align-items:center;gap:.6em;color:var(--mp-on-dark-muted);text-decoration:none}
+  footer .contact a:hover{color:var(--mp-white)}
+  footer .contact .icon{width:16px;height:16px;color:var(--mp-grey-light)}
+  footer small{display:block;margin-top:var(--space-4);color:var(--mp-on-dark-faint);font-size:var(--text-xs)}
+  footer small a{color:var(--mp-on-dark-muted)}
+  @media(max-width:640px){footer .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<!--
+THESIS: "Standing Ground". One living reference for every Maintain Pavements
+visual, built on one colour in two states: white on charcoal #26282B, charcoal
+on paper. The page itself alternates the two grounds, so every section shows
+the inversion rule at work instead of describing it.
+OWN-WORLD: Charcoal and paper grounds, hairline rules, sharp corners, Figtree
+800 two-tone headlines over Inter, tracked-caps labels, numerals as heroes, the
+lane-line keyline, surveyed terrain toned onto the brand ramp. No accent colour.
+STORY: A designer, editor or agent lands, sees the brand at work, and leaves
+with exact tokens, assets and rules: nothing ad-hoc.
+FORM: The uploaded mark (white on #26282B) and Jon Pepper's SuperBase
+capability statement (Rev A) are the visual authority; tokens.css is the source.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+<symbol id="i-check" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-clipboard" viewBox="0 0 24 24" fill="none"><rect x="6" y="4" width="12" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/><rect x="9" y="2" width="6" height="3" rx="1"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6"/><line x1="20" y1="20" x2="16" y2="16"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none"><line x1="5" y1="20" x2="5" y2="13"/><line x1="12" y1="20" x2="12" y2="9"/><line x1="19" y1="20" x2="19" y2="15"/></symbol>
+<symbol id="i-network" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><line x1="12" y1="7.5" x2="6.5" y2="16.5"/><line x1="12" y1="7.5" x2="17.5" y2="16.5"/><line x1="7.5" y1="19" x2="16.5" y2="19"/></symbol>
+<symbol id="i-speed" viewBox="0 0 24 24" fill="none"><path d="M4 18a8 8 0 1 1 16 0"/><line x1="12" y1="18" x2="16" y2="11"/><circle cx="12" cy="18" r="1.5" fill="currentColor"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none"><polygon points="12 3 14.5 9 21 9.5 16 14 17.5 21 12 17.5 6.5 21 8 14 3 9.5 9.5 9 12 3"/></symbol>
+<symbol id="i-cpu" viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" rx="1"/><rect x="9" y="9" width="6" height="6"/><line x1="3" y1="9" x2="6" y2="9"/><line x1="3" y1="15" x2="6" y2="15"/><line x1="18" y1="9" x2="21" y2="9"/><line x1="18" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="6"/><line x1="15" y1="3" x2="15" y2="6"/><line x1="9" y1="18" x2="9" y2="21"/><line x1="15" y1="18" x2="15" y2="21"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3,7 12,13 21,7"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none"><path d="M12 22s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13,6 19,12 13,18"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24" fill="none"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></symbol>
+<symbol id="mark" viewBox="0 0 146 93" fill="none"><path d="M145.266 50.8169V91.6312C145.266 92.2738 144.749 92.8012 144.096 92.8012H106.102C105.066 92.8012 104.538 91.5449 105.277 90.8065L145.266 50.8169Z" fill="currentColor"/><path d="M145.267 1.16959V50.8258H137.193C135.649 50.8258 134.162 51.4395 133.069 52.5328L93.1464 92.4552C92.9258 92.6758 92.6285 92.8005 92.3217 92.8005H53.6458C52.6101 92.8005 52.0827 91.5442 52.8211 90.8058L143.282 0.344859C144.02 -0.393559 145.277 0.133883 145.277 1.16959H145.267Z" fill="currentColor"/><path d="M92.8005 1.16959V50.8258H84.7258C83.1819 50.8258 81.6955 51.4395 80.6022 52.5328L40.6797 92.4552C40.4592 92.6758 40.1619 92.8005 39.855 92.8005H1.16959C0.133883 92.8005 -0.393558 91.5442 0.344859 90.8058L90.8058 0.344859C91.5442 -0.393559 92.8005 0.133883 92.8005 1.16959Z" fill="currentColor"/></symbol>
+<symbol id="wordmark" viewBox="0 0 440 93" fill="none"><path d="M219.137 54.6227H210.295L206.651 26.0066L195.21 54.6227H191.048L179.608 26.0066L175.964 54.6227H167.122L173.365 10.9218H181.689L193.129 39.0104L204.57 10.9218H212.894L219.137 54.6227Z" fill="currentColor"/>
+      <path d="M259.184 22.3714V54.622H250.86V51.1793C248.261 54.1713 244.876 55.6673 240.973 55.6673C232.064 55.6673 224.842 47.9955 224.842 38.5015C224.842 29.0076 232.064 21.3357 240.973 21.3357C244.876 21.3357 248.251 22.8317 250.86 25.8238V22.381H259.184V22.3714ZM250.86 38.5015C250.86 33.6203 246.889 29.6597 242.018 29.6597C237.146 29.6597 233.176 33.6299 233.176 38.5015C233.176 43.3732 237.146 47.3434 242.018 47.3434C246.889 47.3434 250.86 43.3732 250.86 38.5015Z" fill="currentColor"/>
+      <path d="M268.725 22.3715H277.049V54.6221H268.725V22.3715Z" fill="currentColor"/>
+      <path d="M268.725 10.9312H277.049V18.2098H268.725V10.9312Z" fill="currentColor"/>
+      <path d="M391.14 10.9312H399.464V18.2098H391.14V10.9312Z" fill="currentColor"/>
+      <path d="M316.694 35.8931V54.622H308.37V36.9384C308.37 31.9325 306.424 29.6597 302.127 29.6597C298.359 29.6597 294.849 32.1339 294.849 37.9837V54.6316H286.525V22.381H294.849V25.4977C297.064 22.8988 299.73 21.3357 304.602 21.3357C312.014 21.3357 316.694 26.1498 316.694 35.9027V35.8931Z" fill="currentColor"/>
+      <path d="M327.061 29.6505H322.899V22.3718H327.061V10.9312H335.385V22.3718H341.628V29.6505H335.385V43.1722C335.385 48.111 337.533 48.3123 341.628 47.3342V54.6129C339.997 55.265 338.242 55.6485 335.519 55.6485C329.602 55.6485 327.061 51.4194 327.061 45.4354V29.6313V29.6505Z" fill="currentColor"/>
+      <path d="M381.589 22.3714V54.622H373.265V51.1793C370.666 54.1713 367.281 55.6673 363.378 55.6673C354.469 55.6673 347.248 47.9955 347.248 38.5015C347.248 29.0076 354.469 21.3357 363.378 21.3357C367.281 21.3357 370.656 22.8317 373.265 25.8238V22.381H381.589V22.3714ZM373.265 38.5015C373.265 33.6203 369.295 29.6597 364.423 29.6597C359.551 29.6597 355.581 33.6299 355.581 38.5015C355.581 43.3732 359.551 47.3434 364.423 47.3434C369.295 47.3434 373.265 43.3732 373.265 38.5015Z" fill="currentColor"/>
+      <path d="M391.14 22.3715H399.464V54.6221H391.14V22.3715Z" fill="currentColor"/>
+      <path d="M439.109 35.8931V54.622H430.785V36.9384C430.785 31.9325 428.838 29.6597 424.542 29.6597C420.773 29.6597 417.263 32.1339 417.263 37.9837V54.6316H408.939V22.381H417.263V25.4977C419.478 22.8988 422.144 21.3357 427.016 21.3357C434.429 21.3357 439.109 26.1498 439.109 35.9027V35.8931Z" fill="currentColor"/>
+      <path d="M145.266 50.8262V91.6405C145.266 92.283 144.749 92.8105 144.096 92.8105H106.102C105.066 92.8105 104.538 91.5542 105.277 90.8158L145.266 50.8262Z" fill="currentColor"/>
+      <path d="M145.267 1.16957V50.8258H137.193C135.649 50.8258 134.162 51.4395 133.069 52.5327L93.1464 92.4552C92.9259 92.6758 92.6286 92.8005 92.3217 92.8005H53.6459C52.6102 92.8005 52.0828 91.5442 52.8212 90.8058L143.282 0.344863C144.021 -0.393555 145.277 0.133872 145.277 1.16957H145.267Z" fill="currentColor"/>
+      <path d="M92.8005 1.16957V50.8258H84.7258C83.1819 50.8258 81.6955 51.4395 80.6022 52.5327L40.6797 92.4552C40.4591 92.6758 40.1619 92.8005 39.855 92.8005H1.16959C0.133883 92.8005 -0.393558 91.5442 0.344859 90.8058L90.8058 0.344863C91.5442 -0.393555 92.8005 0.133872 92.8005 1.16957Z" fill="currentColor"/>
+      <path d="M167.12 67.474H170.49V87.162H167.12ZM204.526 67.474L208.086 67.474L201.367 87.162L197.806 87.162ZM204.526 67.474L208.086 67.474L214.806 87.162L211.245 87.162ZM202.005 78.39H210.607V81.76H202.005ZM231.992 67.474L235.553 67.474L242.272 87.162L238.712 87.162ZM245.431 67.474L248.992 67.474L242.272 87.162L238.712 87.162ZM266.178 67.474H269.548V87.162H266.178ZM269.548 67.474H278.678V70.844H269.548ZM269.548 75.633H277.478V79.003H269.548ZM269.548 83.792H278.678V87.162H269.548ZM295.865 67.474H299.235V87.162H295.865ZM299.235 67.474L302.605 67.474L307.05 84.3L303.68 84.3ZM308.125 67.474L311.495 67.474L307.05 84.3L303.68 84.3ZM311.495 67.474H314.865V87.162H311.495ZM332.051 67.474H335.421V87.162H332.051ZM335.421 67.474H344.551V70.844H335.421ZM335.421 75.633H343.351V79.003H335.421ZM335.421 83.792H344.551V87.162H335.421ZM361.737 67.474H365.107V87.162H361.737ZM373.367 67.474H376.737V87.162H373.367ZM361.737 67.474L365.587 67.474L376.737 87.162L372.887 87.162ZM393.923 67.474H407.923V70.844H393.923ZM399.238 70.844H402.608V87.162H399.238Z" fill="currentColor"/>
+      <path d="M167.12 69.159H174.856A4.079 4.079 0 0 1 174.856 77.318H167.12M438.609 69.159H430.689A3.895 3.895 0 0 0 430.689 76.95H433.16A4.264 4.264 0 0 1 433.16 85.477H425.109" stroke="currentColor" stroke-width="3.37" fill="none"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Design system sections"><div class="wrap">
+  <svg class="logo" viewBox="0 0 440 93" role="img" aria-label="Maintain Pavements"><use href="#wordmark"/></svg>
+  <div class="links">
+    <a href="#colour">Colour</a><a href="#type">Type</a><a href="#logo">Logo</a>
+    <a href="#icons">Icons</a><a href="#motifs">Motifs</a><a href="#imagery">Imagery</a><a href="#components">Components</a>
+  </div>
+</div></nav>
+
+<header class="hero dark"><div class="wrap">
+  <div>
+    <h1 class="mp-two-tone">One colour. <strong>Two states.</strong></h1>
+    <p class="lead">The Maintain Pavements design system and brand kit. Charcoal <code>#26282B</code> is the brand: white on charcoal, charcoal on paper. Everything else is paper, slate, hairlines and the numbers that prove the work.</p>
+    <div class="mp-laneline lane" role="presentation"></div>
+    <div class="meta">
+      <span class="chiplet">Charcoal #26282B</span>
+      <span class="chiplet">Monochrome by rule</span>
+      <span class="chiplet">WCAG 2.2 AA</span>
+      <span class="chiplet">Figtree · Inter</span>
+      <span class="chiplet">tokens.css · tokens.json</span>
+    </div>
+  </div>
+  <div class="plate">
+    <div class="states">
+      <figure class="state on-charcoal"><svg viewBox="0 0 146 93" role="img" aria-label="Mark in white on charcoal"><use href="#mark"/></svg><figcaption class="mp-label">On charcoal</figcaption></figure>
+      <figure class="state on-paper"><svg viewBox="0 0 146 93" role="img" aria-label="Mark in charcoal on paper"><use href="#mark"/></svg><figcaption class="mp-label">On paper</figcaption></figure>
+    </div>
+    <p class="caption">The mark in both of its states. There is no third.</p>
+  </div>
+</div></header>
+
+<main id="main">
+<section id="colour" class="paper"><div class="wrap">
+  <div class="head"><h2>Colour</h2><p class="lead">One brand colour and the greys of the page. No accent: signal comes from the inversion itself. Build against the semantic roles in <code>tokens.css</code>, never raw hex.</p></div>
+
+  <div class="block">
+    <div class="brand">
+      <div class="block-charcoal">
+        <svg viewBox="0 0 146 93" aria-hidden="true"><use href="#mark"/></svg>
+        <div class="hex">#26282B</div>
+      </div>
+      <div class="data">
+        <h3>Charcoal</h3>
+        <dl>
+          <dt>Token</dt><dd><code>--mp-charcoal</code></dd>
+          <dt>RGB</dt><dd>38 · 40 · 43</dd>
+          <dt>Roles</dt><dd>Logo on light · the dark ground · ink on paper</dd>
+          <dt>White on it</dt><dd>14.8:1</dd>
+          <dt>On paper</dt><dd>13.4:1</dd>
+        </dl>
+        <p class="note">Jon's capability statement prints its cover a single step away, at <code>#25282A</code>. The two can't be told apart; <code>#26282B</code> is canonical.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">Dark grounds</h3>
+    <div class="swatches">
+      <div class="sw"><div class="chip ink-w" style="background:#26282B">#26282B</div><div class="cap"><div class="tk">--mp-charcoal</div><div class="role">The ground · white 14.8:1</div></div></div>
+      <div class="sw"><div class="chip ink-w" style="background:#2F3233">#2F3233</div><div class="cap"><div class="tk">--mp-panel</div><div class="role">Raised panel · white 12.9:1</div></div></div>
+      <div class="sw"><div class="chip ink-w" style="background:#1C1E20">#1C1E20</div><div class="cap"><div class="tk">--mp-deep</div><div class="role">Recessed well, footer · white 16.7:1</div></div></div>
+      <div class="sw"><div class="chip ink-w" style="background:#131416">#131416</div><div class="cap"><div class="tk">--mp-black</div><div class="role">Deepest base · scrims, shadow tint</div></div></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">Greys</h3>
+    <div class="swatches">
+      <div class="sw"><div class="chip ink-c" style="background:#99A1A7">#99A1A7</div><div class="cap"><div class="tk">--mp-grey</div><div class="role">Two-tone setup on dark only · 5.6:1 on charcoal</div></div></div>
+      <div class="sw"><div class="chip ink-c" style="background:#C4CAD0">#C4CAD0</div><div class="cap"><div class="tk">--mp-grey-light</div><div class="role">Icons and detail on dark · 8.9:1</div></div></div>
+      <div class="sw"><div class="chip ink-w" style="background:#5C6670">#5C6670</div><div class="cap"><div class="tk">--mp-slate</div><div class="role">Muted text and setup on light · 5.9:1 on white</div></div></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">Light grounds</h3>
+    <div class="swatches">
+      <div class="sw"><div class="chip ink-c hair" style="background:#F5F4F1">#F5F4F1</div><div class="cap"><div class="tk">--mp-paper</div><div class="role">Warm off-white page · charcoal 13.4:1</div></div></div>
+      <div class="sw"><div class="chip ink-c hair" style="background:#F1F1F2">#F1F1F2</div><div class="cap"><div class="tk">--mp-row</div><div class="role">Table row tint · charcoal 13.1:1</div></div></div>
+      <div class="sw"><div class="chip ink-c hair" style="background:#E4E6E8">#E4E6E8</div><div class="cap"><div class="tk">--mp-tint</div><div class="role">Chips and highlight on light · 11.8:1</div></div></div>
+      <div class="sw"><div class="chip ink-c hair" style="background:#FFFFFF">#FFFFFF</div><div class="cap"><div class="tk">--mp-white</div><div class="role">Pure surface · the action colour on dark</div></div></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">The grey rule</h3>
+    <div class="greyrule">
+      <div class="on-charcoal">
+        <p class="hl mp-two-tone">Stop patching the yard. <strong>Bind it.</strong></p>
+        <p class="ratio">Setup in mid grey <code>#99A1A7</code> · 5.6:1 on charcoal</p>
+      </div>
+      <div class="on-paper">
+        <p class="hl mp-two-tone on-light">Stop patching the yard. <strong>Bind it.</strong></p>
+        <p class="ratio">Setup in slate <code>#5C6670</code> · 5.9:1 on white. Mid grey would be 2.6:1.</p>
+      </div>
+    </div>
+    <p class="note" style="margin-top:var(--space-4)">Mid grey only works on dark. On a light ground the setup line turns slate: that's what <code>.mp-two-tone.on-light</code> does.</p>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">Status severity</h3>
+    <p class="note" style="margin-bottom:var(--space-4)">The only hues in the system, and not brand colours: functional traffic-light semantics for condition and defect ratings. Always paired with a label, never colour alone.</p>
+    <div class="sevs">
+      <span class="sev s-pass"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Pass</span>
+      <span class="sev s-low"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>Low</span>
+      <span class="sev s-med"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg>Medium</span>
+      <span class="sev s-high"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>High</span>
+      <span class="sev s-crit"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Critical</span>
+    </div>
+  </div>
+</div></section>
+
+<section id="type" class="dark"><div class="wrap">
+  <div class="head"><h2>Typography</h2><p class="lead">Figtree, heavy and tight, carries the headline. Inter carries the reading. Labels are small tracked caps; numbers are set large.</p></div>
+  <div class="spec">
+    <div class="row"><small>display<br>Figtree 800</small><div class="disp" style="font-size:var(--text-display)">The base you already have, turned into standing ground.</div></div>
+    <div class="row"><small>h1<br>Figtree 800</small><div class="disp" style="font-size:var(--text-h1)">The yard never actually gets finished.</div></div>
+    <div class="row"><small>h2<br>Figtree 700</small><div class="disp" style="font-size:var(--text-h2);font-weight:700">Grader. Water cart. Roller. No pour.</div></div>
+    <div class="row"><small>h3<br>Figtree 700</small><div class="disp" style="font-size:var(--text-h3);font-weight:700">Mixed through the full depth. Built, not coated.</div></div>
+    <div class="row"><small>two-tone<br>.mp-two-tone</small><div class="disp mp-two-tone" style="font-size:var(--text-h1)">Compaction builds the bond. <strong>Testing proves it.</strong></div></div>
+    <div class="row"><small>figure<br>Figtree 800</small><div><div class="figure">~75&nbsp;mm</div><p class="mp-label" style="margin-top:var(--space-3);color:var(--mp-on-dark-muted)">Existing base, scarified</p></div></div>
+    <div class="row"><small>label<br>.mp-label</small><div><p class="mp-label">02 — Binder and water through the full depth</p></div></div>
+    <div class="row"><small>body-lg<br>Inter 400</small><div style="font-size:var(--text-body-lg);max-width:62ch">SuperBase is a bonding agent dosed into the yard base you already have. It is mixed through with water, graded to level, then rolled and compacted into a hard, bound hardstand.</div></div>
+    <div class="row"><small>body<br>Inter 400</small><div style="color:var(--mp-on-dark-muted);max-width:68ch">Body copy sits at a 65–75 character measure with 1.6 line height. The voice is measured, not asserted: lead with the point, then the method, then the test that proves it. Every figure carries its qualifier.</div></div>
+    <div class="row"><small>small<br>Inter 500</small><div style="font-size:var(--text-sm);font-weight:500;color:var(--mp-on-dark-faint)">Captions, metadata, table notes and the disclaimer line.</div></div>
+    <div class="row"><small>weights<br>Figtree</small><div class="weights"><span style="font-weight:600">Level 600</span><span style="font-weight:700">Bound 700</span><span style="font-weight:800">Standing 800</span></div></div>
+  </div>
+</div></section>
+
+<section id="logo" class="paper"><div class="wrap">
+  <div class="head"><h2>Logo</h2><p class="lead">The Maintain family mark, the word Maintain, and PAVEMENTS letter-spaced to the full width of the wordmark. PAVEMENTS is drawn geometry, in the same stroke and cap height as the family's sub-words, never set in a font. Charcoal on light, white on charcoal.</p></div>
+
+  <div class="block">
+    <div class="lockups">
+      <figure class="lock l-charcoal"><svg viewBox="0 0 440 93" role="img" aria-label="Maintain Pavements wordmark in white on charcoal"><use href="#wordmark"/></svg><figcaption>wordmark-on-dark.svg</figcaption></figure>
+      <figure class="lock l-paper"><svg viewBox="0 0 440 93" role="img" aria-label="Maintain Pavements wordmark in charcoal on white"><use href="#wordmark"/></svg><figcaption>wordmark-on-light.svg</figcaption></figure>
+      <figure class="lock l-grid mp-grid-bg"><svg viewBox="0 0 440 93" role="img" aria-label="Wordmark on the setting-out grid"><use href="#wordmark"/></svg><figcaption>on the setting-out grid</figcaption></figure>
+      <figure class="lock l-image"><svg viewBox="0 0 440 93" role="img" aria-label="Wordmark on imagery under a charcoal scrim"><use href="#wordmark"/></svg><figcaption>on imagery · 50% charcoal scrim</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">Mark and app icon</h3>
+    <div class="marks">
+      <figure class="markt"><div class="art on-paper"><svg viewBox="0 0 146 93" role="img" aria-label="Mark in charcoal"><use href="#mark"/></svg></div><figcaption class="cap"><b>mark.svg</b><span>Charcoal · light surfaces, watermarks</span></figcaption></figure>
+      <figure class="markt"><div class="art on-charcoal"><svg viewBox="0 0 146 93" role="img" aria-label="Mark in white"><use href="#mark"/></svg></div><figcaption class="cap"><b>mark-on-dark.svg</b><span>White · charcoal grounds, imagery</span></figcaption></figure>
+      <figure class="markt"><div class="art on-paper"><img src="assets/logo/app-icon.svg" alt="App icon: the white mark on a charcoal square" width="96" height="96"></div><figcaption class="cap"><b>app-icon.svg</b><span>Charcoal tile · favicon, avatar, app</span></figcaption></figure>
+    </div>
+  </div>
+
+  <div class="block rules">
+    <div class="clear">
+      <div class="zone"><svg viewBox="0 0 440 93" role="img" aria-label="Wordmark with its clear-space zone"><use href="#wordmark"/></svg></div>
+      <p>Clear space on every side = the cap height of “Maintain”. Minimum width 120px.</p>
+    </div>
+    <ul class="dolist">
+      <li><b>Do</b><span>Use the drawn files in <code>assets/logo/</code>. Charcoal on paper and white, white on charcoal and imagery.</span></li>
+      <li><b>Do</b><span>On photography, sit the white lockup over a charcoal scrim of at least 50%.</span></li>
+      <li><b>Don't</b><span>Place the charcoal mark on a dark ground. It reads 1.1:1 there; the inversion is the rule.</span></li>
+      <li><b>Don't</b><span>Stretch, outline, shadow, gradient-fill or recolour it, or re-set PAVEMENTS in a typeface.</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="icons" class="dark"><div class="wrap">
+  <div class="head"><h2>Iconography</h2><p class="lead">Fourteen line icons at 24×24, <code>stroke: currentColor</code>, width 2, round caps, from <code>sprite.svg</code>. Grey-light on charcoal, charcoal on paper. In the method, numerals carry the sequence, not icons.</p></div>
+  <div class="icons">
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>i-check</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg><span>i-clipboard</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span>i-search</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><span>i-shield</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg><span>i-chart</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-network"/></svg><span>i-network</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-speed"/></svg><span>i-speed</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><span>i-star</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg><span>i-cpu</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>i-mail</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>i-phone</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>i-pin</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg><span>i-arrow-right</span></div>
+    <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg><span>i-menu</span></div>
+  </div>
+</div></section>
+
+<section id="motifs" class="paper"><div class="wrap">
+  <div class="head"><h2>Layout motifs</h2><p class="lead">The devices of Jon's capability statement, ready for decks, reports, video supers and the web: the numbered method, the big number with its qualifier, the two-tone call-out, and the captioned lower-third.</p></div>
+
+  <div class="block">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="SuperBase method, five steps">
+      <table class="method">
+        <caption>Specimen from the SuperBase capability statement, Rev A. Cure times vary by site.</caption>
+        <thead><tr><th scope="col">No.</th><th scope="col">Step</th><th scope="col">What happens</th></tr></thead>
+        <tbody>
+          <tr><td class="n">01</td><td class="step">Prepare</td><td>Loose stone and bull dust are graded off, and the existing base is scarified to around 75 mm.</td></tr>
+          <tr><td class="n">02</td><td class="step">Dose and mix</td><td>Binder and water, dosed against your own base material, mixed through the full depth.</td></tr>
+          <tr><td class="n">03</td><td class="step">Grade to level</td><td>Trimmed to design level and crossfall while still workable, so water sheds instead of ponding.</td></tr>
+          <tr><td class="n">04</td><td class="step">Roll and compact</td><td>Rolled to final compaction. Compaction builds the bond.</td></tr>
+          <tr><td class="n">05</td><td class="step">Cure and return</td><td>Back in service within hours, not weeks.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="motifs">
+      <div>
+        <div class="figure-panel">
+          <div class="figure">60–70%</div>
+          <p class="mp-label">Indicatively below engineered concrete hardstand</p>
+          <p class="qual">Indicative. Varies with base material, climate and duty. Confirmed by site trial.</p>
+        </div>
+        <p class="motif-cap">Big-number panel: the figure is the hero, and its qualifier always travels with it.</p>
+      </div>
+      <div>
+        <div class="callout dark">
+          <p class="mp-two-tone">The choice is usually “keep making it good” or “pour a slab”. <strong>There is a third option.</strong></p>
+          <p class="note">Two-tone call-out on the raised panel: grey setup, white payoff.</p>
+        </div>
+        <p class="motif-cap">Two-tone call-out: one payoff per panel.</p>
+      </div>
+      <div class="lower">
+        <div class="bar">
+          <div class="mp-laneline" role="presentation"></div>
+          <p class="mp-label">02 — Binder and water through the full depth</p>
+        </div>
+      </div>
+    </div>
+    <p class="motif-cap">Lower-third: lane line, then the label. The same caption works under a photo, over footage or as a video super.</p>
+  </div>
+</div></section>
+
+<section id="imagery" class="dark"><div class="wrap">
+  <div class="head"><h2>Textures &amp; imagery</h2><p class="lead">The setting-out grid, the lane line, and surveyed terrain toned onto the brand ramp: darks on charcoal, lights on paper. Utilities live in <code>tokens.css</code> (<code>.mp-grid-bg</code>, <code>.mp-laneline</code>); full-resolution art lives in <code>graphics/</code>.</p></div>
+  <div class="bgs">
+    <div class="bgtile mp-grid-bg"><span>.mp-grid-bg · setting-out grid</span></div>
+    <div class="bgtile bg-lane-dark"><div class="mp-laneline"></div><span>.mp-laneline · on charcoal</span></div>
+    <div class="bgtile bg-lane-paper"><div class="mp-laneline"></div><span>.mp-laneline · on paper, same class</span></div>
+    <div class="bgtile bg-combo"><span>grid + terrain · hero surface</span></div>
+  </div>
+
+  <h3 class="sub grouplabel">Backgrounds &amp; terrain</h3>
+  <div class="gallery">
+    <figure class="gfx wide" style="background-image:url('graphics/web/cover.jpg')"><figcaption><b>cover.jpg</b><span>Hero / cover · surveyed terrain</span></figcaption></figure>
+    <figure class="gfx" style="background-image:url('graphics/web/section.jpg')"><figcaption><b>section.jpg</b><span>Section background · soft floor light</span></figcaption></figure>
+    <figure class="gfx" style="background-image:url('graphics/web/cover-2.jpg')"><figcaption><b>cover 2.jpg</b><span>Section wash · charcoal</span></figcaption></figure>
+    <figure class="gfx wide" style="background-image:url('graphics/web/mountain-forms-2.jpg')"><figcaption><b>mountain forms 2.png</b><span>Full-bleed terrain · dark sections, footer</span></figcaption></figure>
+    <figure class="gfx wide" style="background-image:url('graphics/web/mountain-forms-1.jpg')"><figcaption><b>mountain forms 1.png</b><span>Terrain variant · head-on</span></figcaption></figure>
+  </div>
+
+  <h3 class="sub grouplabel">Glows &amp; washes</h3>
+  <div class="gallery">
+    <figure class="gfx" style="background-image:url('graphics/web/green-gradient.jpg')"><figcaption><b>green-gradient.png</b><span>Radial glow · alpha PNG</span></figcaption></figure>
+    <figure class="gfx" style="background-image:url('graphics/web/blue-gradient.jpg')"><figcaption><b>blue-gradient.png</b><span>Softer glow · alpha PNG</span></figcaption></figure>
+    <figure class="gfx tall" style="background-image:url('graphics/web/pantone-glow.jpg')"><figcaption><b>Gradient-pantone-1.png</b><span>Vertical glow · rails · alpha PNG</span></figcaption></figure>
+    <figure class="gfx tall" style="background-image:url('graphics/web/gradient-portrait.jpg')"><figcaption><b>gradient.png</b><span>Perspective wash · portrait</span></figcaption></figure>
+    <figure class="gfx" style="background-image:url('graphics/web/gradient.jpg')"><figcaption><b>gradient.jpg</b><span>Perspective wash · panels</span></figcaption></figure>
+    <figure class="gfx" style="background-color:var(--mp-charcoal);background-image:url('graphics/web/blu-gradient.svg');background-size:contain;background-repeat:no-repeat"><figcaption><b>blu-gradient.svg</b><span>Vector glow · slate</span></figcaption></figure>
+  </div>
+
+  <h3 class="sub grouplabel">Light surfaces</h3>
+  <div class="gallery">
+    <figure class="gfx light" style="background-image:url('graphics/web/gradient-white.jpg')"><figcaption><b>gradient-white.jpg</b><span>Light section · white to grey wash</span></figcaption></figure>
+    <figure class="gfx light" style="background-image:url('graphics/web/white-bg.jpg')"><figcaption><b>white bg.jpg</b><span>Paper · light base</span></figcaption></figure>
+    <figure class="gfx light" style="background-image:url('graphics/web/white-gradient.jpg')"><figcaption><b>white-gradient.png</b><span>Soft light glow · alpha PNG</span></figcaption></figure>
+    <figure class="gfx light" style="background-image:url('graphics/web/white-linear.jpg')"><figcaption><b>white-lineargradient.png</b><span>Light linear fade · alpha PNG</span></figcaption></figure>
+    <figure class="gfx light full" style="background-image:url('graphics/web/mountain-line.jpg');background-position:center 35%"><figcaption><b>mountain.svg</b><span>Line-art terrain · light surfaces</span></figcaption></figure>
+  </div>
+  <p class="note" style="margin-top:var(--space-5)">Photography of real sites and plant comes first wherever it exists; this art is for covers, section grounds and texture. Gradients live only inside imagery, never as UI fills or type.</p>
+</div></section>
+
+<section id="components" class="paper"><div class="wrap">
+  <div class="head"><h2>Components</h2><p class="lead">Baseline patterns built straight from the tokens. One primary action per surface: white on charcoal, charcoal on light. Corners stay sharp; 2px is the ceiling.</p></div>
+  <div class="demo">
+    <div class="panel on-charcoal">
+      <h3>Buttons on charcoal</h3>
+      <div class="btnrow">
+        <button class="btn btn-primary" type="button">Nominate a trial area <svg class="icon go" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        <button class="btn btn-quiet" type="button"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg>View the method</button>
+        <button class="btn btn-ghost" type="button">Book a yard walk</button>
+      </div>
+      <p class="note">Primary is white with charcoal ink, and it greys to <code>#C4CAD0</code> on hover. Quiet sits on the panel; ghost carries a mid-grey edge at 5.6:1.</p>
+    </div>
+    <div class="panel on-white">
+      <h3>Buttons on light</h3>
+      <div class="btnrow">
+        <button class="btn btn-primary-light" type="button">Nominate a trial area <svg class="icon go" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        <button class="btn btn-ghost-light" type="button">Book a yard walk</button>
+        <button class="btn btn-ghost-light" type="button" disabled>Trial report pending</button>
+      </div>
+      <p class="note">The same action inverted: charcoal with white ink. Ghost fills charcoal on hover. <a class="textlink" href="#motifs">Text links</a> stay charcoal and underlined.</p>
+    </div>
+    <div class="panel on-white">
+      <h3>Field</h3>
+      <div class="field">
+        <label for="area">Yard area (m²)</label>
+        <input id="area" name="area" inputmode="numeric" placeholder="e.g. 2400" aria-describedby="area-hint">
+        <span class="hint" id="area-hint">Approximate is fine. We measure it on the yard walk.</span>
+      </div>
+      <div class="field error">
+        <label for="area-err">Yard area (m²)</label>
+        <input id="area-err" name="area-err" value="about half" aria-invalid="true" aria-describedby="area-err-hint">
+        <span class="hint" id="area-err-hint">Enter the area in square metres, for example 2400.</span>
+      </div>
+    </div>
+    <div class="finding">
+      <div class="ftop">
+        <span class="sev s-high"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>High</span>
+        <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+      </div>
+      <h4>Ravelling and ponding at the gate approach</h4>
+      <p>Loose stone and standing water where trucks turn in. A candidate for the trial area: dose to suit what the gate carries, then soaked CBR before and after, on the yard's own material.</p>
+      <p class="mp-label">Condition finding 03 · Gate approach</p>
+    </div>
+  </div>
+  <p class="specimen">All content on this page is specimen copy taken from Jon's capability statement and its Claims Register wording. It is not a site report.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div>
+    <svg class="logo" viewBox="0 0 440 93" role="img" aria-label="Maintain Pavements"><use href="#wordmark"/></svg>
+    <p class="desc">Maintain Pavements · Hardstand &amp; Industrial Surfaces · part of the Maintain group <!-- TODO: confirm legal entity + ABN for Maintain Pavements before external use --></p>
+    <small>Spec: <a href="../DESIGN.md">DESIGN.md</a> · Tokens: <a href="tokens.css">tokens.css</a> / <a href="tokens.json">tokens.json</a> · Check: <code>python contrast.py</code></small>
+  </div>
+  <div class="contact">
+    <a href="mailto:jon@maintain.com.au"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>jon@maintain.com.au</a>
+    <a href="https://maintain.com.au"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>maintain.com.au</a>
+  </div>
+</div></footer>
+</body>
+</html>

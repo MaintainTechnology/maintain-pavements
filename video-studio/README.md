@@ -1,5 +1,31 @@
 # Maintain Pavements SuperBase video studio
 
+## SuperBasePresenter — branded corporate Reel
+
+The new `SuperBasePresenter` composition combines the official Maintain Pavements logo, charcoal/paper design system, a generated office presenter wearing a white hard hat, recorded process footage, photographs, timed subtitles and original background music. Its five-step script is traced to the supplied documentation in [PRESENTER-REEL.md](PRESENTER-REEL.md). The editable job is `src/jobs/superbase-presenter.ts`; reusable zod props and components are in `src/presenter/`.
+
+The completed Reel is 60 seconds, 1080 × 1920 at 30 fps: 43 seconds of generated narration explain all five steps, followed by a 17-second contact and disclaimer card. Delivered-file verification passed: all 1800 frames and the full stereo audio decode cleanly; source/brand hashes, seven videos, two stills, five steps and 19 subtitle phrases are verified. A 16-frame sample of the actual MP4 and full-size end-card review also passed. The renderer refuses draft captions, missing source coverage or changed disclaimer wording. Prior exports remain separate.
+
+To reproduce this reviewed edit, keep the accepted media, selection manifests and validated `out/presenter-render-coverage.json` on disk:
+
+```console
+npm run presenter:status
+npm run presenter:assets
+npm run lint
+npm run preview:presenter
+node scripts/mix-presenter-audio.mjs
+npm run render:presenter
+npm run verify:presenter
+```
+
+The deliverables are [the MP4](out/maintain-pavements-presenter-reel.mp4) and [matching SRT](out/maintain-pavements-presenter-reel.srt). The MP4 is 18,289,521 bytes; its measured mix is −16.99 LUFS with a −2.55 dBTP true peak. See the [coverage report](out/presenter-render-coverage.json), [delivered-file verification report](out/presenter-render-report.json) and [final visual review](out/qa-final-presenter/review.json). For a design preview before native speech is ready on a future job, use `node scripts/render-presenter.mjs --stills --seed`.
+
+If only the canonical brand assets or tokens changed, run `node scripts/prepare-presenter-assets.mjs --brand-only` before rebuilding. It refreshes the exact copies and hash manifest in `public/brand/`, preserving all audio and video masters. The presenter follows the current lane-motion rule: two 2.4-second periods, then rest at 4.8 seconds; reduced motion and the end-card lane remain stationary. The palette still has no accent colour.
+
+The mixer creates `public/audio/presenter-mix.wav` and its hash manifest from the reviewed native narration and music masters, using the composition's volume curves. The default final renderer uses `scripts/presenter/render-checkpointed.mjs`: it preserves validated frames under `out/presenter-frames/<fingerprint>/`, resumes missing frames on a rerun with identical inputs, and encodes the complete frame set with the verified audio mix. Source, props, media or brand changes produce a different fingerprint. These commands perform local rendering and audio work, with no new generation requests. If final coverage is absent or outdated, the render entrypoint writes current validated coverage before its mix check; prepare the mix against that coverage and rerun. Do not reuse a stale mix after changing the job.
+
+`scripts/generate-presenter.mjs` runs outside the Remotion bundle and reads the private Gemini key only in Node. Its separate durable ledger preserves all eight submissions: six generated segments, one rejected aspect-ratio request, and a provider refusal for the planned spoken CTA. No further generation is attempted. The reviewed six-segment selection includes the introduction and every process step. The end card says “Let’s look at your yard. Start with your material. Confirm with a site trial and testing.” and displays Jon's contact and the exact disclaimer. The planned sentence about laboratory testing before treatment and after cure is absent from both narration and on-screen copy. Local independent transcription uses `scripts/presenter/transcribe-local.py` and cached speech-model weights in an isolated, ignored `.venv-asr`. Original API videos remain unchanged; a separately hashed 30 fps derivative supports reliable frame seeking in Remotion. The presenter uses a generic synthetic voice and is labelled as AI throughout. Generated video is not evidence that unrecorded site actions occurred.
+
 ## SuperBaseComplete — every source and all five steps
 
 The new `SuperBaseComplete` composition is **72 seconds, 1080 × 1920, 30 fps**. It includes all seven original video files, both supplied surface stills, a photo-based AI levelling illustration, the four existing AI atmosphere clips, and a newly generated instrumental music bed. The previous 60-second test and its outputs remain separate.
@@ -108,9 +134,9 @@ Duplicate `src/jobs/superbase-test.ts`, change its `jobId`, contact and shot lis
 | 39–44 s | Qualified indicative cost comparison |
 | 44–60 s | Jon’s contact and verbatim Claims Register disclaimer |
 
-The test retains low-level original machinery audio on real video shots. AI audio is muted; there is no invented speech, voiceover or licensed music. Figtree and Inter are temporary brand stand-ins loaded by the existing Remotion font package. No logo has been reconstructed.
+The test retains low-level original machinery audio on real video shots. AI audio is muted; this older test contains no invented speech, voiceover or licensed music. It uses Figtree and Inter through the existing Remotion font package; those fonts are also named in the current design system. No logo was reconstructed for this test.
 
-This is a local internal test. The handoff still lists public-use footage permissions, official logo/fonts and finished-yard evidence as unresolved; this render does not establish those. Review the [Remotion licence](https://www.remotion.dev/license) for the company before commercial use.
+This is a local internal test. The original handoff listed public-use footage permissions, official logo/fonts and finished-yard evidence as unresolved. The current design system now supplies drawn logo assets and names Figtree/Inter; this older test does not establish footage permissions or finished-yard evidence. Review the [Remotion licence](https://www.remotion.dev/license) for the company before commercial use.
 
 ---
 
@@ -127,7 +153,7 @@ Welcome to your Remotion project!
 
 ## Maintain Pavements working template
 
-`PavementsProcessTemplate` is an internal, editable three-scene starting point: Prepare, Dose and mix, and Roll and compact. The labels and clip paths are editable in Remotion Studio. It uses the capability statement's charcoal/grey palette with Figtree and Inter as temporary font choices. The official logo and font files have not been supplied.
+`PavementsProcessTemplate` is the earlier internal, editable three-scene starting point: Prepare, Dose and mix, and Roll and compact. The labels and clip paths are editable in Remotion Studio. It uses the capability statement's charcoal/grey palette with Figtree and Inter. It predates the current drawn logo assets; the new presenter composition uses those assets from `../design-system/`.
 
 All nine source media files have been copied from `../videos/` into `public/footage/` for local editing. This directory is ignored by Git while footage ownership and visible-worker consent are checked. Re-copy it from `../videos/` on a fresh checkout before opening this composition. The file stored under `04-cure-and-return-to-service` is duplicate rolling footage and is not used as a curing scene.
 

@@ -15,10 +15,23 @@ import {
   type SuperBaseCompleteProps,
 } from "./complete";
 import { superBaseCompleteJob } from "./jobs/superbase-complete";
+import { SuperBasePresenterPromo, SuperBasePresenterSchema, getPresenterDurationInFrames, type SuperBasePresenterProps } from "./presenter";
+import { superBasePresenterJob } from "./jobs/superbase-presenter";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="SuperBasePresenter"
+        component={SuperBasePresenterPromo}
+        schema={SuperBasePresenterSchema}
+        defaultProps={superBasePresenterJob}
+        width={1080}
+        height={1920}
+        fps={30}
+        durationInFrames={getPresenterDurationInFrames(superBasePresenterJob)}
+        calculateMetadata={({ props }: { props: SuperBasePresenterProps }) => ({ durationInFrames: getPresenterDurationInFrames(SuperBasePresenterSchema.parse(props)) })}
+      />
       <Composition
         id="SuperBaseComplete"
         component={SuperBaseCompletePromo}

@@ -11,3 +11,4 @@ public/footage/
 public/ai/
 public/audio/
 .veo/
+.venv-asr/

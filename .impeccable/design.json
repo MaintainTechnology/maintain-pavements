@@ -1,0 +1,590 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T10:30:00+08:00",
+  "title": "Design System: Maintain Pavements",
+  "extensions": {
+    "colorMeta": {
+      "charcoal": {
+        "role": "primary",
+        "displayName": "Charcoal",
+        "canonical": "oklch(27.6% 0.0062 258.4)",
+        "purpose": "The brand: logo on light, the dark ground, ink on paper.",
+        "tonalRamp": [
+          "#0A0B0E",
+          "#232528",
+          "#404245",
+          "#5F6165",
+          "#808286",
+          "#A3A5A9",
+          "#C7C9CD",
+          "#ECEFF3"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Charcoal Panel",
+        "canonical": "oklch(31.5% 0.0046 219.6)",
+        "purpose": "Raised panel on charcoal.",
+        "tonalRamp": [
+          "#090C0C",
+          "#232627",
+          "#3F4344",
+          "#5E6263",
+          "#7F8384",
+          "#A2A6A7",
+          "#C6CACB",
+          "#EBEFF0"
+        ]
+      },
+      "deep": {
+        "role": "neutral",
+        "displayName": "Deep Charcoal",
+        "canonical": "oklch(23.4% 0.0049 248.0)",
+        "purpose": "Recessed wells, footer.",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#232527",
+          "#404244",
+          "#5F6164",
+          "#808385",
+          "#A3A5A8",
+          "#C7C9CC",
+          "#ECEFF2"
+        ]
+      },
+      "black": {
+        "role": "neutral",
+        "displayName": "Black",
+        "canonical": "oklch(19.1% 0.0043 264.5)",
+        "purpose": "Deepest base; scrims and shadow tint.",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#242527",
+          "#414244",
+          "#606164",
+          "#818285",
+          "#A4A5A8",
+          "#C8C9CC",
+          "#EDEEF1"
+        ]
+      },
+      "grey": {
+        "role": "neutral",
+        "displayName": "Mid Grey",
+        "canonical": "oklch(70.4% 0.0127 240.0)",
+        "purpose": "Two-tone setup on dark only.",
+        "tonalRamp": [
+          "#070C10",
+          "#20262B",
+          "#3C4348",
+          "#5B6268",
+          "#7C8489",
+          "#9EA6AC",
+          "#C2CAD1",
+          "#E7F0F6"
+        ]
+      },
+      "grey-light": {
+        "role": "neutral",
+        "displayName": "Grey-Light",
+        "canonical": "oklch(83.6% 0.0107 248.0)",
+        "purpose": "Icons, detail and hover fills on dark.",
+        "tonalRamp": [
+          "#080C0F",
+          "#21262A",
+          "#3E4348",
+          "#5D6267",
+          "#7D8389",
+          "#A0A6AC",
+          "#C4CAD0",
+          "#E9EFF5"
+        ]
+      },
+      "slate": {
+        "role": "neutral",
+        "displayName": "Slate",
+        "canonical": "oklch(50.5% 0.0201 248.2)",
+        "purpose": "Muted text and two-tone setup on light.",
+        "tonalRamp": [
+          "#050C13",
+          "#1D262F",
+          "#3A434C",
+          "#59626C",
+          "#79848E",
+          "#9CA6B1",
+          "#BFCBD6",
+          "#E4F0FC"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(96.7% 0.0041 91.4)",
+        "purpose": "Warm off-white page.",
+        "tonalRamp": [
+          "#0C0B09",
+          "#262523",
+          "#43423F",
+          "#62615F",
+          "#838280",
+          "#A6A5A2",
+          "#CAC9C6",
+          "#EFEEEB"
+        ]
+      },
+      "row": {
+        "role": "neutral",
+        "displayName": "Row Tint",
+        "canonical": "oklch(95.8% 0.0013 286.4)",
+        "purpose": "Alternating table rows.",
+        "tonalRamp": [
+          "#0B0B0C",
+          "#252526",
+          "#424243",
+          "#616162",
+          "#828283",
+          "#A5A5A6",
+          "#C9C9CA",
+          "#EEEEEF"
+        ]
+      },
+      "tint": {
+        "role": "neutral",
+        "displayName": "Tint",
+        "canonical": "oklch(92.4% 0.0035 247.9)",
+        "purpose": "Chips, code and highlight fills on light.",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#242527",
+          "#414244",
+          "#606163",
+          "#818284",
+          "#A3A5A7",
+          "#C7C9CB",
+          "#EDEFF1"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "oklch(100.0% 0.0000 89.9)",
+        "purpose": "Cards, fields; the action colour on charcoal.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "sev-pass-fg": {
+        "role": "status",
+        "displayName": "Severity pass fg",
+        "canonical": "oklch(36.2% 0.0864 152.5)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#001300",
+          "#00300E",
+          "#134F2A",
+          "#376F49",
+          "#589169",
+          "#7BB58B",
+          "#9EDAAE",
+          "#C3FFD3"
+        ]
+      },
+      "sev-pass-bg": {
+        "role": "status",
+        "displayName": "Severity pass bg",
+        "canonical": "oklch(96.2% 0.0239 163.1)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#030E08",
+          "#1A2922",
+          "#37463E",
+          "#55665D",
+          "#76877E",
+          "#98AAA1",
+          "#BCCEC5",
+          "#E1F4EA"
+        ]
+      },
+      "sev-low-fg": {
+        "role": "status",
+        "displayName": "Severity low fg",
+        "canonical": "oklch(42.4% 0.1809 265.6)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#0C0056",
+          "#05007B",
+          "#1431A0",
+          "#2F56C6",
+          "#4E7AED",
+          "#6E9EFF",
+          "#91C3FF",
+          "#B4EAFF"
+        ]
+      },
+      "sev-low-bg": {
+        "role": "status",
+        "displayName": "Severity low bg",
+        "canonical": "oklch(93.2% 0.0316 255.6)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#030B18",
+          "#1B2634",
+          "#374353",
+          "#566273",
+          "#768496",
+          "#98A6B9",
+          "#BCCBDE",
+          "#E1F0FF"
+        ]
+      },
+      "sev-medium-fg": {
+        "role": "status",
+        "displayName": "Severity medium fg",
+        "canonical": "oklch(47.6% 0.1034 61.9)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#250000",
+          "#461200",
+          "#673200",
+          "#8A5215",
+          "#AE733C",
+          "#D4965F",
+          "#FABA82",
+          "#FFDFA6"
+        ]
+      },
+      "sev-medium-bg": {
+        "role": "status",
+        "displayName": "Severity medium bg",
+        "canonical": "oklch(97.3% 0.0693 103.2)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#110B00",
+          "#2B2600",
+          "#494310",
+          "#686332",
+          "#8A8453",
+          "#ACA774",
+          "#D1CC97",
+          "#F6F1BC"
+        ]
+      },
+      "sev-high-fg": {
+        "role": "status",
+        "displayName": "Severity high fg",
+        "canonical": "oklch(47.0% 0.1430 37.3)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#320000",
+          "#570000",
+          "#7C1400",
+          "#A23B1B",
+          "#C85E3F",
+          "#F08261",
+          "#FFA684",
+          "#FFCBA9"
+        ]
+      },
+      "sev-high-bg": {
+        "role": "status",
+        "displayName": "Severity high bg",
+        "canonical": "oklch(95.4% 0.0372 75.2)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#140800",
+          "#30220F",
+          "#4E3F2C",
+          "#6E5F4A",
+          "#90806A",
+          "#B3A28C",
+          "#D8C6AF",
+          "#FEECD4"
+        ]
+      },
+      "sev-critical-fg": {
+        "role": "status",
+        "displayName": "Severity critical fg",
+        "canonical": "oklch(44.4% 0.1613 26.9)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#370000",
+          "#5D0000",
+          "#830004",
+          "#AA2E2A",
+          "#D1534B",
+          "#FA786C",
+          "#FF9C8F",
+          "#FFC2B3"
+        ]
+      },
+      "sev-critical-bg": {
+        "role": "status",
+        "displayName": "Severity critical bg",
+        "canonical": "oklch(93.6% 0.0309 17.7)",
+        "purpose": "Functional condition rating, not brand. Always with a label.",
+        "tonalRamp": [
+          "#160607",
+          "#331F1F",
+          "#513C3C",
+          "#725A5B",
+          "#947B7B",
+          "#B89E9E",
+          "#DDC2C2",
+          "#FFE7E7"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Cover and hero headlines, usually two-tone."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headlines."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sub-section heads."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Group labels, card, panel and finding titles."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "The big number in a figure panel; the 01-05 method numerals use the same face at h2 size."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text at 65–75ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Tracked caps after a 28px rule: captions, lower-thirds, table heads, step labels. Never an eyebrow."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float",
+        "value": "0 12px 32px rgba(19,20,22,.28)",
+        "purpose": "Menus, dialogs and toasts on charcoal. Never resting cards."
+      },
+      {
+        "name": "float-light",
+        "value": "0 8px 24px rgba(38,40,43,.14)",
+        "purpose": "Floating layers on paper."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22,1,0.36,1)",
+        "purpose": "The system's one curve."
+      },
+      {
+        "name": "dur-fast",
+        "value": "120ms",
+        "purpose": "Press feedback."
+      },
+      {
+        "name": "dur-base",
+        "value": "200ms",
+        "purpose": "Hover and state changes."
+      },
+      {
+        "name": "dur-slow",
+        "value": "320ms",
+        "purpose": "Larger state changes."
+      },
+      {
+        "name": "dur-reveal",
+        "value": "620ms",
+        "purpose": "Scroll-entrance tier."
+      },
+      {
+        "name": "lane-crawl",
+        "value": "background-position 0 -> -40px, 2.4s linear, 2 iterations",
+        "purpose": "The one signature moment: the hero lane line crawls twice on load (4.8s) then rests, under the WCAG 2.2.2 five-second limit. One per page; skipped under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "560px"
+      },
+      {
+        "name": "compact",
+        "value": "640px"
+      },
+      {
+        "name": "stack",
+        "value": "760px"
+      },
+      {
+        "name": "nav",
+        "value": "860px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (on charcoal)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action on a charcoal ground: white with charcoal ink.",
+      "html": "<div class=\"ds-ground\"><button class=\"ds-btn-p\">Nominate a trial area <svg class=\"ds-go\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/><polyline points=\"13,6 19,12 13,18\"/></svg></button></div>",
+      "css": ".ds-ground{background:#26282B;padding:24px}.ds-btn-p{display:inline-flex;align-items:center;gap:.55em;font:600 1rem/1 Inter,system-ui,sans-serif;padding:.85em 1.2em;border:1px solid transparent;border-radius:2px;background:#FFFFFF;color:#26282B;cursor:pointer;transition:background-color 200ms cubic-bezier(0.22,1,0.36,1),transform 120ms cubic-bezier(0.22,1,0.36,1)}.ds-btn-p:hover{background:#C4CAD0}.ds-btn-p:active{transform:translateY(1px)}.ds-btn-p:focus-visible{outline:2px solid #FFFFFF;outline-offset:3px}.ds-go{transition:transform 200ms cubic-bezier(0.22,1,0.36,1)}.ds-btn-p:hover .ds-go{transform:translateX(3px)}"
+    },
+    {
+      "name": "Ghost Button (on charcoal)",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on charcoal: mid-grey edge (5.6:1), white on hover.",
+      "html": "<div class=\"ds-ground-g\"><button class=\"ds-btn-g\">Book a yard walk</button></div>",
+      "css": ".ds-ground-g{background:#26282B;padding:24px}.ds-btn-g{font:600 1rem/1 Inter,system-ui,sans-serif;padding:.85em 1.2em;border:1px solid #99A1A7;border-radius:2px;background:transparent;color:#FFFFFF;cursor:pointer;transition:border-color 200ms cubic-bezier(0.22,1,0.36,1)}.ds-btn-g:hover{border-color:#FFFFFF}.ds-btn-g:focus-visible{outline:2px solid #FFFFFF;outline-offset:3px}"
+    },
+    {
+      "name": "Primary Button (on light)",
+      "kind": "button",
+      "refersTo": "button-primary-on-light",
+      "description": "The same action inverted for paper and white grounds.",
+      "html": "<button class=\"ds-btn-pl\">Nominate a trial area</button>",
+      "css": ".ds-btn-pl{font:600 1rem/1 Inter,system-ui,sans-serif;padding:.85em 1.2em;border:1px solid transparent;border-radius:2px;background:#26282B;color:#FFFFFF;cursor:pointer;transition:background-color 200ms cubic-bezier(0.22,1,0.36,1)}.ds-btn-pl:hover{background:#2F3233}.ds-btn-pl:focus-visible{outline:2px solid #26282B;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button (on light)",
+      "kind": "button",
+      "refersTo": "button-ghost-on-light",
+      "description": "Secondary action on light; fills charcoal on hover.",
+      "html": "<button class=\"ds-btn-gl\">Book a yard walk</button>",
+      "css": ".ds-btn-gl{font:600 1rem/1 Inter,system-ui,sans-serif;padding:.85em 1.2em;border:1px solid #26282B;border-radius:2px;background:transparent;color:#26282B;cursor:pointer;transition:background-color 200ms cubic-bezier(0.22,1,0.36,1),color 200ms cubic-bezier(0.22,1,0.36,1)}.ds-btn-gl:hover{background:#26282B;color:#FFFFFF}.ds-btn-gl:focus-visible{outline:2px solid #26282B;outline-offset:3px}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Label, input and hint: slate edge, charcoal focus.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-l\">Yard area (m²)</span><input class=\"ds-input\" placeholder=\"e.g. 2400\"><span class=\"ds-field-h\">Approximate is fine. We measure it on the yard walk.</span></label>",
+      "css": ".ds-field{display:grid;gap:8px;max-width:360px;font-family:Inter,system-ui,sans-serif}.ds-field-l{font-size:.875rem;font-weight:600;color:#26282B}.ds-input{font:400 1rem/1.4 Inter,system-ui,sans-serif;color:#26282B;background:#FFFFFF;border:1px solid #5C6670;border-radius:2px;padding:.72em .85em;transition:border-color 200ms cubic-bezier(0.22,1,0.36,1)}.ds-input::placeholder{color:#5C6670}.ds-input:hover{border-color:#26282B}.ds-input:focus-visible{outline:2px solid #26282B;outline-offset:1px;border-color:#26282B}.ds-field-h{font-size:.75rem;color:#5C6670}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Solid charcoal sticky bar, white wordmark, muted links that underline on hover.",
+      "html": "<nav class=\"ds-nav\"><svg class=\"ds-nav-logo\" viewBox=\"0 0 440 93\" fill=\"none\" role=\"img\" aria-label=\"Maintain Pavements\"><path d=\"M219.137 54.6227H210.295L206.651 26.0066L195.21 54.6227H191.048L179.608 26.0066L175.964 54.6227H167.122L173.365 10.9218H181.689L193.129 39.0104L204.57 10.9218H212.894L219.137 54.6227Z\" fill=\"currentColor\"/><path d=\"M259.184 22.3714V54.622H250.86V51.1793C248.261 54.1713 244.876 55.6673 240.973 55.6673C232.064 55.6673 224.842 47.9955 224.842 38.5015C224.842 29.0076 232.064 21.3357 240.973 21.3357C244.876 21.3357 248.251 22.8317 250.86 25.8238V22.381H259.184V22.3714ZM250.86 38.5015C250.86 33.6203 246.889 29.6597 242.018 29.6597C237.146 29.6597 233.176 33.6299 233.176 38.5015C233.176 43.3732 237.146 47.3434 242.018 47.3434C246.889 47.3434 250.86 43.3732 250.86 38.5015Z\" fill=\"currentColor\"/><path d=\"M268.725 22.3715H277.049V54.6221H268.725V22.3715Z\" fill=\"currentColor\"/><path d=\"M268.725 10.9312H277.049V18.2098H268.725V10.9312Z\" fill=\"currentColor\"/><path d=\"M391.14 10.9312H399.464V18.2098H391.14V10.9312Z\" fill=\"currentColor\"/><path d=\"M316.694 35.8931V54.622H308.37V36.9384C308.37 31.9325 306.424 29.6597 302.127 29.6597C298.359 29.6597 294.849 32.1339 294.849 37.9837V54.6316H286.525V22.381H294.849V25.4977C297.064 22.8988 299.73 21.3357 304.602 21.3357C312.014 21.3357 316.694 26.1498 316.694 35.9027V35.8931Z\" fill=\"currentColor\"/><path d=\"M327.061 29.6505H322.899V22.3718H327.061V10.9312H335.385V22.3718H341.628V29.6505H335.385V43.1722C335.385 48.111 337.533 48.3123 341.628 47.3342V54.6129C339.997 55.265 338.242 55.6485 335.519 55.6485C329.602 55.6485 327.061 51.4194 327.061 45.4354V29.6313V29.6505Z\" fill=\"currentColor\"/><path d=\"M381.589 22.3714V54.622H373.265V51.1793C370.666 54.1713 367.281 55.6673 363.378 55.6673C354.469 55.6673 347.248 47.9955 347.248 38.5015C347.248 29.0076 354.469 21.3357 363.378 21.3357C367.281 21.3357 370.656 22.8317 373.265 25.8238V22.381H381.589V22.3714ZM373.265 38.5015C373.265 33.6203 369.295 29.6597 364.423 29.6597C359.551 29.6597 355.581 33.6299 355.581 38.5015C355.581 43.3732 359.551 47.3434 364.423 47.3434C369.295 47.3434 373.265 43.3732 373.265 38.5015Z\" fill=\"currentColor\"/><path d=\"M391.14 22.3715H399.464V54.6221H391.14V22.3715Z\" fill=\"currentColor\"/><path d=\"M439.109 35.8931V54.622H430.785V36.9384C430.785 31.9325 428.838 29.6597 424.542 29.6597C420.773 29.6597 417.263 32.1339 417.263 37.9837V54.6316H408.939V22.381H417.263V25.4977C419.478 22.8988 422.144 21.3357 427.016 21.3357C434.429 21.3357 439.109 26.1498 439.109 35.9027V35.8931Z\" fill=\"currentColor\"/><path d=\"M145.266 50.8262V91.6405C145.266 92.283 144.749 92.8105 144.096 92.8105H106.102C105.066 92.8105 104.538 91.5542 105.277 90.8158L145.266 50.8262Z\" fill=\"currentColor\"/><path d=\"M145.267 1.16957V50.8258H137.193C135.649 50.8258 134.162 51.4395 133.069 52.5327L93.1464 92.4552C92.9259 92.6758 92.6286 92.8005 92.3217 92.8005H53.6459C52.6102 92.8005 52.0828 91.5442 52.8212 90.8058L143.282 0.344863C144.021 -0.393555 145.277 0.133872 145.277 1.16957H145.267Z\" fill=\"currentColor\"/><path d=\"M92.8005 1.16957V50.8258H84.7258C83.1819 50.8258 81.6955 51.4395 80.6022 52.5327L40.6797 92.4552C40.4591 92.6758 40.1619 92.8005 39.855 92.8005H1.16959C0.133883 92.8005 -0.393558 91.5442 0.344859 90.8058L90.8058 0.344863C91.5442 -0.393555 92.8005 0.133872 92.8005 1.16957Z\" fill=\"currentColor\"/><path d=\"M167.12 67.474H170.49V87.162H167.12ZM204.526 67.474L208.086 67.474L201.367 87.162L197.806 87.162ZM204.526 67.474L208.086 67.474L214.806 87.162L211.245 87.162ZM202.005 78.39H210.607V81.76H202.005ZM231.992 67.474L235.553 67.474L242.272 87.162L238.712 87.162ZM245.431 67.474L248.992 67.474L242.272 87.162L238.712 87.162ZM266.178 67.474H269.548V87.162H266.178ZM269.548 67.474H278.678V70.844H269.548ZM269.548 75.633H277.478V79.003H269.548ZM269.548 83.792H278.678V87.162H269.548ZM295.865 67.474H299.235V87.162H295.865ZM299.235 67.474L302.605 67.474L307.05 84.3L303.68 84.3ZM308.125 67.474L311.495 67.474L307.05 84.3L303.68 84.3ZM311.495 67.474H314.865V87.162H311.495ZM332.051 67.474H335.421V87.162H332.051ZM335.421 67.474H344.551V70.844H335.421ZM335.421 75.633H343.351V79.003H335.421ZM335.421 83.792H344.551V87.162H335.421ZM361.737 67.474H365.107V87.162H361.737ZM373.367 67.474H376.737V87.162H373.367ZM361.737 67.474L365.587 67.474L376.737 87.162L372.887 87.162ZM393.923 67.474H407.923V70.844H393.923ZM399.238 70.844H402.608V87.162H399.238Z\" fill=\"currentColor\"/><path d=\"M167.12 69.159H174.856A4.079 4.079 0 0 1 174.856 77.318H167.12M438.609 69.159H430.689A3.895 3.895 0 0 0 430.689 76.95H433.16A4.264 4.264 0 0 1 433.16 85.477H425.109\" stroke=\"currentColor\" stroke-width=\"3.37\" fill=\"none\"/></svg><a href=\"#\">Colour</a><a href=\"#\">Type</a><a href=\"#\">Logo</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:24px;height:64px;padding:0 24px;background:#26282B;border-bottom:1px solid rgba(255,255,255,.12);font-family:Inter,system-ui,sans-serif}.ds-nav-logo{display:block;height:28px;width:auto;margin-right:auto;color:#FFFFFF;flex:none}.ds-nav a{color:rgba(255,255,255,.72);text-decoration:none;font-size:.875rem;font-weight:500;padding:8px 0;border-bottom:2px solid transparent;transition:color 200ms cubic-bezier(0.22,1,0.36,1),border-color 200ms cubic-bezier(0.22,1,0.36,1)}.ds-nav a:hover{color:#FFFFFF;border-bottom-color:currentColor}.ds-nav a:focus-visible{outline:2px solid #FFFFFF;outline-offset:3px}"
+    },
+    {
+      "name": "Severity Chip",
+      "kind": "chip",
+      "refersTo": "chip-severity-high",
+      "description": "Functional condition rating: bg/fg pair, 2px corner, always with a label.",
+      "html": "<span class=\"ds-sev\">High</span>",
+      "css": ".ds-sev{display:inline-flex;align-items:center;font:600 .875rem/1 Inter,system-ui,sans-serif;padding:.32em .7em;border-radius:2px;background:#FFEDD5;color:#9A3412}"
+    },
+    {
+      "name": "Condition Finding Card",
+      "kind": "card",
+      "refersTo": "card-finding",
+      "description": "White plane, hairline edge, no shadow: chip, title, slate body, tracked-caps reference.",
+      "html": "<article class=\"ds-card\"><span class=\"ds-sev-c\">High</span><h4>Ravelling and ponding at the gate approach</h4><p>Loose stone and standing water where trucks turn in. A candidate for the trial area.</p><span class=\"ds-label\">Condition finding 03 · Gate approach</span></article>",
+      "css": ".ds-card{background:#FFFFFF;border:1px solid rgba(38,40,43,.14);padding:24px;display:grid;gap:12px;max-width:420px;font-family:Inter,system-ui,sans-serif;color:#5C6670}.ds-card h4{margin:0;font:700 1.125rem/1.2 Figtree,system-ui,sans-serif;letter-spacing:-.01em;color:#26282B}.ds-card p{margin:0;font-size:.875rem;line-height:1.6}.ds-sev-c{justify-self:start;font:600 .875rem/1 Inter,system-ui,sans-serif;padding:.32em .7em;border-radius:2px;background:#FFEDD5;color:#9A3412}.ds-label{display:inline-flex;align-items:center;gap:.9em;font:600 .6875rem/1.4 Inter,system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase}.ds-label::before{content:\"\";width:28px;height:2px;background:currentColor;flex:none}"
+    },
+    {
+      "name": "Figure Panel",
+      "kind": "custom",
+      "refersTo": "panel-figure",
+      "description": "Charcoal panel, one huge figure, a label, and the qualifier that always travels with it.",
+      "html": "<div class=\"ds-fig\"><div class=\"ds-fig-n\">60–70%</div><span class=\"ds-label\">Indicatively below engineered concrete hardstand</span><p>Indicative. Varies with base material, climate and duty. Confirmed by site trial.</p></div>",
+      "css": ".ds-fig{background:#26282B;color:#FFFFFF;padding:48px 32px;display:grid;gap:16px;max-width:460px;font-family:Inter,system-ui,sans-serif}.ds-fig-n{font:800 clamp(3.5rem,9vw,6rem)/.95 Figtree,system-ui,sans-serif;letter-spacing:-.02em;font-variant-numeric:tabular-nums}.ds-fig p{margin:0;font-size:.75rem;color:rgba(255,255,255,.55)}.ds-label{display:inline-flex;align-items:center;gap:.9em;font:600 .6875rem/1.4 Inter,system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase}.ds-label::before{content:\"\";width:28px;height:2px;background:currentColor;flex:none}"
+    },
+    {
+      "name": "Two-Tone Call-out",
+      "kind": "custom",
+      "refersTo": "callout",
+      "description": "Panel block with one two-tone statement: grey setup, white payoff.",
+      "html": "<div class=\"ds-call\"><p>The choice is usually “keep making it good” or “pour a slab”. <strong>There is a third option.</strong></p></div>",
+      "css": ".ds-call{background:#2F3233;padding:48px 32px;max-width:520px}.ds-call p{margin:0;font:800 clamp(1.5rem,3vw,2rem)/1.12 Figtree,system-ui,sans-serif;letter-spacing:-.02em;color:#99A1A7}.ds-call strong{color:#FFFFFF;font-weight:inherit}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Standing Ground",
+    "overview": "**Creative North Star: \"Standing Ground\"**\n\nMaintain Pavements builds bound hardstand out of the yard base a site already has: dosed, mixed through the full depth, graded to level, rolled and compacted. The brand looks like the finished pad: level, dense, quietly engineered, done. Its name comes from Jon Pepper's own line, \"the base you already have, turned into standing ground\".\n\nThe system is one colour in two states. Charcoal `#26282B`, the ground of the chevron mark, is the brand: white on charcoal, charcoal on paper. Everything else is the greys of the page, hairline rules and very large numbers. There is no accent colour. Signal comes from the inversion itself, and colour comes from the site photography: hi-vis, plant yellow, red soil, blue sky. The layout is editorial and generous, in the manner of a capability statement rather than an app: wide margins, sharp edges, tracked-caps captions, numbered steps, and headlines that set up in grey and pay off in white.\n\nThe voice matches the look: measured, not asserted. Every figure travels with its qualifier.",
+    "keyCharacteristics": [
+      "One brand colour, charcoal `#26282B`, used in two states; no accent.",
+      "Figtree 800 two-tone headlines over Inter body; tracked-caps labels.",
+      "Sharp corners (2px ceiling on small controls), hairline rules, flat surfaces.",
+      "Numbers as heroes: the method's 01–05 and the big-number panel.",
+      "Surveyed terrain art toned onto the charcoal ramp; real site photography first."
+    ],
+    "rules": [
+      {
+        "name": "The Two States Rule",
+        "body": "Charcoal on paper and white; white on charcoal. There is no third state. Charcoal on the dark grounds is 1.1:1, so the logo and any charcoal shape invert to white there.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Accent Rule",
+        "body": "No brand hue exists beyond charcoal. The one primary action on a surface is made by inversion: white with charcoal ink on a dark ground, charcoal with white ink on a light one. If a surface seems to need colour, use a photograph.",
+        "section": "colors"
+      },
+      {
+        "name": "The Grey Setup Rule",
+        "body": "Mid grey #99A1A7 is a dark-ground colour. On paper or white the setup line of a two-tone headline is slate #5C6670 (`.mp-two-tone.on-light`).",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Tone Rule",
+        "body": "A display headline may set up in grey and pay off in white (or slate and charcoal on light): \"Stop patching the yard. **Bind it.**\" One payoff per headline, and the payoff is always the shorter half.",
+        "section": "typography"
+      },
+      {
+        "name": "The Label Is Not an Eyebrow Rule",
+        "body": "The tracked-caps label captions things: photos, footage, table columns, steps. It never sits stacked above a headline; the headline carries its own weight.",
+        "section": "typography"
+      },
+      {
+        "name": "The Margin Is the Material Rule",
+        "body": "Generous margins and hairlines do the structural work that boxes and fills would do elsewhere. When in doubt, add space, not a container.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Pad Rule",
+        "body": "Surfaces at rest carry no shadow. A card is a white plane with a hairline edge, not a lifted tile.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Two Pixel Ceiling Rule",
+        "body": "No radius above 2px anywhere, on anything.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do build against the semantic roles (`--color-primary`, `--color-text`, `--color-setup`…), never raw hex; raw `--mp-*` values only define new roles.",
+      "Do invert, never recolour: white on charcoal (14.8:1), charcoal on paper (13.4:1) and white (14.8:1).",
+      "Do keep one primary action per surface.",
+      "Do set the two-tone setup in mid grey #99A1A7 on dark and in slate #5C6670 on light.",
+      "Do attach the qualifier to every figure: \"Indicative. Varies with base material, climate and duty. Confirmed by site trial.\"",
+      "Do keep corners square, with 2px only on buttons, inputs and chips.",
+      "Do contrast-check any new colour pair with `python design-system/contrast.py` and record it in `tokens.json` and here."
+    ],
+    "donts": [
+      "Don't introduce an accent colour, amber, hi-vis orange or otherwise, as a UI colour. Colour belongs to the photography.",
+      "Don't place the charcoal logo or charcoal shapes on a dark ground (1.1:1).",
+      "Don't use mid grey #99A1A7 as text on paper or white (2.4–2.6:1).",
+      "Don't use a radius above 2px, pill shapes, or drop shadows on resting cards.",
+      "Don't use gradient fills or gradient text in UI. Gradients live only inside the imagery.",
+      "Don't stack a tracked-caps label above a headline as an eyebrow.",
+      "Don't set PAVEMENTS, or any part of the lockup, in a typeface."
+    ]
+  }
+}

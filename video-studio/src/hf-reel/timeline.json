@@ -1,0 +1,606 @@
+{
+  "titleFrames": 60,
+  "endFrames": 180,
+  "presenterLabel": "AI presenter · illustrative",
+  "segments": [
+    {
+      "id": "intro",
+      "step": null,
+      "stepName": null,
+      "clip": "ai/hf-reel/clips/norm/01-intro.mp4",
+      "voiceGain": 1,
+      "presenterScale": 1.03,
+      "presenterDy": 19,
+      "from": 0,
+      "durationInFrames": 210,
+      "dissolveIn": false,
+      "pieces": [
+        {
+          "clipFromFrame": 0,
+          "from": 0,
+          "durationInFrames": 210
+        }
+      ],
+      "cues": [
+        {
+          "lines": [
+            "SuperBase turns the yard base",
+            "you already have"
+          ],
+          "burnIn": true,
+          "from": 14,
+          "to": 114
+        },
+        {
+          "lines": [
+            "into a bound hardstand,",
+            "in five steps."
+          ],
+          "burnIn": true,
+          "from": 114,
+          "to": 210
+        }
+      ],
+      "inserts": [],
+      "caption": null
+    },
+    {
+      "id": "prepare",
+      "step": 1,
+      "stepName": "Prepare",
+      "clip": "ai/hf-reel/clips/norm/02-prepare.mp4",
+      "voiceGain": 1,
+      "presenterScale": 1,
+      "presenterDy": 0,
+      "from": 210,
+      "durationInFrames": 210,
+      "dissolveIn": true,
+      "pieces": [
+        {
+          "clipFromFrame": 0,
+          "from": 0,
+          "durationInFrames": 210
+        }
+      ],
+      "cues": [
+        {
+          "lines": [
+            "First, prepare."
+          ],
+          "burnIn": false,
+          "from": 5,
+          "to": 50
+        },
+        {
+          "lines": [
+            "Loose material is cleared,"
+          ],
+          "burnIn": true,
+          "from": 50,
+          "to": 109
+        },
+        {
+          "lines": [
+            "and the base is scarified",
+            "to about 75 mm."
+          ],
+          "burnIn": true,
+          "from": 109,
+          "to": 210
+        }
+      ],
+      "inserts": [
+        {
+          "kind": "portrait",
+          "src": "footage/V01.mp4",
+          "trimStartSeconds": 0,
+          "label": "Site footage",
+          "masks": [
+            {
+              "keys": [
+                {
+                  "t": 0,
+                  "x": 343,
+                  "y": 741,
+                  "w": 74,
+                  "h": 43
+                },
+                {
+                  "t": 0.5,
+                  "x": 289,
+                  "y": 750,
+                  "w": 71,
+                  "h": 42
+                },
+                {
+                  "t": 1,
+                  "x": 248,
+                  "y": 763,
+                  "w": 69,
+                  "h": 41
+                },
+                {
+                  "t": 1.5,
+                  "x": 234,
+                  "y": 774,
+                  "w": 68,
+                  "h": 40
+                },
+                {
+                  "t": 2,
+                  "x": 230,
+                  "y": 785,
+                  "w": 67,
+                  "h": 40
+                },
+                {
+                  "t": 2.5,
+                  "x": 244,
+                  "y": 790,
+                  "w": 60,
+                  "h": 39
+                },
+                {
+                  "t": 2.95,
+                  "x": 256,
+                  "y": 797,
+                  "w": 62,
+                  "h": 40
+                }
+              ],
+              "blur": 9
+            },
+            {
+              "keys": [
+                {
+                  "t": 0,
+                  "x": 246,
+                  "y": 776,
+                  "w": 54,
+                  "h": 42
+                },
+                {
+                  "t": 0.5,
+                  "x": 192,
+                  "y": 787,
+                  "w": 54,
+                  "h": 40
+                },
+                {
+                  "t": 1,
+                  "x": 160,
+                  "y": 796,
+                  "w": 50,
+                  "h": 40
+                },
+                {
+                  "t": 1.5,
+                  "x": 152,
+                  "y": 804,
+                  "w": 50,
+                  "h": 40
+                },
+                {
+                  "t": 2,
+                  "x": 156,
+                  "y": 813,
+                  "w": 48,
+                  "h": 40
+                },
+                {
+                  "t": 2.5,
+                  "x": 173,
+                  "y": 821,
+                  "w": 46,
+                  "h": 39
+                },
+                {
+                  "t": 2.95,
+                  "x": 189,
+                  "y": 828,
+                  "w": 46,
+                  "h": 38
+                }
+              ],
+              "blur": 9
+            }
+          ],
+          "playbackRate": 0.876,
+          "from": 109,
+          "to": 210
+        }
+      ],
+      "caption": {
+        "text": "Indicative depth · varies by site",
+        "from": 109,
+        "to": 210
+      }
+    },
+    {
+      "id": "dose",
+      "step": 2,
+      "stepName": "Dose and mix",
+      "clip": "ai/hf-reel/clips/norm/03-dose.mp4",
+      "voiceGain": 1,
+      "presenterScale": 1,
+      "presenterDy": 0,
+      "from": 420,
+      "durationInFrames": 240,
+      "dissolveIn": false,
+      "pieces": [
+        {
+          "clipFromFrame": 0,
+          "from": 0,
+          "durationInFrames": 240
+        }
+      ],
+      "cues": [
+        {
+          "lines": [
+            "Second, dose and mix."
+          ],
+          "burnIn": false,
+          "from": 5,
+          "to": 93
+        },
+        {
+          "lines": [
+            "SuperBase is dosed with water",
+            "to suit your base,"
+          ],
+          "burnIn": true,
+          "from": 93,
+          "to": 189
+        },
+        {
+          "lines": [
+            "and mixed through",
+            "the full depth."
+          ],
+          "burnIn": true,
+          "from": 189,
+          "to": 240
+        }
+      ],
+      "inserts": [
+        {
+          "kind": "square",
+          "src": "footage/V02A.mp4",
+          "trimStartSeconds": 20,
+          "cropX": 11,
+          "label": "Site footage",
+          "masks": [
+            {
+              "keys": [
+                {
+                  "t": 0,
+                  "x": 390,
+                  "y": 810,
+                  "w": 94,
+                  "h": 76
+                },
+                {
+                  "t": 2,
+                  "x": 392,
+                  "y": 830,
+                  "w": 68,
+                  "h": 66
+                }
+              ],
+              "blur": 12
+            },
+            {
+              "keys": [
+                {
+                  "t": 0,
+                  "x": 80,
+                  "y": 822,
+                  "w": 30,
+                  "h": 38
+                },
+                {
+                  "t": 0.7,
+                  "x": 128,
+                  "y": 831,
+                  "w": 30,
+                  "h": 32
+                },
+                {
+                  "t": 1.4,
+                  "x": 173,
+                  "y": 834,
+                  "w": 30,
+                  "h": 34
+                },
+                {
+                  "t": 2,
+                  "x": 209,
+                  "y": 834,
+                  "w": 30,
+                  "h": 34
+                }
+              ],
+              "blur": 8
+            }
+          ],
+          "playbackRate": 1,
+          "from": 0,
+          "to": 60
+        },
+        {
+          "kind": "diagram",
+          "diagram": "depth",
+          "label": "Diagram · illustrative",
+          "from": 189,
+          "to": 240
+        }
+      ],
+      "caption": null
+    },
+    {
+      "id": "grade",
+      "step": 3,
+      "stepName": "Grade to level",
+      "clip": "ai/hf-reel/clips/norm/04-grade.mp4",
+      "voiceGain": 1,
+      "presenterScale": 1,
+      "presenterDy": 0,
+      "from": 660,
+      "durationInFrames": 214,
+      "dissolveIn": false,
+      "pieces": [
+        {
+          "clipFromFrame": 0,
+          "from": 0,
+          "durationInFrames": 44
+        },
+        {
+          "clipFromFrame": 64,
+          "from": 44,
+          "durationInFrames": 170
+        }
+      ],
+      "cues": [
+        {
+          "lines": [
+            "Third, grade to level."
+          ],
+          "burnIn": false,
+          "from": 3,
+          "to": 50
+        },
+        {
+          "lines": [
+            "The treated base is trimmed",
+            "to level and crossfall,"
+          ],
+          "burnIn": true,
+          "from": 50,
+          "to": 168
+        },
+        {
+          "lines": [
+            "to stop water ponding."
+          ],
+          "burnIn": true,
+          "from": 168,
+          "to": 214
+        }
+      ],
+      "inserts": [
+        {
+          "kind": "diagram",
+          "diagram": "grade",
+          "label": "Diagram · illustrative",
+          "from": 44,
+          "to": 214
+        }
+      ],
+      "caption": null
+    },
+    {
+      "id": "compact",
+      "step": 4,
+      "stepName": "Roll and compact",
+      "clip": "ai/hf-reel/clips/norm/05-compact.mp4",
+      "voiceGain": 1,
+      "presenterScale": 1,
+      "presenterDy": 0,
+      "from": 874,
+      "durationInFrames": 227,
+      "dissolveIn": false,
+      "pieces": [
+        {
+          "clipFromFrame": 0,
+          "from": 0,
+          "durationInFrames": 71
+        },
+        {
+          "clipFromFrame": 84,
+          "from": 71,
+          "durationInFrames": 156
+        }
+      ],
+      "cues": [
+        {
+          "lines": [
+            "Fourth, roll and compact."
+          ],
+          "burnIn": false,
+          "from": 8,
+          "to": 78
+        },
+        {
+          "lines": [
+            "Wet rolling builds the bond."
+          ],
+          "burnIn": true,
+          "from": 78,
+          "to": 148
+        },
+        {
+          "lines": [
+            "Density is checked against",
+            "the dosage design."
+          ],
+          "burnIn": true,
+          "from": 148,
+          "to": 227
+        }
+      ],
+      "inserts": [
+        {
+          "kind": "square",
+          "src": "footage/V02B.mp4",
+          "trimStartSeconds": 0.5,
+          "cropX": 100,
+          "label": "Site footage · wet rolling",
+          "playbackRate": 1,
+          "from": 71,
+          "to": 148
+        }
+      ],
+      "caption": null
+    },
+    {
+      "id": "cure",
+      "step": 5,
+      "stepName": "Cure and return to service",
+      "clip": "ai/hf-reel/clips/norm/06-cure.mp4",
+      "voiceGain": 1,
+      "presenterScale": 1.09,
+      "presenterDy": 68,
+      "from": 1101,
+      "durationInFrames": 180,
+      "dissolveIn": true,
+      "pieces": [
+        {
+          "clipFromFrame": 0,
+          "from": 0,
+          "durationInFrames": 180
+        }
+      ],
+      "cues": [
+        {
+          "lines": [
+            "Finally, cure and",
+            "return to service."
+          ],
+          "burnIn": false,
+          "from": 8,
+          "to": 106
+        },
+        {
+          "lines": [
+            "The surface cures",
+            "to a bound hardstand."
+          ],
+          "burnIn": true,
+          "from": 106,
+          "to": 180
+        }
+      ],
+      "inserts": [
+        {
+          "kind": "still",
+          "src": "footage/S04B.jpeg",
+          "crop": {
+            "x": 212,
+            "y": 0,
+            "w": 457,
+            "h": 813
+          },
+          "sourceSize": {
+            "w": 895,
+            "h": 813
+          },
+          "label": "Site photo",
+          "from": 106,
+          "to": 180
+        }
+      ],
+      "caption": {
+        "text": "Cure times vary by site",
+        "from": 106,
+        "to": 180
+      }
+    },
+    {
+      "id": "cta",
+      "step": null,
+      "stepName": null,
+      "clip": "ai/hf-reel/clips/norm/07-cta.mp4",
+      "voiceGain": 1,
+      "presenterScale": 1,
+      "presenterDy": 60,
+      "from": 1281,
+      "durationInFrames": 300,
+      "dissolveIn": false,
+      "pieces": [
+        {
+          "clipFromFrame": 0,
+          "from": 0,
+          "durationInFrames": 300
+        }
+      ],
+      "cues": [
+        {
+          "lines": [
+            "Nominate one trial area."
+          ],
+          "burnIn": true,
+          "from": 14,
+          "to": 87
+        },
+        {
+          "lines": [
+            "It’s lab tested",
+            "on your material,"
+          ],
+          "burnIn": true,
+          "from": 87,
+          "to": 155
+        },
+        {
+          "lines": [
+            "before treatment and after cure."
+          ],
+          "burnIn": true,
+          "from": 155,
+          "to": 245
+        },
+        {
+          "lines": [
+            "Contact Maintain Pavements."
+          ],
+          "burnIn": true,
+          "from": 245,
+          "to": 300
+        }
+      ],
+      "inserts": [],
+      "caption": null
+    }
+  ],
+  "music": {
+    "src": "audio/hf-reel/music/take-a.m4a",
+    "bedVolume": 0.13,
+    "openVolume": 0.42,
+    "ctaBedVolume": 0.08
+  },
+  "title": {
+    "setup": "The base you already have,",
+    "payoff": "turned into standing ground.",
+    "caption": "SuperBase · five steps"
+  },
+  "endCard": {
+    "setup": "Stop patching the yard.",
+    "payoff": "Bind it.",
+    "name": "Jon Pepper",
+    "phone": "0414 530 836",
+    "email": "jon@maintain.com.au",
+    "web": "maintain.com.au",
+    "disclaimer": "Figures indicative only. Rates, cure times and results vary with base material, climate and duty, and are confirmed by site trial and testing. Comparison vs engineered concrete hardstand.",
+    "aiDisclosure": "Includes an AI-generated presenter and illustrative diagrams."
+  }
+}

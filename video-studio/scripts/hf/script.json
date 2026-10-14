@@ -1,0 +1,421 @@
+{
+  "segments": [
+    {
+      "id": "intro",
+      "step": null,
+      "stepLabel": null,
+      "spoken": "SuperBase turns the yard base you already have into a bound hardstand, in five steps.",
+      "subtitle": "SuperBase turns the yard base you already have into a bound hardstand, in five steps.",
+      "ttsText": "SuperBase turns the yard base you already have into a bound hardstand, in five steps.",
+      "wordCount": 15,
+      "estSeconds": 5.6,
+      "claimIds": [
+        "C4"
+      ],
+      "onScreenCaption": null,
+      "cues": [
+        {
+          "lines": [
+            "SuperBase turns the yard base",
+            "you already have"
+          ],
+          "burnIn": true
+        },
+        {
+          "lines": [
+            "into a bound hardstand,",
+            "in five steps."
+          ],
+          "burnIn": true
+        }
+      ],
+      "editRules": [
+        "Presenter full frame with the logo plate (design-system/assets/logo/wordmark-on-dark.svg on a charcoal scrim of at least 50%, clear space at least the cap height of 'Maintain'). The persistent AI label is on.",
+        "No result imagery before step 05: no S04B, S04A, PDF-p1_img1 or PDF-p4_img2 in this segment.",
+        "Optional unspoken logo open of 1.5 s or less before the first word. The two-tone headline is kept for the end card."
+      ],
+      "sources": [
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.1 cover lead ('SuperBase is a bonding agent dosed into the yard base you already have ... into a hard, bound hardstand')",
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.2 ('SuperBase builds a bound hardstand out of the base already in your yard')",
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.3 headline ('The base you already have, turned into standing ground.')",
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf pp.3-4 (steps 01-05); MaintainPavements/02 Process/Process Overview.md section 2 (five steps)",
+        "MaintainPavements/01 Jon's Plan/Claims Register.md C4 (video-safe 'Uses the base you already have.'; on-screen qualifier 'No, but don't say always')",
+        "Edit rule: MaintainPavements/04 Promo Video/Shot Library.md rank 1 S04B ('Always place after process footage') and rank 37 PDF-p1_img1 (SuperBase yard unconfirmed)",
+        "AI label: MaintainPavements/04 Promo Video/AI Generation Prompts.md Guardrails 2; video-studio/PRESENTER-REEL.md 'Presenter and seed image'",
+        "Production change 2026-09-25: added \"yard\" (docs/Maintain Pavements - SuperBase Hardstand.pdf p.1: \"dosed into the yard base you already have\") because Whisper heard the Seedance/TTS \"the base\" as \"the bass\" (p=0.94); with \"yard base\" all takes transcribe as base (p>=0.96)."
+      ]
+    },
+    {
+      "id": "prepare",
+      "step": 1,
+      "stepLabel": "01 Prepare",
+      "spoken": "First, prepare. Loose material is cleared, and the base is scarified to about seventy-five millimetres.",
+      "subtitle": "First, prepare. Loose material is cleared, and the base is scarified to about 75 mm.",
+      "ttsText": "First, prepare. Loose material is cleared, and the base is scarified to about seventy-five millimetres.",
+      "wordCount": 15,
+      "estSeconds": 6.9,
+      "claimIds": [
+        "C3"
+      ],
+      "onScreenCaption": "Indicative depth · varies by site",
+      "cues": [
+        {
+          "lines": [
+            "First, prepare."
+          ],
+          "burnIn": false
+        },
+        {
+          "lines": [
+            "Loose material is cleared,"
+          ],
+          "burnIn": true
+        },
+        {
+          "lines": [
+            "and the base is scarified",
+            "to about 75 mm."
+          ],
+          "burnIn": true
+        }
+      ],
+      "editRules": [
+        "Presenter and the '01 PREPARE' step counter under 'First, prepare. Loose material is cleared,'.",
+        "Cut to V01 0.0-4.5 (portrait wide, hero 2.5-3.0) only for 'and the base is scarified to about 75 mm.', with the 'Indicative depth · varies by site' caption.",
+        "Never use V01 5.0 (blur), 7.0-10.0 (no trimming or clearing is shown) or 10.5-14.5 (hose of unknown contents; worker near the moving loader) in this Reel. No grader wording over V01."
+      ],
+      "sources": [
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.3 step 01 Prepare ('Loose stone and bull dust are graded off and the existing yard base is scarified to approximately 75 mm')",
+        "MaintainPavements/02 Process/Step 1 - Prepare.md 'What Jon says'",
+        "MaintainPavements/01 Jon's Plan/Claims Register.md C3 (qualifier 'approximately'; video-safe 'Scarified to around 75 mm.')",
+        "MaintainPavements/02 Process/Step 1 - Prepare.md 'Promo angle' ('Scarified to around 75 mm.' over the V01 wide describes the step, not the shot; no grader VO over the track loader)",
+        "MaintainPavements/04 Promo Video/Shot Library.md rank 23 (no 'trimming' super on V01 7.0-10.0); MaintainPavements/03 Footage/V01 - Prepare.md (frame is never shown being dragged)",
+        "MaintainPavements/02 Process/Process Overview.md section 2 (scarifying and grading-off not shown)",
+        "Caption: docs/Maintain Pavements - SuperBase Hardstand.pdf p.6 disclaimer ('dosage, depth ... vary with base material, climate and surface duty, and are confirmed by site trial and material testing before any commitment'); video-studio/PRESENTER-REEL.md ('an indicative method detail ... not a depth measured in the video')"
+      ]
+    },
+    {
+      "id": "dose",
+      "step": 2,
+      "stepLabel": "02 Dose and mix",
+      "spoken": "Second, dose and mix. SuperBase is dosed with water to suit your base, and mixed through the full depth.",
+      "subtitle": "Second, dose and mix. SuperBase is dosed with water to suit your base, and mixed through the full depth.",
+      "ttsText": "Second, dose and mix. Superbase is dosed with water to suit your base, and mixed through the full depth.",
+      "wordCount": 19,
+      "estSeconds": 8,
+      "claimIds": [
+        "C6"
+      ],
+      "onScreenCaption": "Illustrative diagram · not to scale",
+      "cues": [
+        {
+          "lines": [
+            "Second, dose and mix."
+          ],
+          "burnIn": false
+        },
+        {
+          "lines": [
+            "SuperBase is dosed with water",
+            "to suit your base,"
+          ],
+          "burnIn": true
+        },
+        {
+          "lines": [
+            "and mixed through",
+            "the full depth."
+          ],
+          "burnIn": true
+        }
+      ],
+      "editRules": [
+        "V02A 20.0-22.0 (1:1 window at x 10-20, hero 20.5 s) runs only under 'Second, dose and mix.'. That cue is not burned in, so only the '02 DOSE AND MIX' step counter shows over the spray.",
+        "Cut to the B2 DepthDiagram (Remotion Build Notes section 5.4; drawn, not AI) or to the presenter for 'SuperBase is dosed with water to suit your base, and mixed through the full depth.' Show the 'Illustrative diagram · not to scale' caption on diagram frames only.",
+        "No 'SuperBase', 'binder' or 'full depth' text on any spray, hose or IBC frame. Never use V02A 0.0-2.0 (IBCs), V01 10.5-13.5 (hose) or V02B in this segment."
+      ],
+      "sources": [
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.3 step 02 Dose and mix ('SuperBase is introduced with water at a binder-to-water ratio set against your own base material, and mixed through the full depth of the layer')",
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.3 intro ('the binder sits through the full depth of the layer rather than on top of it')",
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.6 'Dosage design for your actual base material, not a generic rate card.'",
+        "MaintainPavements/01 Jon's Plan/Claims Register.md C6 (video-safe 'Mixed through the full depth.')",
+        "MaintainPavements/01 Jon's Plan/Glossary.md 'SuperBase' ('dosed with water into an existing unbound yard base') and 'Dosage design / dosage rate'",
+        "Edit rule: MaintainPavements/04 Promo Video/Script & Storyboard.md 'Captions and supers' ('The V02A spray carries only the step label.'); MaintainPavements/02 Process/Step 2 - Dose and Mix.md 'Promo angle' (keep 'Mixed through the full depth.' off spray-only frames); MaintainPavements/04 Promo Video/Promo Video Brief.md section 11 (the full-depth message is carried by VO and a diagram, not by a caption on the spray)",
+        "Caption: MaintainPavements/04 Promo Video/AI Generation Prompts.md Guardrails 8; MaintainPavements/04 Promo Video/Remotion Build Notes.md section 5.4; MaintainPavements/02 Process/Process Overview.md section 9 gap 2 (mixing not filmed)"
+      ]
+    },
+    {
+      "id": "grade",
+      "step": 3,
+      "stepLabel": "03 Grade to level",
+      "spoken": "Third, grade to level. The treated base is trimmed to level and crossfall, to stop water ponding.",
+      "subtitle": "Third, grade to level. The treated base is trimmed to level and crossfall, to stop water ponding.",
+      "ttsText": "Third, grade to level. The treated base is trimmed to level and crossfall, to stop water ponding.",
+      "wordCount": 17,
+      "estSeconds": 7.2,
+      "claimIds": [],
+      "onScreenCaption": "Illustrative diagram · not to scale",
+      "cues": [
+        {
+          "lines": [
+            "Third, grade to level."
+          ],
+          "burnIn": false
+        },
+        {
+          "lines": [
+            "The treated base is trimmed",
+            "to level and crossfall,"
+          ],
+          "burnIn": true
+        },
+        {
+          "lines": [
+            "to stop water ponding."
+          ],
+          "burnIn": true
+        }
+      ],
+      "editRules": [
+        "Presenter and the '03 GRADE TO LEVEL' counter under 'Third, grade to level.'.",
+        "For the rest of the segment, use the Remotion GradeDiagram crossfall SVG (src/superbase/SuperBasePromo.tsx: water sheds off the fall and ponds on a flat pad), captioned 'Illustrative diagram · not to scale' on diagram frames only. Alternative: Jon's PDF-p5_img1 grader still with a slow push-in, captioned 'Grader pictured at another site' instead.",
+        "Never use grade-levelling*.mp4 (AI animation of a real site frame), V01, V03C/V04 or PDF-p3_img3 (a roller, not grading) in this segment."
+      ],
+      "sources": [
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.3 step 03 Grade to level ('The treated base is trimmed to design level and crossfall while it is still workable. Getting fall right at this stage is what stops water ponding later') and photo caption '03 -- Trimmed to level and crossfall'",
+        "MaintainPavements/02 Process/Step 3 - Grade to Level.md 'What Jon says'; MaintainPavements/04 Promo Video/Script & Storyboard.md supers ('Trimmed to level and crossfall.')",
+        "Traceability: 'to stop water ponding' is Jon's p.3 method rationale and matches MaintainPavements/01 Jon's Plan/Glossary.md 'Crossfall / fall' ('so water runs off instead of ponding'). It has no Claims Register entry, is not quantified or guaranteed, and is covered by the end-card disclaimer ('results vary')",
+        "MaintainPavements/02 Process/Process Overview.md section 2 (no grading footage in any clip)",
+        "Edit rule: MaintainPavements/04 Promo Video/AI Generation Prompts.md grade-levelling.mp4 row ('Don't use in the public cuts') and Guardrails 3; MaintainPavements/04 Promo Video/Script & Storyboard.md 'Alternates' (V03C under step 03 not recommended); MaintainPavements/02 Process/Step 3 - Grade to Level.md 'Promo angle' options 2-3"
+      ]
+    },
+    {
+      "id": "compact",
+      "step": 4,
+      "stepLabel": "04 Roll and compact",
+      "spoken": "Fourth, roll and compact. Wet rolling builds the bond. Density is checked against the dosage design.",
+      "subtitle": "Fourth, roll and compact. Wet rolling builds the bond. Density is checked against the dosage design.",
+      "ttsText": "Fourth, roll and compact. Wet rolling builds the bond. Density is checked against the dosage design.",
+      "wordCount": 16,
+      "estSeconds": 6.8,
+      "claimIds": [
+        "C8"
+      ],
+      "onScreenCaption": null,
+      "cues": [
+        {
+          "lines": [
+            "Fourth, roll and compact."
+          ],
+          "burnIn": false
+        },
+        {
+          "lines": [
+            "Wet rolling builds the bond."
+          ],
+          "burnIn": true,
+          "mayOverlapOnly": [
+            "V02B 0.5-3.5 (1:1 window x 250)",
+            "presenter"
+          ]
+        },
+        {
+          "lines": [
+            "Density is checked against",
+            "the dosage design."
+          ],
+          "burnIn": true,
+          "mayOverlapOnly": [
+            "presenter",
+            "plain brand panel"
+          ]
+        }
+      ],
+      "editRules": [
+        "Presenter and the '04 ROLL AND COMPACT' counter under 'Fourth, roll and compact.'. Optional: V03B 5.5-7.5 here instead, because this cue carries no burned-in text.",
+        "The cue 'Wet rolling builds the bond.' may overlap only V02B 0.5-3.5 in a 1:1 window at x 250 (the drum dominates and the hose worker is out of frame) or the presenter.",
+        "The cue 'Density is checked against the dosage design.' runs over the presenter or a plain brand panel, never over roller footage (no density test was filmed).",
+        "No V03A, V03B or V03C under any cue containing 'wet' or 'density'. Never use V04."
+      ],
+      "sources": [
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.4 step 04 Roll and compact ('Wet rolling to final compaction with a smooth drum roller. This is the stage that develops the bond ... Compaction is confirmed on site against the density nominated in the dosage design')",
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.4 headline ('Compaction builds the bond.')",
+        "MaintainPavements/01 Jon's Plan/Claims Register.md C8",
+        "MaintainPavements/01 Jon's Plan/Glossary.md 'Wet rolling', 'Compaction / density'",
+        "MaintainPavements/02 Process/Step 4 - Roll and Compact.md 'Gaps' (only V02B shows water; no density test) and 'Promo angle' (bond supers only where the roller dominates, not the hand spray)",
+        "MaintainPavements/04 Promo Video/Script & Storyboard.md (V02B 0.5-3.5, 1:1 window x 250, hose worker out of frame); MaintainPavements/04 Promo Video/Promo Video Brief.md section 11 (V03A-C never carry 'wet rolling')",
+        "MaintainPavements/02 Process/Process Overview.md section 8 (no density gauge in the footage); MaintainPavements/04 Promo Video/Shot Library.md (V03C = V04, never both); MaintainPavements/04 Promo Video/CapCut Edit Guide.md section 13 ('V04 appears nowhere')"
+      ]
+    },
+    {
+      "id": "cure",
+      "step": 5,
+      "stepLabel": "05 Cure and return to service",
+      "spoken": "Finally, cure and return to service. The surface cures to a bound hardstand.",
+      "subtitle": "Finally, cure and return to service. The surface cures to a bound hardstand.",
+      "ttsText": "Finally, cure and return to service. The surface cures to a bound hardstand.",
+      "wordCount": 13,
+      "estSeconds": 5.6,
+      "claimIds": [
+        "C2"
+      ],
+      "onScreenCaption": "Cure times vary by site",
+      "cues": [
+        {
+          "lines": [
+            "Finally, cure and",
+            "return to service."
+          ],
+          "burnIn": false
+        },
+        {
+          "lines": [
+            "The surface cures",
+            "to a bound hardstand."
+          ],
+          "burnIn": true
+        }
+      ],
+      "editRules": [
+        "Presenter and the '05 CURE AND RETURN TO SERVICE' counter under 'Finally, cure and return to service.'.",
+        "Hard cut, with no dissolve from rolling footage, to a slow S04B push-in from 100% to 112% (9:16 crop x 212-669, light grain) for 'The surface cures to a bound hardstand.', with the 'Cure times vary by site' caption.",
+        "S04B appears only here, after all process footage. Never use S04A (a different yard), PDF-p4_img2 (another site) or V04. Nothing implies traffic or elapsed time."
+      ],
+      "sources": [
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.4 step 05 ('The surface cures to a bound, hard-wearing hardstand')",
+        "MaintainPavements/01 Jon's Plan/Claims Register.md C2 (only its recommended qualifier 'cure times vary by site' is used, as the caption; 'within hours' is deliberately not claimed)",
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.6 disclaimer ('cure times ... vary with base material, climate and surface duty')",
+        "MaintainPavements/02 Process/Step 5 - Cure and Return to Service.md 'Gaps' (no video, no time evidence, no traffic on the pad) and 'Promo angle' (S04B as the payoff with 'cure times vary by site'; don't present S04A and S04B as the same yard)",
+        "MaintainPavements/04 Promo Video/Shot Library.md rank 1 (S04B after process footage; treatment and cure timing unconfirmed) and rank 17 (don't caption the tonal change as measured cure)",
+        "Caption style: MaintainPavements/04 Promo Video/CapCut Edit Guide.md section 7 'Body and footnotes' ('Cure times vary by site.')"
+      ]
+    },
+    {
+      "id": "cta",
+      "step": null,
+      "stepLabel": null,
+      "spoken": "Nominate one trial area. It’s lab tested on your material, before treatment and after cure. Contact Maintain Pavements.",
+      "subtitle": "Nominate one trial area. It’s lab tested on your material, before treatment and after cure. Contact Maintain Pavements.",
+      "ttsText": "Nominate one trial area. It's lab tested on your material, before treatment and after cure. Contact Maintain Pavements.",
+      "wordCount": 18,
+      "estSeconds": 7.2,
+      "claimIds": [
+        "C9"
+      ],
+      "onScreenCaption": null,
+      "cues": [
+        {
+          "lines": [
+            "Nominate one trial area."
+          ],
+          "burnIn": true
+        },
+        {
+          "lines": [
+            "It’s lab tested",
+            "on your material,"
+          ],
+          "burnIn": true
+        },
+        {
+          "lines": [
+            "before treatment and after cure."
+          ],
+          "burnIn": true
+        },
+        {
+          "lines": [
+            "Contact Maintain Pavements."
+          ],
+          "burnIn": true
+        }
+      ],
+      "editRules": [
+        "Presenter only, with the persistent AI label. A charcoal or design-system terrain plate may sit behind the presenter. No site, roller or test footage under any CTA cue.",
+        "The disclaimer strip starts at the first CTA word and runs through the end card, so it stays on screen for well over 6 s."
+      ],
+      "sources": [
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.6 CTA panel ('Nominate one area.') and 'How we start' 02 ('Trial area. Nominate one representative area and treat it.')",
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.4 ('The trial area is tested by laboratory CBR on your own yard material, before treatment and after cure'); p.6 'CBR testing before and after' and 'on your material, in your yard'",
+        "MaintainPavements/01 Jon's Plan/Claims Register.md C9 (a process promise, no number)",
+        "docs/Maintain Pavements - SuperBase Hardstand.pdf p.1 and p.6 (Maintain Pavements, maintain.com.au)",
+        "Edit rule: MaintainPavements/02 Process/Process Overview.md section 8 ('None of the loop is in the footage'); video-studio/PRESENTER-REEL.md ('There is no laboratory, sampling or test-result footage'; the Veo CTA was refused for a real-person name); MaintainPavements/04 Promo Video/Promo Video Brief.md section 6 (disclaimer strip from the ask shot through the end card)"
+      ]
+    }
+  ],
+  "totalWords": 113,
+  "totalEstSeconds": 47.3,
+  "endCard": {
+    "name": "Jon Pepper",
+    "phone": "0414 530 836",
+    "email": "jon@maintain.com.au",
+    "web": "maintain.com.au",
+    "disclaimerExact": "Figures indicative only. Rates, cure times and results vary with base material, climate and duty, and are confirmed by site trial and testing. Comparison vs engineered concrete hardstand.",
+    "disclaimerSource": "MaintainPavements/01 Jon's Plan/Claims Register.md, section 'Suggested end-card micro-disclaimer (≤ 2 lines)', line 40. Copied character for character, without the Markdown '> *...*' markers. It condenses the verbatim PDF p.6 disclaimer, and Promo Video Brief.md section 6 requires it verbatim on the end card for at least 6 s. The contact comes from docs/Maintain Pavements - SuperBase Hardstand.pdf p.1 (cover contact row) and p.6 (Contact block), and matches the Capability Statement - Rev A.md frontmatter. The headline comes from PDF p.1, and Promo Video Brief.md section 3 says it 'closes the end card in every cut'.",
+    "headline": [
+      "Stop patching the yard.",
+      "Bind it."
+    ],
+    "headlineStyle": "Two-tone Figtree ExtraBold: line 1 #99A1A7, line 2 white, on charcoal #26282B",
+    "logo": "design-system/assets/logo/wordmark-on-dark.svg (unstretched, not recoloured, clear space at least the cap height of 'Maintain')",
+    "aiDisclosure": "Includes an AI-generated presenter and illustrative diagrams.",
+    "holdSeconds": 6.5
+  },
+  "aiLabel": "{\"text\":\"AI-generated presenter · illustrative\",\"rule\":\"A persistent layer on every frame where presenter footage is visible, in all seven segments including the CTA. It is separate from onScreenCaption and drops only on frames where footage, a still or a diagram fully replaces the presenter.\",\"placement\":\"Top right, below y 220 and at least 72 px from the edge. Inter Medium 28 px, white on a charcoal box with a 1 px #52585C border (CapCut Edit Guide.md section 7). Evidence captions use their own slot above the subtitle block (subtitles at about y 1300-1450).\",\"reuse\":\"The existing AiLabel component in video-studio/src/superbase/SuperBasePromo.tsx\"}",
+  "productionGates": "[\"1. Render TTS for each segment from ttsText as a 48 kHz dry WAV per segment. Run local ASR on it and listen for SuperBase, scarified, crossfall, ponding, millimetres and dosage. Fix pronunciation in ttsText and re-render: TTS is cheap, lip-sync regeneration is not.\",\"2. Sum the measured speech. If it exceeds about 48.5 s, apply the trim order in changesFromExistingPlan before any Seedance call.\",\"3. Set each presenter clip length to the next whole second above the measured segment audio plus about 0.8 s (within 5-12 s). The edit trims to the cues, and cue timings come from the TTS word timestamps.\",\"4. Confirm the model's capability read-only (higgsfield model get seedance_2_5 / seedance_2_0), then get the user's explicit spend approval before any generation (AI Generation Prompts.md Guardrails 10).\",\"5. Jon signs off the script and the final cut before anything is published (Promo Video Brief.md QA table).\"]",
+  "pronunciationNotes": [
+    "SuperBase: 'SOO-per-base', one word with the stress on the first syllable (AI Generation Prompts.md, AI voiceover direction). ttsText spells it 'Superbase' so the engine treats it as one word; confirm by ear.",
+    "hardstand: 'HARD-stand'. crossfall: 'CROSS-fall'.",
+    "scarified: 'SKARR-ih-fyed', three syllables.",
+    "seventy-five millimetres: said in full, never 'mil' or 'mm'. Australian 'MILL-ih-mee-tuhz'. Allow about 0.5 s extra in segment 01.",
+    "ponding: 'PON-ding'. Check that it isn't heard as 'pounding'. dosage: 'DOH-sij'.",
+    "'lab' replaces 'laboratory', which removes the American 'LAB-ruh-tor-ee' risk. ttsText uses a straight apostrophe in \"It's\"; the subtitle keeps the typographic ’.",
+    "Maintain Pavements: keep 'Pavements' plural, and say it as the company name after 'Contact', with a falling finish. Jon Pepper's name is no longer spoken; it appears only on the end card.",
+    "'Finally' replaces 'Fifth' because 'Fifth, cure' is a hard consonant cluster for TTS.",
+    "Leave a pause of about 0.4 s after each step label ('First, prepare.' and so on) so the step counter can land. Statements fall at the end, with no upward inflection or salesy lift.",
+    "Voice: Australian male, about 35-55, general Australian accent (neither broad nor cultivated); calm, confident and dry; about 2.5 words/s, a little slower through the method (AI Generation Prompts.md). The seed presenter must be a man of matching age so the voice and face agree. Use a generic, commercially licensed synthetic voice; never clone or imitate Jon Pepper or any real person.",
+    "Word counts treat hyphenated words ('seventy-five') and contractions (\"It’s\") as one word."
+  ],
+  "changesFromExistingPlan": [
+    "VS PLAN.JSON, structure: plan.json chained Veo 3.1 Fast extensions at 720p. This script is seven independent lip-synced presenter clips, one per segment, each sized from measured TTS, so any one line can change without regenerating a chain.",
+    "VS PLAN.JSON, length: 108 words become 112. At the documented 2.5 words/s that is 44.8 s. Add 5 step-label pauses at 0.4 s and 0.5 s for 'seventy-five millimetres' and speech is 47.3 s. Add 7 x 0.4 s handles and a 6.5 s end card and the Reel is 56.6 s, which leaves about 3.4 s inside the 1800-frame master for a logo open of 1.5 s or less, plus slack. At a slower 2.3 words/s it would run about 60.5 s. If measured speech exceeds about 48.5 s, trim in this order: handles to 0.25 s, end card to 6.0 s (the disclaimer strip already starts at the CTA), then drop 'treated' in 03. estSeconds use the documented 2.5 words/s plus pauses, not the schema's 2.6.",
+    "VS PLAN.JSON, intro: 'Maintain Pavements introduces SuperBase: a five-step process for turning suitable existing yard base into bound hardstand.' becomes 'SuperBase turns the base you already have into a bound hardstand, in five steps.' This is Jon's p.1-p.3 wording and C4's video-safe line, which needs no on-screen qualifier as long as it never says 'always'. The brand is spoken in the CTA and shown on the logo plate.",
+    "VS PLAN.JSON, 01: the imperative 'Remove loose material and scarify' becomes the descriptive 'Loose material is cleared, and the base is scarified to about seventy-five millimetres'. 'About' is kept, and 'cleared' runs over the presenter, not V01.",
+    "VS PLAN.JSON, 02: 'Add SuperBase and water at the designed ratio, mixing through the full depth' becomes 'SuperBase is dosed with water to suit your base, and mixed through the full depth'. This restores p.3's ratio set against your own base, and an edit rule keeps these words off the V02A spray.",
+    "VS PLAN.JSON, 03: 'Trim the workable base to the designed level and crossfall for drainage' becomes 'The treated base is trimmed to level and crossfall, to stop water ponding'. This uses Jon's p.3 photo caption wording plus his stated reason.",
+    "VS PLAN.JSON, 04: 'Use wet rolling, then check density against the dosage design' becomes 'Wet rolling builds the bond. Density is checked against the dosage design.' This adds C8, and the two sentences give a clean cut point between V02B and the presenter.",
+    "VS PLAN.JSON, 05: 'Fifth ... Timing varies with base material, climate and duty' becomes 'Finally ... The surface cures to a bound hardstand.', and 'Cure times vary by site' moves to the on-screen caption. The end-card disclaimer also covers cure times. 'Within hours' is still not claimed.",
+    "VS PLAN.JSON, CTA: 'Start with a trial area. Laboratory testing compares ... Contact Jon Pepper.' (refused by Veo for a real-person name) becomes 'Nominate one trial area. It's lab tested on your material, before treatment and after cure. Contact Maintain Pavements.' Jon is named only on the end card.",
+    "VS PLAN.JSON, unchanged: Jon's five step names; the 'about' qualifier on 75 mm; and none of 'within hours', a CBR number, 60-70% or any saving, 'guaranteed', Eloise Copper Project, 'since 2017', 'we' or 'this site'.",
+    "VS OTHER SESSION'S EDIT (PRESENTER-REEL.md): this Reel deliberately uses no AI levelling clip in 03 and no V04 anywhere, because the docs forbid both.",
+    "ACCEPTED (claims, footage-honesty and delivery all raised it) AI label on intro only: top-level aiLabel is now a persistent 'AI-generated presenter · illustrative' layer on every presenter frame in all seven segments, including the CTA, separate from onScreenCaption. The end card adds 'Includes an AI-generated presenter and illustrative diagrams.' This follows Guardrails 2 and PRESENTER-REEL.md. The user's explicit request for an on-screen narrator overrides Guardrails 3 ('no AI in method beats'); the mitigations are an office-only presenter who is never shown doing site work, the persistent label, and only real footage, stills or drawn diagrams as method visuals.",
+    "ACCEPTED (claims and footage-honesty) 'binder' over V02A: I confirmed Glossary defines SuperBase as the binder and Storyboard says 'The V02A spray carries only the step label.' V02A now runs only under the non-burned-in 'Second, dose and mix.' cue, and the rest goes to the DepthDiagram or presenter. The draft's note that the word 'binder' satisfied the caption rule is withdrawn.",
+    "REJECTED (claims) soften intro to 'can turn': C4's approved video-safe wording is 'Uses the base you already have.', with no on-screen qualifier needed provided it never says 'always', and PDF p.2 states it unqualified. ACCEPTED its second point: the draft's claim that the micro-disclaimer carries a suitability hedge is withdrawn, because it does not.",
+    "ACCEPTED (claims, footage-honesty and delivery) 01 caption 'Depth confirmed by site trial' read as a finding about this site: it becomes the forward-looking qualifier 'Indicative depth · varies by site', matching PDF p.6 ('confirmed ... before any commitment') and PRESENTER-REEL.md.",
+    "PARTLY ACCEPTED (claims) 05 stills: I added edit rules (S04B only, placed after all process footage; S04A, PDF-p4_img2 and V04 excluded). I did not use 'Finished pad · cure time not shown' because there is one caption slot, and the documented qualifier 'Cure times vary by site' (C2, Step 5 Promo angle, CapCut section 7) goes there. S04B is the docs' recommended step-05 image.",
+    "ACCEPTED (claims) V02B framing unspecified: the cue 'Wet rolling builds the bond.' may overlap only V02B 0.5-3.5 in the 1:1 window at x 250, where the drum dominates and the hose worker is out of frame (Step 4 Promo angle; Storyboard).",
+    "PARTLY ACCEPTED (claims) 03 'to stop water ponding' untagged: sources now trace it to p.3 and the Glossary 'Crossfall / fall' definition, covered by the end-card disclaimer. I did not soften it: it is Jon's verbatim method rationale, not a quantified or guaranteed outcome, and the Claims Register has no ID to assign.",
+    "ACCEPTED (claims) p.5 source misattributed: the p.5 headline is about dosing by duty, so it is removed. 'Dosed to suit your base' now cites only p.3 and p.6 'Dosage design for your actual base material'.",
+    "ACCEPTED (footage-honesty) 01 'cleared' over V01 7-9.5: the presenter holds 'First, prepare. Loose material is cleared,'. V01 0.0-4.5 runs only under 'scarified to about 75 mm', which Step 1 Promo angle allows as a description of the step. V01 7.0-10.0 and 10.5-14.5 are excluded (Shot Library rank 23; CapCut section 13).",
+    "ACCEPTED (footage-honesty) 03 unsafe visuals: the rule is the GradeDiagram (or the PDF-p5_img1 grader still captioned 'Grader pictured at another site'). Never grade-levelling*.mp4 (AI Generation Prompts: 'Don't use in the public cuts'), V01, V03C/V04 or PDF-p3_img3 (Storyboard 'Alternates'). The diagram caption shows on diagram frames only.",
+    "ACCEPTED (footage-honesty) 04 density clause over roller footage, and V04: the density cue runs over the presenter or a plain panel only (Process Overview section 8: no gauge filmed). No V03A-C under any cue containing 'wet' or 'density', and 'Never V04' is recorded (Shot Library; CapCut section 13).",
+    "ACCEPTED (footage-honesty) 05 dissolve and S04A: the rule is a hard cut to the S04B push-in, with no V03C-to-S04B dissolve under 'cures to', so the tonal change isn't captioned as cure (Shot Library rank 17). S04A stays out of this Reel.",
+    "ACCEPTED (footage-honesty) CTA over roller footage: the CTA stays on the presenter plus a brand plate, with no site or test footage under 'lab tested ... before treatment and after cure' (Process Overview section 8; PRESENTER-REEL.md).",
+    "ACCEPTED (footage-honesty) intro result shot: the intro is the presenter plus the logo plate only. No S04B, S04A, PDF-p1_img1 or PDF-p4_img2 before step 05 (Shot Library ranks 1 and 37).",
+    "ACCEPTED (delivery) optimistic timing: I confirmed AI Generation Prompts sets 2.5 words/s and the Brief requires exactly 1800 frames. The Reel is re-budgeted at 2.5 words/s plus pauses and trimmed to 112 words, with a measured-TTS gate and a trim order (see the length line above). I cut the intro brand clause (-3), 'own' (-1), 'design' in 03 (-1, Jon's caption wording), the spoken cure hedge (-4) and 'and' in 04 (-1). The other session's 42.04 s figure measured Veo's own padding inside fixed-length extensions, not TTS pace.",
+    "ACCEPTED (delivery) subtitle blocks too long: every segment now has cues[] pre-broken at clause boundaries, at most two lines of 32 characters or fewer (CapCut section 7). Timings come from TTS word timestamps. I verified this with a script: the longest line is 29 characters and all cue text joins back to the subtitle exactly.",
+    "ACCEPTED WITH CHANGE (delivery) CTA grammar: I used the reviewer's 'Nominate one trial area. It's lab tested on your material, before treatment and after cure.' ('lab' removes the pronunciation risk; wording from PDF p.4). The line ends 'Contact Maintain Pavements.' rather than 'Contact Jon Pepper.': the brand is then spoken once after the intro clause was cut, the real-person name Veo refused is gone, and the AI presenter can't be read as Jon. Jon's name and number lead the end card, so no fallback line is needed.",
+    "PARTLY ACCEPTED (delivery) 05 repetition: the spoken 'Cure times vary by site' moves to onScreenCaption. I did not add 'hard-wearing': over S04B, whose treatment is unconfirmed, it would put a performance adjective on a pictured pad, and 'hard-wearing hardstand' is clumsy for TTS. The line is 13 words.",
+    "ACCEPTED (delivery) intro garden path and missing article: I used 'a bound hardstand' (Jon's p.1 and p.2 wording). The commas became moot once the 'from Maintain Pavements' clause was dropped, which was the reviewer's own fallback.",
+    "ACCEPTED WITH VARIANT (delivery) 02 bare 'Binder' and choppy commas: the line is 'SuperBase is dosed with water to suit your base, and mixed through the full depth.', with one phrase break. The product name returns because the V02A rule now keeps every word except the non-burned-in step label off spray frames.",
+    "ACCEPTED (delivery) no TTS pronunciation control: each segment has a ttsText field ('Superbase', straight apostrophe) separate from subtitle. There is no SSML because the TTS engine isn't chosen yet (the installed higgsfield-generate skill excludes TTS). ASR, a listening check and sign-off come before any lip-sync call (productionGates 1).",
+    "ACCEPTED (delivery) voice unspecified: the voice is now an Australian male, about 35-55, general accent, 2.5 words/s, delivered as 48 kHz dry WAV per segment (AI Generation Prompts.md), and the seed presenter must match it.",
+    "ACCEPTED (delivery) step label doubled by the counter: step-label cues are burnIn false while the counter shows (Storyboard 'text never doubles'; CapCut section 8.3). This is the one allowed exception to word-for-word burned-in captions. The subtitle field and SRT sidecar still carry every word.",
+    "ACCEPTED AS A DOCUMENTED CONVENTION (delivery) '75 mm' vs spoken: subtitles use numerals and unit symbols ('about 75 mm'), per the output spec and C3's video-safe '75 mm'. The words are said in full, 'about' stays in both, and this is the only intended difference between spoken and subtitle.",
+    "ACCEPTED (delivery) 'wet rolling' limit only in prose: the compact cues now carry mayOverlapOnly lists (V02B 0.5-3.5 at x 250 or presenter; presenter or plain panel for density). A render check in this Reel's own job should assert them.",
+    "ACCEPTED (delivery) end card missing headline and logo: endCard adds the two-tone 'Stop patching the yard.' / 'Bind it.' (Brief section 3), design-system/assets/logo/wordmark-on-dark.svg (it exists), the AI disclosure and a 6.5 s hold. The contact and disclaimer are unchanged and verified character for character.",
+    "ACCEPTED AS A PRE-GENERATION CHECK (delivery) Seedance 2.5 720p cap: this is confirmed in the installed higgsfield-generate SKILL.md and model-catalog.md, and the skill contradicts itself on whether 2.5 or only 2.0 takes an audio reference for lip-sync. Run a read-only 'higgsfield model get' first. If 2.5 can't lip-sync at 1080p, use Seedance 2.0 at 1080p with the segment TTS as the audio reference, or frame the presenter as an inset. The script is unaffected.",
+    "PROCESS: nothing was written to the repo, no generation or paid call was made, and no .env file was read. All checks were read-only (PDF text via pdftotext; vault notes; plan.json; PRESENTER-REEL.md; the Higgsfield skill). Word counts, subtitle-to-spoken equivalence and cue lengths were verified with an inline script.",
+    "PRODUCTION (2026-09-25): intro reads \"the yard base you already have\" (PDF p.1 wording) to stop \"base\" being heard as \"bass\"."
+  ]
+}

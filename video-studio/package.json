@@ -43,7 +43,12 @@
     "music:status": "node scripts/generate-superbase-music.mjs --status",
     "preview:complete": "node scripts/render-complete.mjs --stills",
     "render:complete": "node scripts/render-complete.mjs",
-    "verify:complete": "node scripts/verify-complete.mjs"
+    "verify:complete": "node scripts/verify-complete.mjs",
+    "presenter:assets": "node scripts/prepare-presenter-assets.mjs",
+    "presenter:status": "node scripts/generate-presenter.mjs --status",
+    "preview:presenter": "node scripts/render-presenter.mjs --stills",
+    "render:presenter": "node scripts/render-presenter.mjs",
+    "verify:presenter": "node scripts/verify-presenter.mjs"
   },
   "sideEffects": [
     "*.css"

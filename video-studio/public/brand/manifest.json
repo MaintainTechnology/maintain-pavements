@@ -1,0 +1,31 @@
+{
+  "preparedAt": "2026-09-25T06:49:18.226Z",
+  "assets": [
+    {
+      "source": "design-system/assets/logo/wordmark-on-dark.svg",
+      "target": "public/brand/wordmark-on-dark.svg",
+      "sha256": "5a5eaa4b8d735396273f7fa6a6c2531fd53a9dfad1ee0d3143e6185dd04f0b59"
+    },
+    {
+      "source": "design-system/assets/logo/wordmark-on-light.svg",
+      "target": "public/brand/wordmark-on-light.svg",
+      "sha256": "030f20cc929070fbcc6ad4013185899ad2356b28c9c6791e270688e89eaa43d4"
+    },
+    {
+      "source": "design-system/assets/logo/mark-on-dark.svg",
+      "target": "public/brand/mark-on-dark.svg",
+      "sha256": "bf689669aa1d70b7ebb22390351bbe53f84a65e1143c1332df839e98610e4fcf"
+    },
+    {
+      "source": "design-system/graphics/web/cover.jpg",
+      "target": "public/brand/terrain-cover.jpg",
+      "sha256": "c56cfa5e94c3ba6a963e78f4f19795b3b9ae6beb644dd4de11a5faa214e22062"
+    },
+    {
+      "source": "design-system/tokens.json",
+      "target": "public/brand/tokens.json",
+      "sha256": "7f2ee6ee3c62ccd4929fd456f881895a694fa87f2ed361e227602afee41101b1"
+    }
+  ],
+  "rule": "Exact copies of user-supplied canonical brand assets. No logo reconstruction or recolouring."
+}

@@ -1,0 +1,34 @@
+/** Deterministic native-speech/music mix matching the Remotion volume curves. */
+import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+import { readFileSync, renameSync, writeFileSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const studio = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const read = (file) => JSON.parse(readFileSync(resolve(studio, file), 'utf8'));
+const hash = (file) => createHash('sha256').update(readFileSync(file)).digest('hex');
+const coverage = read('out/presenter-render-coverage.json');
+const { props, composition } = coverage;
+const selection = read('public/ai/presenter/selection.json');
+const masters = read('public/audio/presenter-audio.manifest.json');
+const narration = resolve(studio, 'public', props.audio.narrationSrc);
+const music = resolve(studio, 'public', props.audio.musicSrc);
+if (coverage.mode !== 'final' || props.captionsStatus !== 'verified') throw new Error('Reviewed final composition is required.');
+if (masters.narration.sourceSha256 !== selection.sourceSha256 || hash(narration) !== masters.narration.sha256 || hash(music) !== masters.music.sha256) throw new Error('Audio master provenance mismatch.');
+const totalSeconds = composition.durationInFrames / composition.fps;
+if (totalSeconds !== selection.totalSeconds || props.narrationSeconds !== selection.narrationSeconds) throw new Error('Selected audio timing mismatch.');
+const fadeIn = 0.8;
+const fadeOutStart = totalSeconds - 2.5;
+const fadeOutEnd = totalSeconds - 1 / composition.fps;
+const liftStart = props.narrationSeconds - 1 / composition.fps;
+const liftEnd = props.narrationSeconds + 1.3;
+const lift = `(${props.audio.musicUnderVoice}+(${props.audio.musicEndCard - props.audio.musicUnderVoice})*clip((t-${liftStart})/${liftEnd - liftStart},0,1))`;
+const envelope = `${lift}*clip(t/${fadeIn},0,1)*clip((${fadeOutEnd}-t)/${fadeOutEnd - fadeOutStart},0,1)`;
+const filter = `[0:a]atrim=duration=${props.narrationSeconds},asetpts=PTS-STARTPTS,volume=${props.audio.narrationVolume},apad=whole_dur=${totalSeconds}[voice];[1:a]aeval='val(0)*${envelope}|val(1)*${envelope}':channel_layout=stereo[bed];[voice][bed]amix=inputs=2:duration=longest:normalize=0,atrim=duration=${totalSeconds},asetpts=PTS-STARTPTS[mix]`;
+const output = resolve(studio, 'public/audio/presenter-mix.wav');
+execFileSync(process.env.FFMPEG_PATH || 'ffmpeg', ['-hide_banner', '-loglevel', 'error', '-i', narration, '-i', music, '-filter_complex', filter, '-map', '[mix]', '-ar', '48000', '-ac', '2', '-c:a', 'pcm_s16le', '-y', output + '.tmp.wav'], { windowsHide: true, stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 4 * 1024 * 1024 });
+renameSync(output + '.tmp.wav', output);
+const report = { preparedAt: new Date().toISOString(), output: 'audio/presenter-mix.wav', sha256: hash(output), seconds: totalSeconds, sampleRate: 48000, channels: 2, sourceSha256: selection.sourceSha256, narration: { file: props.audio.narrationSrc, sha256: hash(narration), volume: props.audio.narrationVolume, endSeconds: props.narrationSeconds }, music: { file: props.audio.musicSrc, sha256: hash(music), underVoice: props.audio.musicUnderVoice, endCard: props.audio.musicEndCard, fadeInSeconds: fadeIn, liftStart, liftEnd, fadeOutStart, fadeOutEnd }, note: 'Same continuous linear volume envelope as the Remotion component, evaluated per audio sample. Native speech timing unchanged; original masters retained.' };
+writeFileSync(resolve(studio, 'public/audio/presenter-mix.manifest.json'), JSON.stringify(report, null, 2) + '\n');
+console.log(JSON.stringify(report, null, 2));

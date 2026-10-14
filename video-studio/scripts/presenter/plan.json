@@ -1,0 +1,30 @@
+{
+  "jobId": "maintain-pavements-presenter-reel-20260925",
+  "model": "veo-3.1-fast-generate-preview",
+  "resolution": "720p",
+  "aspectRatio": "9:16",
+  "seed": "public/ai/presenter/seeds/office-hardhat.png",
+  "voiceDirection": "One consistent generic adult male corporate narrator with a calm natural Australian English accent, warm mid-low register, clear consonants and moderate conversational pace. This is a synthetic narrator, not a clone of any person's real voice.",
+  "rateUSDPerGeneratedSecond": 0.1,
+  "maximumGenerationRequests": 8,
+  "plannedRequests": 7,
+  "expectedNewSeconds": 50,
+  "eightSecondsPerRequestEstimateUSD": 5.6,
+  "conservativeCumulativeOutputEstimateUSD": 20.3,
+  "budgetNote": "Provider lists per-generated-second pricing but does not explicitly document extension billing granularity. Log both new-duration and cumulative-output estimates. Actual billing remains unknown. Reserve every request before POST; do not retry an uncertain POST.",
+  "segments": [
+    {"id":"intro","step":null,"expectedFromSeconds":0,"expectedToSeconds":8,"script":"Maintain Pavements introduces SuperBase: a five-step process for turning suitable existing yard base into bound hardstand."},
+    {"id":"prepare","step":1,"expectedFromSeconds":8,"expectedToSeconds":15,"script":"First, prepare. Remove loose material and scarify the base to about seventy-five millimetres."},
+    {"id":"dose","step":2,"expectedFromSeconds":15,"expectedToSeconds":22,"script":"Second, dose and mix. Add SuperBase and water at the designed ratio, mixing through the full depth."},
+    {"id":"grade","step":3,"expectedFromSeconds":22,"expectedToSeconds":29,"script":"Third, grade to level. Trim the workable base to the designed level and crossfall for drainage."},
+    {"id":"compact","step":4,"expectedFromSeconds":29,"expectedToSeconds":36,"script":"Fourth, roll and compact. Use wet rolling, then check density against the dosage design."},
+    {"id":"cure","step":5,"expectedFromSeconds":36,"expectedToSeconds":43,"script":"Fifth, cure and return to service. Timing varies with base material, climate and duty."},
+    {"id":"cta","step":null,"expectedFromSeconds":43,"expectedToSeconds":50,"script":"Start with a trial area. Laboratory testing compares your material before treatment and after cure. Contact Jon Pepper."}
+  ],
+  "sources": [
+    "MaintainPavements/01 Jon's Plan/SuperBase Capability Statement - Rev A.md",
+    "MaintainPavements/02 Process/Process Overview.md",
+    "MaintainPavements/01 Jon's Plan/Claims Register.md",
+    "MaintainPavements/04 Promo Video/Shot Library.md"
+  ]
+}

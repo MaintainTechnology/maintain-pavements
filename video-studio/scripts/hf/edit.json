@@ -1,0 +1,308 @@
+{
+  "$note": "Edit decisions for the HfReel. Inserts are anchored to cue indexes in scripts/hf/script.json; frames are resolved from Whisper word timings on each Seedance clip. Rules follow scripts/hf/script.json editRules and the reviewed shot map: V01 only 0.0-3.0 s (face from 3.0 s); V02A only under the spoken step label (contents unconfirmed, never captioned as SuperBase); no grading footage exists, so step 3 uses a drawn diagram; V02B only under 'Wet rolling builds the bond.'; density and lab-testing lines stay on the presenter; S04B only after all process footage; V04 and all AI site footage excluded.",
+  "titleFrames": 60,
+  "endFrames": 180,
+  "title": {
+    "setup": "The base you already have,",
+    "payoff": "turned into standing ground.",
+    "caption": "SuperBase · five steps"
+  },
+  "music": {
+    "src": "audio/hf-reel/music/take-a.m4a",
+    "bedVolume": 0.13,
+    "openVolume": 0.42,
+    "ctaBedVolume": 0.08
+  },
+  "segments": {
+    "intro": {
+      "clip": "01-intro",
+      "inserts": [],
+      "captionCue": null,
+      "framing": {
+        "scale": 1.03,
+        "dy": 19,
+        "$note": "regenerated intro renders ~3% wider and 24 px higher than 02-prepare; matched for the dissolve"
+      }
+    },
+    "prepare": {
+      "clip": "02-prepare",
+      "inserts": [
+        {
+          "kind": "portrait",
+          "src": "footage/V01.mp4",
+          "trimStartSeconds": 0,
+          "fromCue": 2,
+          "toCue": "end",
+          "label": "Site footage",
+          "fitSourceSeconds": 2.95,
+          "$cropNote": "V01 0.0-2.95 s only (a worker face appears from 3.0 s), slowed to at least 70%; loader asset plate and fleet sticker blurred on keyed tracks",
+          "masks": [
+            {
+              "keys": [
+                {
+                  "t": 0,
+                  "x": 343,
+                  "y": 741,
+                  "w": 74,
+                  "h": 43
+                },
+                {
+                  "t": 0.5,
+                  "x": 289,
+                  "y": 750,
+                  "w": 71,
+                  "h": 42
+                },
+                {
+                  "t": 1,
+                  "x": 248,
+                  "y": 763,
+                  "w": 69,
+                  "h": 41
+                },
+                {
+                  "t": 1.5,
+                  "x": 234,
+                  "y": 774,
+                  "w": 68,
+                  "h": 40
+                },
+                {
+                  "t": 2,
+                  "x": 230,
+                  "y": 785,
+                  "w": 67,
+                  "h": 40
+                },
+                {
+                  "t": 2.5,
+                  "x": 244,
+                  "y": 790,
+                  "w": 60,
+                  "h": 39
+                },
+                {
+                  "t": 2.95,
+                  "x": 256,
+                  "y": 797,
+                  "w": 62,
+                  "h": 40
+                }
+              ],
+              "blur": 9
+            },
+            {
+              "keys": [
+                {
+                  "t": 0,
+                  "x": 246,
+                  "y": 776,
+                  "w": 54,
+                  "h": 42
+                },
+                {
+                  "t": 0.5,
+                  "x": 192,
+                  "y": 787,
+                  "w": 54,
+                  "h": 40
+                },
+                {
+                  "t": 1,
+                  "x": 160,
+                  "y": 796,
+                  "w": 50,
+                  "h": 40
+                },
+                {
+                  "t": 1.5,
+                  "x": 152,
+                  "y": 804,
+                  "w": 50,
+                  "h": 40
+                },
+                {
+                  "t": 2,
+                  "x": 156,
+                  "y": 813,
+                  "w": 48,
+                  "h": 40
+                },
+                {
+                  "t": 2.5,
+                  "x": 173,
+                  "y": 821,
+                  "w": 46,
+                  "h": 39
+                },
+                {
+                  "t": 2.95,
+                  "x": 189,
+                  "y": 828,
+                  "w": 46,
+                  "h": 38
+                }
+              ],
+              "blur": 9
+            }
+          ]
+        }
+      ],
+      "captionCue": 2
+    },
+    "dose": {
+      "clip": "03-dose",
+      "inserts": [
+        {
+          "kind": "square",
+          "src": "footage/V02A.mp4",
+          "trimStartSeconds": 20,
+          "cropX": 11,
+          "fromCue": 0,
+          "toCue": 0,
+          "fromStart": true,
+          "maxSeconds": 2,
+          "label": "Site footage",
+          "masks": [
+            {
+              "keys": [
+                {
+                  "t": 0,
+                  "x": 390,
+                  "y": 810,
+                  "w": 94,
+                  "h": 76
+                },
+                {
+                  "t": 2,
+                  "x": 392,
+                  "y": 830,
+                  "w": 68,
+                  "h": 66
+                }
+              ],
+              "blur": 12
+            },
+            {
+              "keys": [
+                {
+                  "t": 0,
+                  "x": 80,
+                  "y": 822,
+                  "w": 30,
+                  "h": 38
+                },
+                {
+                  "t": 0.7,
+                  "x": 128,
+                  "y": 831,
+                  "w": 30,
+                  "h": 32
+                },
+                {
+                  "t": 1.4,
+                  "x": 173,
+                  "y": 834,
+                  "w": 30,
+                  "h": 34
+                },
+                {
+                  "t": 2,
+                  "x": 209,
+                  "y": 834,
+                  "w": 30,
+                  "h": 34
+                }
+              ],
+              "blur": 8
+            }
+          ],
+          "$cropNote": "740 tank decal and the cab-top fleet plate blurred on keyed tracks (normalised-source px, V02A 20.0-22.0 s) pending owner clearance"
+        },
+        {
+          "kind": "diagram",
+          "diagram": "depth",
+          "fromCue": 2,
+          "toCue": "end",
+          "label": "Diagram · illustrative"
+        }
+      ],
+      "captionCue": null
+    },
+    "grade": {
+      "clip": "04-grade",
+      "inserts": [
+        {
+          "kind": "diagram",
+          "diagram": "grade",
+          "fromCue": 1,
+          "toCue": "end",
+          "label": "Diagram · illustrative"
+        }
+      ],
+      "captionCue": null,
+      "tightenPauses": true
+    },
+    "compact": {
+      "clip": "05-compact",
+      "inserts": [
+        {
+          "kind": "square",
+          "src": "footage/V02B.mp4",
+          "trimStartSeconds": 0.5,
+          "cropX": 100,
+          "fromCue": 1,
+          "toCue": 1,
+          "maxSeconds": 3,
+          "label": "Site footage · wet rolling",
+          "$cropNote": "visible source x 100-672: whole drum and water film; fleet no. 5335 (x 35-95) and the hose worker (x 860+) out of frame"
+        }
+      ],
+      "captionCue": null,
+      "tightenPauses": true
+    },
+    "cure": {
+      "clip": "06-cure",
+      "inserts": [
+        {
+          "kind": "still",
+          "src": "footage/S04B.jpeg",
+          "crop": {
+            "x": 212,
+            "y": 0,
+            "w": 457,
+            "h": 813
+          },
+          "sourceSize": {
+            "w": 895,
+            "h": 813
+          },
+          "fromCue": 1,
+          "toCue": "end",
+          "label": "Site photo"
+        }
+      ],
+      "captionCue": 1,
+      "framing": {
+        "scale": 1.09,
+        "dy": 68,
+        "$note": "matched to the end of 05-compact while keeping the clip top at or above the masthead edge (y 368)"
+      }
+    },
+    "cta": {
+      "clip": "07-cta",
+      "inserts": [],
+      "captionCue": null,
+      "framing": {
+        "scale": 1,
+        "dy": 60,
+        "$note": "hat crown (clip y ~165) clears the CTA disclaimer strip (ends ~y 506)"
+      }
+    }
+  },
+  "endCard": {
+    "setup": "Stop patching the yard.",
+    "payoff": "Bind it.",
+    "aiDisclosure": "Includes an AI-generated presenter and illustrative diagrams."
+  }
+}

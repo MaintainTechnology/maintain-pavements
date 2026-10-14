@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Maintain Pavements — Design Tokens (single source of truth)
+   v1 — STANDING GROUND. One colour: CHARCOAL #26282B, the colour of the
+   brand mark's ground (user-supplied) and the ink of Jon's capability
+   statement. The system is monochrome by rule: charcoal, white, paper and
+   the greys of the page. There is no accent colour. Signal comes from the
+   inversion itself: white on charcoal, charcoal on paper, never grey on grey.
+   The logo is charcoal on light surfaces and white on charcoal (charcoal on
+   the dark grounds reads 1.1:1, never place it there).
+   Corners are sharp, rules are hairlines, numbers are the heroes.
+   Spec + usage rules: ../DESIGN.md      Living reference: ./index.html
+   ========================================================================== */
+:root {
+  /* ---- Brand anchor ------------------------------------------------------------ */
+  --mp-charcoal:        #26282B; /* THE BRAND · logo on light · signature ground · ink on light */
+
+  /* ---- Dark grounds -------------------------------------------------------------- */
+  --mp-panel:           #2F3233; /* raised charcoal panel (Jon's p.6 call-out) · white 12.9:1 */
+  --mp-deep:            #1C1E20; /* recessed well, footers · white 16.7:1 */
+  --mp-black:           #131416; /* deepest base · scrims and shadow tint */
+
+  /* ---- Greys --------------------------------------------------------------------- */
+  --mp-grey:            #99A1A7; /* mid grey · two-tone setup ON DARK ONLY · 5.6:1 on charcoal, 2.6:1 on white */
+  --mp-grey-light:      #C4CAD0; /* icons and detail on dark · 8.9:1 on charcoal */
+  --mp-slate:           #5C6670; /* muted text on light · two-tone setup on light · 5.9:1 on white */
+
+  /* ---- Light grounds ------------------------------------------------------------- */
+  --mp-paper:           #F5F4F1; /* warm off-white page · charcoal 13.4:1 */
+  --mp-row:             #F1F1F2; /* table row tint · charcoal 13.1:1 */
+  --mp-tint:            #E4E6E8; /* chip and highlight tint on light · charcoal 11.8:1 */
+  --mp-white:           #FFFFFF;
+
+  /* ---- Text on dark -------------------------------------------------------------- */
+  --mp-on-dark:         #FFFFFF;
+  --mp-on-dark-muted:   rgba(255,255,255,0.72); /* 8.4:1 on charcoal */
+  --mp-on-dark-faint:   rgba(255,255,255,0.55); /* 5.5:1 on charcoal · captions and metadata only */
+
+  /* ---- Semantic roles (build against these, not raw brand vars) ------------------ */
+  --color-bg:                  var(--mp-charcoal);
+  --color-bg-raised:           var(--mp-panel);
+  --color-bg-deep:             var(--mp-deep);
+  --color-surface:             var(--mp-white);
+  --color-surface-soft:        var(--mp-paper);
+  --color-text:                var(--mp-charcoal);  /* ink on light IS the brand colour */
+  --color-text-muted:          var(--mp-slate);
+  --color-primary:             var(--mp-white);     /* the one action on a dark ground */
+  --color-primary-ink:         var(--mp-charcoal);
+  --color-primary-on-light:    var(--mp-charcoal);  /* the one action on a light ground */
+  --color-primary-on-light-ink:var(--mp-white);
+  --color-highlight:           var(--mp-white);     /* big numbers, lane lines, payoffs on dark */
+  --color-highlight-ink:       var(--mp-charcoal);
+  --color-setup:               var(--mp-grey);      /* two-tone setup line on dark */
+  --color-setup-on-light:      var(--mp-slate);     /* two-tone setup line on light */
+  --color-line:                rgba(255,255,255,0.12); /* hairline on dark */
+  --color-line-strong:         rgba(255,255,255,0.24); /* hover / active hairline on dark */
+  --color-line-light:          rgba(38,40,43,0.14);    /* hairline on light */
+  --color-focus:               var(--mp-white);     /* focus ring on dark; charcoal on light */
+  --color-focus-on-light:      var(--mp-charcoal);
+
+  /* ---- Status severity ------------------------------------------------------------- */
+  /* Deliberately NOT brand: functional traffic-light semantics for condition
+     and defect ratings. The only hues in the system, and always paired with a
+     label, never colour alone. */
+  --sev-pass-fg:    #0C4A26; --sev-pass-bg:    #E5F8EE;
+  --sev-low-fg:     #1E40AF; --sev-low-bg:     #DBEAFE;
+  --sev-medium-fg:  #854D0E; --sev-medium-bg:  #FEF9C3;
+  --sev-high-fg:    #9A3412; --sev-high-bg:    #FFEDD5;
+  --sev-critical-fg:#991B1B; --sev-critical-bg:#FEE2E2;
+
+  /* ---- Typography ------------------------------------------------------------------- */
+  --font-display: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  --tracking-display: -0.02em;
+  --tracking-tight:   -0.01em;
+  --tracking-label:    0.24em;  /* tracked caps: captions, lower-thirds, table heads, step labels */
+  --leading-display:   1.05;
+  --leading-body:      1.6;
+
+  --text-display: clamp(2.75rem, 6vw, 4.5rem);
+  --text-h1:      clamp(2rem, 4vw, 3rem);
+  --text-h2:      clamp(1.5rem, 3vw, 2rem);
+  --text-h3:      1.375rem;
+  --text-h4:      1.125rem;
+  --text-body-lg: 1.125rem;
+  --text-body:    1rem;
+  --text-sm:      0.875rem;
+  --text-xs:      0.75rem;
+  --text-overline:0.6875rem;
+  --text-figure:  clamp(3.5rem, 9vw, 6rem); /* the big-number panel */
+
+  /* ---- Spacing (4px base) ------------------------------------------------------------ */
+  --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem;
+  --space-5:1.5rem; --space-6:2rem;  --space-7:3rem;   --space-8:4rem;
+  --space-9:6rem;   --space-10:8rem;
+
+  /* ---- Radius: sharp by rule --------------------------------------------------------- */
+  --radius-sharp: 0;   /* panels, cards, images, tables, the whole page */
+  --radius-sm:    2px; /* the ceiling · buttons, inputs, chips · echoes the mark's machined corners */
+
+  /* ---- Elevation: flat by default ------------------------------------------------------ */
+  /* Depth is tonal (charcoal -> panel -> deep) plus hairlines. Shadows exist
+     only for layers that float above content: menus, dialogs, toasts. */
+  --shadow-float:0 12px 32px rgba(19,20,22,.28);
+  --shadow-float-light:0 8px 24px rgba(38,40,43,.14);
+
+  /* ---- Signature textures --------------------------------------------------------------- */
+  --grid-line: rgba(255,255,255,0.05); /* setting-out grid on charcoal */
+  --grid-size: 40px;
+  --lane-dash: 24px;                   /* lane-line keyline: paint */
+  --lane-gap:  16px;                   /*                    gap   */
+
+  /* ---- Motion ------------------------------------------------------------------------------ */
+  --dur-fast:120ms; --dur-base:200ms; --dur-slow:320ms;
+  /* Scroll-entrance tier. Longer than the UI scale because these elements travel
+     further and start off-screen; same curve, because the system has one curve. */
+  --dur-reveal:620ms; --stagger-word:60ms; --stagger-card:70ms;
+  --ease-out:cubic-bezier(0.22,1,0.36,1);
+
+  /* ---- z-index scale ------------------------------------------------------------------------ */
+  --z-dropdown:1000; --z-sticky:1100; --z-modal-backdrop:1200;
+  --z-modal:1300; --z-toast:1400; --z-tooltip:1500;
+}
+
+/* ---- Signature utilities (reuse everywhere the brand needs its texture) ---- */
+
+/* Setting-out grid: the surveyed pad before it is built. Charcoal ground only. */
+.mp-grid-bg{
+  background-color:var(--mp-charcoal);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size:var(--grid-size) var(--grid-size);
+}
+
+/* Lane line: the road-marking keyline. Paints in currentColor, so it is white
+   on charcoal and charcoal on paper with no variant. Dividers, table top-rules,
+   chart annotations, 3-6px tall. Never a fill behind text. */
+.mp-laneline{
+  height:4px;
+  background:repeating-linear-gradient(90deg,
+    currentColor 0 var(--lane-dash), transparent var(--lane-dash) calc(var(--lane-dash) + var(--lane-gap)));
+}
+
+/* Label: a short rule, then tracked caps. Jon's caption device, for photo
+   captions, lower-thirds, table heads and step labels:
+   "02 — BINDER AND WATER THROUGH THE FULL DEPTH". Never an eyebrow stacked
+   over a headline; the headline carries its own weight. */
+.mp-label{
+  display:inline-flex; align-items:center; gap:.9em;
+  font-family:var(--font-body); font-weight:600; font-size:var(--text-overline);
+  line-height:1.4; letter-spacing:var(--tracking-label); text-transform:uppercase;
+}
+.mp-label::before{ content:""; width:1.75rem; height:2px; background:currentColor; flex:none; }
+
+/* Two-tone headline: grey setup, then the payoff in <strong>.
+   "Stop patching the yard. <strong>Bind it.</strong>"  Add .on-light on paper. */
+.mp-two-tone{ color:var(--color-setup); }
+.mp-two-tone strong{ color:var(--mp-white); font-weight:inherit; }
+.mp-two-tone.on-light{ color:var(--color-setup-on-light); }
+.mp-two-tone.on-light strong{ color:var(--mp-charcoal); }
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{ animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; }
+}
